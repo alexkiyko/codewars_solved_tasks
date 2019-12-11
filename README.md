@@ -8,4 +8,6 @@ const b = 321;
 * task 2
 ```javascript
 const x = 123;
+const e = 345; //test
+// new test
 ```
