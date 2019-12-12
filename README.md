@@ -11,7 +11,3 @@ const x = 123;
 const e = 345; //test
 // new test
 ```
-* task 3
-```javascript
-let c = 1234; // test gain
-```
