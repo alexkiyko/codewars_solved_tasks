@@ -1,14 +1,8 @@
-# solved-tasks
-* task 1
+# Codewars fun
+* Simple Comparison?
 ```javascript
-const a = 123;
-const b = 321;
-// test
-```
-* task 2
-```javascript
-const x = 123;
-const e = 345; //test
-// new test
-// test 1
+function add(a, b) {
+    if (+a === +b || a === b) return true;
+    else return false;
+}
 ```
