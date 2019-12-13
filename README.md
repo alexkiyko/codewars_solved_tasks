@@ -13,5 +13,4 @@ function hero(bullets, dragons){
     else return false;
 }
 ```
-* Is he gonna survive?
-* Is he gonna survive?
+
