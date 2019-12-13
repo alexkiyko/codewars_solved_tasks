@@ -6,3 +6,10 @@ function add(a, b) {
     else return false;
 }
 ```
+* Is he gonna survive?
+```javascript
+function hero(bullets, dragons){
+    if ((bullets * 2) >= dragons) return true;
+    else return false;
+}
+```
