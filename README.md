@@ -1,4 +1,4 @@
-# Codewars fun
+# CodeWars
 * Simple Comparison?
 ```javascript
 function add(a, b) {
