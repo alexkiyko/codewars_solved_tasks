@@ -19,3 +19,11 @@ function maps(x){
   return x.map(x => x * 2);
 }
 ```
+* Discover The Original Price
+```javascript
+function discoverOriginalPrice(discountedPrice, salePercentage) {
+  salePercentage = salePercentage / 100;
+  let originalPrice = discountedPrice / (1 - salePercentage);
+  return +originalPrice.toFixed(2);
+}
+```
