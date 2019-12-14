@@ -27,3 +27,9 @@ function discoverOriginalPrice(discountedPrice, salePercentage) {
   return +originalPrice.toFixed(2);
 }
 ```
+* Keep Hydrated!
+```javascript
+function litres(hour) {
+  return Math.floor(hour * 0.5);
+}
+```
