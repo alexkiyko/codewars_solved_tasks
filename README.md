@@ -33,3 +33,16 @@ function litres(hour) {
   return Math.floor(hour * 0.5);
 }
 ```
+* Sum of Multiples
+```javascript
+function sumMul(n, m){
+    if (n >= m) {
+      return 'INVALID';
+    }
+    let sum = 0;
+    for (let i = n; i < m; i += n) {
+      sum += i;
+    }
+    return sum;
+}
+```
