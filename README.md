@@ -33,3 +33,39 @@ function litres(hour) {
   return Math.floor(hour * 0.5);
 }
 ```
+* Sum of Multiples
+```javascript
+function sumMul(n, m){
+    if (n >= m) {
+      return 'INVALID';
+    }
+    let sum = 0;
+    for (let i = n; i < m; i += n) {
+      sum += i;
+    }
+    return sum;
+}
+```
+* Draw stairs
+```javascript
+function drawStairs(n) {
+    let s = '';
+    for (let i = 0; i < n; i++) {
+        s = s + ' '.repeat(i) + 'I';
+        if (i < (n - 1)) {
+            s += '\n';
+        }
+    }
+    return s;
+}
+```
+* Sum of the first nth term of Series
+```javascript
+function SeriesSum(n) {
+  let sum = 0;
+  for(i = 0; i < n; i++) {
+      sum += (1 / (1 + (i * 3)));
+  }
+  return sum.toFixed(2);
+}
+```
