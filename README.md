@@ -69,3 +69,16 @@ function SeriesSum(n) {
   return sum.toFixed(2);
 }
 ```
+* Remove String Spaces
+1. Solution 
+```javascript
+function noSpace(x){
+let space = '';
+for (let i = 0; i < x.length; i++){
+  if (x[i] !== ' ') {
+  space += x[i];
+    }
+  }
+  return space;
+}
+```
