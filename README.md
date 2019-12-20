@@ -92,3 +92,24 @@ if ( x ** 2 > 1000){
  }
 }
 ```
+* Do I get a bonus?
+```javascript
+function bonusTime(salary, bonus) {
+  if (bonus === true) {
+    salary = salary * 10;
+    return "£" + salary;
+  } else {
+  return "£" + salary;
+  }
+}
+```
+* Convert a Boolean to a String
+```javascript
+function booleanToString(b) {
+    if (Boolean(b)) {
+        return 'true';
+    } else {
+        return 'false';
+    }
+}
+```
