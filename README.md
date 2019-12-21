@@ -113,3 +113,7 @@ function booleanToString(b) {
     }
 }
 ```
+* Parse float
+```javascript
+const parseF = s => (Number.isNaN(parseFloat(s)) ? null : parseFloat(s));
+```
