@@ -117,3 +117,9 @@ function booleanToString(b) {
 ```javascript
 const parseF = s => (Number.isNaN(parseFloat(s)) ? null : parseFloat(s));
 ```
+* Bin to Decimal
+```javascript
+function binToDec(bin){
+  return Number.parseInt(bin, 2);
+}
+```
