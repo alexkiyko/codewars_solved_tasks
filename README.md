@@ -123,3 +123,9 @@ function binToDec(bin){
   return Number.parseInt(bin, 2);
 }
 ```
+* Hex to Decimal
+```javascript
+function hexToDec(hexString){
+  return Number.parseInt(hexString, 16);
+}
+```
