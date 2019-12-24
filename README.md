@@ -83,7 +83,7 @@ for (let i = 0; i < x.length; i++){
 }
 ```
 * Alan Partridge II - Apple Turnover
-```javascript****
+```javascript
 function apple(x){
 if ( x ** 2 > 1000){
   return "It's hotter than the sun!!";
@@ -128,4 +128,8 @@ function binToDec(bin){
 function hexToDec(hexString){
   return Number.parseInt(hexString, 16);
 }
+```
+* Be Concise IV - Index of an element in an array
+```javascript
+const find = (array, element) => array.includes(element) ? array.indexOf(element): 'Not found';
 ```
