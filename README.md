@@ -169,3 +169,9 @@ function warnTheSheep(queue) {
   else return `Oi! Sheep number ${Math.abs(queue.indexOf('wolf') - queue.length + 1 )}! You are about to be eaten by a wolf!`
 }
 ```
+* JavaScript Array Filter
+```javascript
+function getEvenNumbers(numbersArray){
+  return numbersArray.filter(el => el % 2 === 0);
+}
+```
