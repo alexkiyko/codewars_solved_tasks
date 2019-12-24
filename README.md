@@ -133,3 +133,16 @@ function hexToDec(hexString){
 ```javascript
 const find = (array, element) => array.includes(element) ? array.indexOf(element): 'Not found';
 ```
+* Who is going to pay for the wall?
+```javascript
+function whoIsPaying(name){
+  const arr = [];
+  if (name.length <= 2){
+  arr.push(name);
+  } else if (name.length > 2){
+  arr.unshift(name);
+  arr.push(name.substring(0, 2));
+  }
+  return arr;
+}
+```
