@@ -162,3 +162,10 @@ function well(x){
   if (arr.length > 2) return 'I smell a series!';
 }
 ```
+* A wolf in sheep's clothing
+```javascript
+function warnTheSheep(queue) {
+  if (queue.indexOf('wolf') === queue.length -1) return "Pls go away and stop eating my sheep";
+  else return `Oi! Sheep number ${Math.abs(queue.indexOf('wolf') - queue.length + 1 )}! You are about to be eaten by a wolf!`
+}
+```
