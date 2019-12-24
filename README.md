@@ -64,7 +64,7 @@ function drawStairs(n) {
 function SeriesSum(n) {
   let sum = 0;
   for(i = 0; i < n; i++) {
-      sum += (1 / (1 + (i * 3)));
+    sum += (1 / (1 + (i * 3)));
   }
   return sum.toFixed(2);
 }
@@ -72,11 +72,11 @@ function SeriesSum(n) {
 * Remove String Spaces
 1. Solution 
 ```javascript
-function noSpace(x){
-let space = '';
-for (let i = 0; i < x.length; i++){
-  if (x[i] !== ' ') {
-  space += x[i];
+function noSpace(x) {
+  let space = '';
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] !== ' ') {
+      space += x[i];
     }
   }
   return space;
@@ -84,12 +84,12 @@ for (let i = 0; i < x.length; i++){
 ```
 * Alan Partridge II - Apple Turnover
 ```javascript
-function apple(x){
-if ( x ** 2 > 1000){
-  return "It's hotter than the sun!!";
-} else {
-  return 'Help yourself to a honeycomb Yorkie for the glovebox.';
- }
+function apple(x) {
+  if ( x ** 2 > 1000) {
+    return "It's hotter than the sun!!";
+  } else {
+    return 'Help yourself to a honeycomb Yorkie for the glovebox.';
+  }
 }
 ```
 * Do I get a bonus?
@@ -99,18 +99,18 @@ function bonusTime(salary, bonus) {
     salary = salary * 10;
     return "£" + salary;
   } else {
-  return "£" + salary;
+    return "£" + salary;
   }
 }
 ```
 * Convert a Boolean to a String
 ```javascript
 function booleanToString(b) {
-    if (Boolean(b)) {
-        return 'true';
-    } else {
-        return 'false';
-    }
+  if (Boolean(b)) {
+    return 'true';
+  } else {
+    return 'false';
+  }
 }
 ```
 * Parse float
@@ -119,13 +119,13 @@ const parseF = s => (Number.isNaN(parseFloat(s)) ? null : parseFloat(s));
 ```
 * Bin to Decimal
 ```javascript
-function binToDec(bin){
+function binToDec(bin) {
   return Number.parseInt(bin, 2);
 }
 ```
 * Hex to Decimal
 ```javascript
-function hexToDec(hexString){
+function hexToDec(hexString) {
   return Number.parseInt(hexString, 16);
 }
 ```
@@ -135,14 +135,20 @@ const find = (array, element) => array.includes(element) ? array.indexOf(element
 ```
 * Who is going to pay for the wall?
 ```javascript
-function whoIsPaying(name){
+function whoIsPaying(name) {
   const arr = [];
-  if (name.length <= 2){
-  arr.push(name);
-  } else if (name.length > 2){
-  arr.unshift(name);
-  arr.push(name.substring(0, 2));
+  if (name.length <= 2) {
+    arr.push(name);
+  } else if (name.length > 2) {
+    arr.unshift(name);
+    arr.push(name.substring(0, 2));
   }
   return arr;
+}
+```
+* Capitalization and Mutability
+```javascript
+function capitalizeWord(word) {
+  return word.charAt(0).toUpperCase() + word.slice(1);
 }
 ```
