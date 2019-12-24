@@ -152,3 +152,13 @@ function capitalizeWord(word) {
   return word.charAt(0).toUpperCase() + word.slice(1);
 }
 ```
+* Well of Ideas - Easy Version
+```javascript
+function well(x){
+  let arr = [];
+  arr = x.filter(el => el === 'good');
+  if (arr.length === 0) return 'Fail!';
+  if (arr.length  > 0 && arr.length <= 2) return 'Publish!';
+  if (arr.length > 2) return 'I smell a series!';
+}
+```
