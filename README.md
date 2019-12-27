@@ -179,3 +179,7 @@ function getEvenNumbers(numbersArray){
 ```javascript
 const grow = x => x.reduce((acc, cur) => acc * cur, 1);
 ```
+* Enumerable Magic #25 - Take the First N Elements
+```javascript
+const take = (arr, n) => arr.splice(0, n);
+```
