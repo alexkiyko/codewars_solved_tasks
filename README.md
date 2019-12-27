@@ -175,3 +175,7 @@ function getEvenNumbers(numbersArray){
   return numbersArray.filter(el => el % 2 === 0);
 }
 ```
+* Beginner - Reduce but Grow
+```javascript
+const grow = x => x.reduce((acc, cur) => acc * cur, 1);
+```
