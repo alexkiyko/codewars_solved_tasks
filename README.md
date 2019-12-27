@@ -183,3 +183,11 @@ const grow = x => x.reduce((acc, cur) => acc * cur, 1);
 ```javascript
 const take = (arr, n) => arr.splice(0, n);
 ```
+* SpeedCode #2 - Array Madness
+```javascript
+function arrayMadness(a, b) {
+  let sumA = a.reduce((acc, cur) => acc + Math.pow(cur, 2), 0);
+  let sumB = b.reduce((acc, cur) => acc + Math.pow(cur, 3), 0);
+  return sumA > sumB ? true : false;
+}
+```
