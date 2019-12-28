@@ -1,4 +1,16 @@
 # CodeWars
+* [Is it a palindrome?] (https://www.codewars.com/kata/is-it-a-palindrome/train/javascript)
+```javascript
+function isPalindrome(x) {
+  x = x.toLowerCase().split('');
+  for (let i = 0; i < x.length / 2; i++) {
+    if (x[i] !== x[x.length - 1 - i]) {
+       return false;
+     }
+  }
+  return true;
+}
+```
 * Simple Comparison?
 ```javascript
 function add(a, b) {
