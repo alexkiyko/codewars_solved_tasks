@@ -1,6 +1,6 @@
 # CodeWars
 
-* __[Is it a palindrome?](https://www.codewars.com/kata/is-it-a-palindrome/train/javascript/)__ - 8ky
+* __[Is it a palindrome?](https://www.codewars.com/kata/is-it-a-palindrome/train/javascript/)__ - 8 kyu
 ```javascript
 function isPalindrome(x) {
   x = x.toLowerCase().split('');
@@ -12,27 +12,27 @@ function isPalindrome(x) {
   return true;
 }
 ```
-* Simple Comparison?
+* __[Simple Comparison?](https://www.codewars.com/kata/simple-comparison/train/javascript/)__ - 8 kyu
 ```javascript
 function add(a, b) {
   if (+a === +b || a === b) return true;
   else return false;
 }
 ```
-* Is he gonna survive?
+* __[Is he gonna survive?](https://www.codewars.com/kata/is-he-gonna-survive/train/javascript/)__ - 8 kyu
 ```javascript
 function hero(bullets, dragons){
   if ((bullets * 2) >= dragons) return true;
   else return false;
 }
 ```
-* Beginner - Lost Without a Map
+* __[Beginner - Lost Without a Map](https://www.codewars.com/kata/beginner-lost-without-a-map/train/javascript/)__ - 8 kyu
 ```javascript
 function maps(x){
   return x.map(x => x * 2);
 }
 ```
-* Discover The Original Price
+* __[Discover The Original Price](https://www.codewars.com/kata/discover-the-original-price/train/javascript/)__ - 7 kyu
 ```javascript
 function discoverOriginalPrice(discountedPrice, salePercentage) {
   salePercentage = salePercentage / 100;
@@ -40,13 +40,13 @@ function discoverOriginalPrice(discountedPrice, salePercentage) {
   return +originalPrice.toFixed(2);
 }
 ```
-* Keep Hydrated!
+* __[Keep Hydrated!](https://www.codewars.com/kata/keep-hydrated-1/train/javascript/)__ - 8 kyu
 ```javascript
 function litres(hour) {
   return Math.floor(hour * 0.5);
 }
 ```
-* Sum of Multiples
+* __[Sum of Multiples](https://www.codewars.com/kata/sum-of-multiples/train/javascript/)__ - 8 kyu
 ```javascript
 function sumMul(n, m){
     if (n >= m) {
@@ -59,7 +59,7 @@ function sumMul(n, m){
     return sum;
 }
 ```
-* Draw stairs
+* __[Draw stairs](https://www.codewars.com/kata/draw-stairs/train/javascript/)__ - 8 kyu
 ```javascript
 function drawStairs(n) {
     let s = '';
@@ -72,7 +72,7 @@ function drawStairs(n) {
     return s;
 }
 ```
-* Sum of the first nth term of Series
+* __[Sum of the first nth term of Series](https://www.codewars.com/kata/sum-of-the-first-nth-term-of-series/train/javascript/)__ - 7 kyu
 ```javascript
 function SeriesSum(n) {
   let sum = 0;
@@ -82,7 +82,7 @@ function SeriesSum(n) {
   return sum.toFixed(2);
 }
 ```
-* Remove String Spaces
+* __[Remove String Spaces](https://www.codewars.com/kata/remove-string-spaces/train/javascript/)__ - 8kyu
 1. Solution 
 ```javascript
 function noSpace(x) {
@@ -95,7 +95,7 @@ function noSpace(x) {
   return space;
 }
 ```
-* Alan Partridge II - Apple Turnover
+* __[Alan Partridge II - Apple Turnover](https://www.codewars.com/kata/alan-partridge-ii-apple-turnover/train/javascript/)__ - 8 kyu
 ```javascript
 function apple(x) {
   if ( x ** 2 > 1000) {
@@ -105,7 +105,7 @@ function apple(x) {
   }
 }
 ```
-* Do I get a bonus?
+* __[Do I get a bonus?](https://www.codewars.com/kata/do-i-get-a-bonus/train/javascript/)__ - 8 kyu
 ```javascript
 function bonusTime(salary, bonus) {
   if (bonus === true) {
@@ -116,7 +116,7 @@ function bonusTime(salary, bonus) {
   }
 }
 ```
-* Convert a Boolean to a String
+* __[Convert a Boolean to a String](https://www.codewars.com/kata/convert-a-boolean-to-a-string/train/javascript/)__ - 8 kyu
 ```javascript
 function booleanToString(b) {
   if (Boolean(b)) {
@@ -126,27 +126,27 @@ function booleanToString(b) {
   }
 }
 ```
-* Parse float
+* __[Parse float](https://www.codewars.com/kata/parse-float/train/javascript/)__ - 8 kyu
 ```javascript
 const parseF = s => (Number.isNaN(parseFloat(s)) ? null : parseFloat(s));
 ```
-* Bin to Decimal
+* __[Bin to Decimal](https://www.codewars.com/kata/bin-to-decimal/train/javascript/)__ - 8 kyu
 ```javascript
 function binToDec(bin) {
   return Number.parseInt(bin, 2);
 }
 ```
-* Hex to Decimal
+* __[Hex to Decimal](https://www.codewars.com/kata/hex-to-decimal/train/javascript/)__ - 8 kyu
 ```javascript
 function hexToDec(hexString) {
   return Number.parseInt(hexString, 16);
 }
 ```
-* Be Concise IV - Index of an element in an array
+* __[Be Concise IV - Index of an element in an array](https://www.codewars.com/kata/be-concise-iv-index-of-an-element-in-an-array/train/javascript/)__ - 8 kyu
 ```javascript
 const find = (array, element) => array.includes(element) ? array.indexOf(element): 'Not found';
 ```
-* Who is going to pay for the wall?
+* __[Who is going to pay for the wall?](https://www.codewars.com/kata/who-is-going-to-pay-for-the-wall/train/javascript/)__ - 8 kyu
 ```javascript
 function whoIsPaying(name) {
   const arr = [];
@@ -159,13 +159,13 @@ function whoIsPaying(name) {
   return arr;
 }
 ```
-* Capitalization and Mutability
+* __[Capitalization and Mutability](https://www.codewars.com/kata/capitalization-and-mutability/train/javascript/)__ - 8 kyu
 ```javascript
 function capitalizeWord(word) {
   return word.charAt(0).toUpperCase() + word.slice(1);
 }
 ```
-* Well of Ideas - Easy Version
+* __[Well of Ideas - Easy Version](https://www.codewars.com/kata/well-of-ideas-easy-version/train/javascript/)__ - 8 kyu
 ```javascript
 function well(x){
   let arr = [];
@@ -175,28 +175,28 @@ function well(x){
   if (arr.length > 2) return 'I smell a series!';
 }
 ```
-* A wolf in sheep's clothing
+* __[A wolf in sheep's clothing](https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript/)__ - 8 kyu
 ```javascript
 function warnTheSheep(queue) {
   if (queue.indexOf('wolf') === queue.length -1) return "Pls go away and stop eating my sheep";
   else return `Oi! Sheep number ${Math.abs(queue.indexOf('wolf') - queue.length + 1 )}! You are about to be eaten by a wolf!`
 }
 ```
-* JavaScript Array Filter
+* __[JavaScript Array Filter](https://www.codewars.com/kata/javascript-array-filter/train/javascript/)__ - 7 kyu
 ```javascript
 function getEvenNumbers(numbersArray){
   return numbersArray.filter(el => el % 2 === 0);
 }
 ```
-* Beginner - Reduce but Grow
+* __[Beginner - Reduce but Grow](https://www.codewars.com/kata/beginner-reduce-but-grow/train/javascript/)__ - 8 kyu
 ```javascript
 const grow = x => x.reduce((acc, cur) => acc * cur, 1);
 ```
-* Enumerable Magic #25 - Take the First N Elements
+* __[Enumerable Magic #25 - Take the First N Elements](https://www.codewars.com/kata/enumerable-magic-number-25-take-the-first-n-elements/train/javascript/)__ - 8 kyu
 ```javascript
 const take = (arr, n) => arr.splice(0, n);
 ```
-* SpeedCode #2 - Array Madness
+* __[SpeedCode #2 - Array Madness](https://www.codewars.com/kata/speedcode-number-2-array-madness/train/javascript/)__ - 8 kyu
 ```javascript
 function arrayMadness(a, b) {
   let sumA = a.reduce((acc, cur) => acc + Math.pow(cur, 2), 0);
@@ -204,7 +204,7 @@ function arrayMadness(a, b) {
   return sumA > sumB ? true : false;
 }
 ```
-* The highest profit wins!
+* __[The highest profit wins!](https://www.codewars.com/kata/the-highest-profit-wins/train/javascript/)__ - 7 kyu
 ```javascript
 function minMax(arr){
   let min = arr[0];
