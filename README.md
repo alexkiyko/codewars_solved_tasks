@@ -1,5 +1,6 @@
 # CodeWars
-* Is it a palindrome? (https://www.codewars.com/kata/is-it-a-palindrome/train/javascript)
+
+* __[Is it a palindrome?](https://www.codewars.com/kata/is-it-a-palindrome/train/javascript/)__ - 8ky
 ```javascript
 function isPalindrome(x) {
   x = x.toLowerCase().split('');
