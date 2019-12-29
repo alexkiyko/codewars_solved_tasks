@@ -1,5 +1,6 @@
 # CodeWars
 
+
 * __[Is it a palindrome?](https://www.codewars.com/kata/is-it-a-palindrome/train/javascript/)__ - 8 kyu
 ```javascript
 function isPalindrome(x) {
@@ -82,8 +83,7 @@ function SeriesSum(n) {
   return sum.toFixed(2);
 }
 ```
-* __[Remove String Spaces](https://www.codewars.com/kata/remove-string-spaces/train/javascript/)__ - 8kyu
-1. Solution 
+* __[Remove String Spaces](https://www.codewars.com/kata/remove-string-spaces/train/javascript/)__ - 8 kyu
 ```javascript
 function noSpace(x) {
   let space = '';
