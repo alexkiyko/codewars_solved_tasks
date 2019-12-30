@@ -1,6 +1,31 @@
 # CodeWars
-
-
+* __[Find the capitals](https://www.codewars.com/kata/find-the-capitals-1/train/javascript/)__ - 7 kyu
+```javascript
+var capitals = function (word) {
+  const arrList = [];
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] === word[i].toUpperCase()) {
+          arrList.push(word.indexOf(word[i]));
+    }
+  }
+  return arrList;
+}
+```
+* __[The highest profit wins!](https://www.codewars.com/kata/the-highest-profit-wins/train/javascript/)__ - 7 kyu
+```javascript
+function minMax(arr){
+  let min = arr[0];
+  let max = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    } else if (arr[i] < min) {
+      min = arr[i];
+    }
+  }
+  return [min, max];
+}
+```
 * __[Is it a palindrome?](https://www.codewars.com/kata/is-it-a-palindrome/train/javascript/)__ - 8 kyu
 ```javascript
 function isPalindrome(x) {
@@ -202,20 +227,5 @@ function arrayMadness(a, b) {
   let sumA = a.reduce((acc, cur) => acc + Math.pow(cur, 2), 0);
   let sumB = b.reduce((acc, cur) => acc + Math.pow(cur, 3), 0);
   return sumA > sumB ? true : false;
-}
-```
-* __[The highest profit wins!](https://www.codewars.com/kata/the-highest-profit-wins/train/javascript/)__ - 7 kyu
-```javascript
-function minMax(arr){
-  let min = arr[0];
-  let max = arr[0];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > max) {
-      max = arr[i];
-    } else if (arr[i] < min) {
-      min = arr[i];
-    }
-  }
-  return [min, max];
 }
 ```
