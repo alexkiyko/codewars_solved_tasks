@@ -1,4 +1,16 @@
 # CodeWars
+* __[Lottery machine](https://www.codewars.com/kata/lottery-machine/train/javascript/)__ - 7 kyu
+```javascript
+function lottery(str){
+  const arrStr = str.replace(/[a-z]/gi, '').split('');
+  const filteredArr = arrStr.filter((el, i) => i === arrStr.indexOf(el)).join('');
+  if (filteredArr.length > 0) {
+    return filteredArr;
+  } else {
+  return 'One more run!';
+  }
+}
+```
 * __[Find the capitals](https://www.codewars.com/kata/find-the-capitals-1/train/javascript/)__ - 7 kyu
 ```javascript
 var capitals = function (word) {
