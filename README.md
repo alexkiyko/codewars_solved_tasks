@@ -1,4 +1,16 @@
 # CodeWars
+* __[Valid Parentheses](https://www.codewars.com/kata/valid-parentheses/train/javascript/)__ - 5 kyu
+```javascript
+function validParentheses(parens){
+  let count = 0;
+  for (let i = 0; i < parens.length; i++) {
+    if (parens[i] === '(') count++;
+    if (parens[i] !== '(') count--;
+    if (count < 0) return false;
+  }
+  return count === 0;
+}
+```
 * __[Lottery machine](https://www.codewars.com/kata/lottery-machine/train/javascript/)__ - 7 kyu
 ```javascript
 function lottery(str){
@@ -238,6 +250,6 @@ const take = (arr, n) => arr.splice(0, n);
 function arrayMadness(a, b) {
   let sumA = a.reduce((acc, cur) => acc + Math.pow(cur, 2), 0);
   let sumB = b.reduce((acc, cur) => acc + Math.pow(cur, 3), 0);
-  return sumA > sumB ? true : false;
+  return sumA > sumB;
 }
 ```
