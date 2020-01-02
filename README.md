@@ -1,4 +1,15 @@
 # CodeWars
+
+* __[Factorial](https://www.codewars.com/kata/factorial-1/train/javascript/)__ - 7 kyu
+```javascript
+function factorial(n) {
+  let factorial = 1;
+  for (let i = 1; i <= n; i++) {
+    factorial = factorial * i;
+  }
+  return factorial;
+}
+```
 * __[Valid Parentheses](https://www.codewars.com/kata/valid-parentheses/train/javascript/)__ - 5 kyu
 ```javascript
 function validParentheses(parens){
@@ -13,7 +24,7 @@ function validParentheses(parens){
 ```
 * __[Lottery machine](https://www.codewars.com/kata/lottery-machine/train/javascript/)__ - 7 kyu
 ```javascript
-function lottery(str){
+function lottery(str) {
   const arrStr = str.replace(/[a-z]/gi, '').split('');
   const filteredArr = arrStr.filter((el, i) => i === arrStr.indexOf(el)).join('');
   if (filteredArr.length > 0) {
@@ -37,7 +48,7 @@ var capitals = function (word) {
 ```
 * __[The highest profit wins!](https://www.codewars.com/kata/the-highest-profit-wins/train/javascript/)__ - 7 kyu
 ```javascript
-function minMax(arr){
+function minMax(arr) {
   let min = arr[0];
   let max = arr[0];
   for (let i = 0; i < arr.length; i++) {
@@ -65,15 +76,13 @@ function isPalindrome(x) {
 * __[Simple Comparison?](https://www.codewars.com/kata/simple-comparison/train/javascript/)__ - 8 kyu
 ```javascript
 function add(a, b) {
-  if (+a === +b || a === b) return true;
-  else return false;
+  return +a === +b || a === b;
 }
 ```
 * __[Is he gonna survive?](https://www.codewars.com/kata/is-he-gonna-survive/train/javascript/)__ - 8 kyu
 ```javascript
-function hero(bullets, dragons){
-  if ((bullets * 2) >= dragons) return true;
-  else return false;
+function hero(bullets, dragons) {
+  return (bullets * 2) >= dragons;
 }
 ```
 * __[Beginner - Lost Without a Map](https://www.codewars.com/kata/beginner-lost-without-a-map/train/javascript/)__ - 8 kyu
