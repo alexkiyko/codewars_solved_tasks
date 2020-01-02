@@ -1,5 +1,12 @@
 # CodeWars
-
+* __[Isograms](https://www.codewars.com/kata/isograms/train/javascript)__ - 7 kyu
+```javascript
+function isIsogram(str) {
+    const strArr = str.toLowerCase().split('');
+    let strDif = strArr.filter((el, i) => i !== strArr.indexOf(el));
+    return strDif.length === 0;
+}
+```
 * __[Factorial](https://www.codewars.com/kata/factorial-1/train/javascript/)__ - 7 kyu
 ```javascript
 function factorial(n) {
