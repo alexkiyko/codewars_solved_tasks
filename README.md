@@ -1,4 +1,12 @@
 # CodeWars
+* __[Correct the mistakes of the character recognition software](https://www.codewars.com/kata/correct-the-mistakes-of-the-character-recognition-software/train/javascript/)__ - 8 kyu
+```javascript
+function correct(string) {
+  return string.replace(/0/g, "O")
+               .replace(/5/g, "S")
+               .replace(/1/g, "I");
+}
+```
 * __[Complementary DNA](https://www.codewars.com/kata/complementary-dna/train/javascript)__ - 7 kyu
 ```javascript
 function DNAStrand(dna){
@@ -18,9 +26,9 @@ function DNAStrand(dna){
 * __[Isograms](https://www.codewars.com/kata/isograms/train/javascript)__ - 7 kyu
 ```javascript
 function isIsogram(str) {
-    const strArr = str.toLowerCase().split('');
-    let strDif = strArr.filter((el, i) => i !== strArr.indexOf(el));
-    return strDif.length === 0;
+  const strArr = str.toLowerCase().split('');
+  let strDif = strArr.filter((el, i) => i !== strArr.indexOf(el));
+  return strDif.length === 0;
 }
 ```
 * __[Factorial](https://www.codewars.com/kata/factorial-1/train/javascript/)__ - 7 kyu
@@ -131,27 +139,27 @@ function litres(hour) {
 * __[Sum of Multiples](https://www.codewars.com/kata/sum-of-multiples/train/javascript/)__ - 8 kyu
 ```javascript
 function sumMul(n, m){
-    if (n >= m) {
-      return 'INVALID';
-    }
-    let sum = 0;
-    for (let i = n; i < m; i += n) {
-      sum += i;
-    }
-    return sum;
+  if (n >= m) {
+    return 'INVALID';
+  }
+  let sum = 0;
+  for (let i = n; i < m; i += n) {
+    sum += i;
+  }
+  return sum;
 }
 ```
 * __[Draw stairs](https://www.codewars.com/kata/draw-stairs/train/javascript/)__ - 8 kyu
 ```javascript
 function drawStairs(n) {
-    let s = '';
-    for (let i = 0; i < n; i++) {
-        s = s + ' '.repeat(i) + 'I';
-        if (i < (n - 1)) {
-            s += '\n';
-        }
-    }
-    return s;
+  let s = '';
+  for (let i = 0; i < n; i++) {
+     s = s + ' '.repeat(i) + 'I';
+     if (i < (n - 1)) {
+       s += '\n';
+     }
+  }
+  return s;
 }
 ```
 * __[Sum of the first nth term of Series](https://www.codewars.com/kata/sum-of-the-first-nth-term-of-series/train/javascript/)__ - 7 kyu
