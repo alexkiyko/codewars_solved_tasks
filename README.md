@@ -1,4 +1,20 @@
 # CodeWars
+* __[Complementary DNA](https://www.codewars.com/kata/complementary-dna/train/javascript)__ - 7 kyu
+```javascript
+function DNAStrand(dna){
+  let dnaKey = {
+    'A' : 'T',
+    'T' : 'A',
+    'G' : 'C',
+    'C' : 'G'
+  };
+  let dnaReverse = '';
+  for (let i = 0; i < dna.length; i++) {
+     dnaReverse += dnaKey[dna[i]] ;
+  }
+  return dnaReverse;
+}
+```
 * __[Isograms](https://www.codewars.com/kata/isograms/train/javascript)__ - 7 kyu
 ```javascript
 function isIsogram(str) {
