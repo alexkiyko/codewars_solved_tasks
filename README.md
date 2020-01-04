@@ -1,4 +1,17 @@
 # CodeWars
+* __[Every possible sum of two digits](https://www.codewars.com/kata/every-possible-sum-of-two-digits/train/javascript/)__ - 7 kyu
+```javascript
+function digits(num){
+  const arr = [];
+  num = num.toString().split('').map(Number);
+  for (let i = 0; i < num.length; i++) {
+     for (let j = i + 1; j < num.length; j++){
+        arr.push(num[i] + num[j]);
+     }
+  }
+  return arr;
+}
+```
 * __[Correct the mistakes of the character recognition software](https://www.codewars.com/kata/correct-the-mistakes-of-the-character-recognition-software/train/javascript/)__ - 8 kyu
 ```javascript
 function correct(string) {
