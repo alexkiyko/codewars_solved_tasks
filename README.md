@@ -1,4 +1,16 @@
 # CodeWars
+* __[Make a function that does arithmetic!](https://www.codewars.com/kata/make-a-function-that-does-arithmetic/train/javascript/)__ - 7 kyu
+```javascript
+function arithmetic(a, b, operator){
+  const operators = {
+    add : a + b,
+    subtract : a - b,
+    divide : a / b,
+    multiply : a * b,
+  };
+  return operators[operator];
+}
+```
 * __[Tip Calculator](https://www.codewars.com/kata/tip-calculator/train/javascript/)__ - 8 kyu
 ```javascript
 function calculateTip(amount, rating) {
@@ -14,8 +26,9 @@ function calculateTip(amount, rating) {
   
   if (!tipObj.hasOwnProperty(rating)) {
     return "Rating not recognised";
-  }
+  } else {
   return Math.ceil(tipObj[rating] * amount / 100);
+  }
 }
 ```
 
