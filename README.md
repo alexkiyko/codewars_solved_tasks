@@ -1,4 +1,24 @@
 # CodeWars
+* __[Tip Calculator](https://www.codewars.com/kata/tip-calculator/train/javascript/)__ - 8 kyu
+```javascript
+function calculateTip(amount, rating) {
+  rating = rating.toLowerCase();
+  
+  let tipObj = {
+    terrible : 0,
+    poor : 5,
+    good : 10,
+    great : 15,
+    excellent : 20,
+  };
+  
+  if (!tipObj.hasOwnProperty(rating)) {
+    return "Rating not recognised";
+  }
+  return Math.ceil(tipObj[rating] * amount / 100);
+}
+```
+
 * __[Every possible sum of two digits](https://www.codewars.com/kata/every-possible-sum-of-two-digits/train/javascript/)__ - 7 kyu
 ```javascript
 function digits(num){
