@@ -1,5 +1,16 @@
 # CodeWars
-
+* __[Multiple of index](https://www.codewars.com/kata/multiple-of-index/train/javascript/)__ - 8 kyu
+```javascript
+function multipleOfIndex(array) {
+  const arr = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % i === 0) {
+      arr.push(array[i]);
+    }
+  }
+  return arr;
+}
+```
 * __[Sum Mixed Array](https://www.codewars.com/kata/sum-mixed-array/train/javascript/)__ - 8 kyu
 ```javascript
 function sumMix(x){
