@@ -1,4 +1,11 @@
 # CodeWars
+
+* __[Sum Mixed Array](https://www.codewars.com/kata/sum-mixed-array/train/javascript/)__ - 8 kyu
+```javascript
+function sumMix(x){
+  return x.map(Number).reduce((acc, cur) => acc + cur, 0);
+}
+```
 * __[Make a function that does arithmetic!](https://www.codewars.com/kata/make-a-function-that-does-arithmetic/train/javascript/)__ - 7 kyu
 ```javascript
 function arithmetic(a, b, operator){
@@ -27,7 +34,7 @@ function calculateTip(amount, rating) {
   if (!tipObj.hasOwnProperty(rating)) {
     return "Rating not recognised";
   } else {
-  return Math.ceil(tipObj[rating] * amount / 100);
+    return Math.ceil(tipObj[rating] * amount / 100);
   }
 }
 ```
