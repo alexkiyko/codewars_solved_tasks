@@ -1,8 +1,21 @@
 # CodeWars
+* __[Simple Fun #37: House Numbers Sum](https://www.codewars.com/kata/simple-fun-number-37-house-numbers-sum/train/javascript/)__ - 7 kyu
+```javascript
+function houseNumbersSum(inputArray) {
+  let index = inputArray.indexOf(0);
+  let sum = 0;
+
+  for (let i = 0; i < index; i++) {
+    sum += inputArray[i];
+  }
+  return sum;
+}
+```
 * __[Multiple of index](https://www.codewars.com/kata/multiple-of-index/train/javascript/)__ - 8 kyu
 ```javascript
 function multipleOfIndex(array) {
   const arr = [];
+
   for (let i = 0; i < array.length; i++) {
     if (array[i] % i === 0) {
       arr.push(array[i]);
@@ -55,6 +68,7 @@ function calculateTip(amount, rating) {
 function digits(num){
   const arr = [];
   num = num.toString().split('').map(Number);
+
   for (let i = 0; i < num.length; i++) {
      for (let j = i + 1; j < num.length; j++){
         arr.push(num[i] + num[j]);
