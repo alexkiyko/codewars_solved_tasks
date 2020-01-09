@@ -1,4 +1,14 @@
 # CodeWars
+* __[Breaking chocolate problem](https://www.codewars.com/kata/534ea96ebb17181947000ada/train/javascript/)__ - 7 kyu
+```javascript
+function breakChocolate(n,m) {
+  if (n > 0 && m > 0) {
+    return (n * m) - 1;
+  } else {
+    return 0;
+  }
+}
+```
 * __[Simple Fun #37: House Numbers Sum](https://www.codewars.com/kata/simple-fun-number-37-house-numbers-sum/train/javascript/)__ - 7 kyu
 ```javascript
 function houseNumbersSum(inputArray) {
