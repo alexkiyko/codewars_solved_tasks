@@ -1,4 +1,10 @@
 # CodeWars
+* __[Add property to every object in array](https://www.codewars.com/kata/54e8c3e89e2ae6f4900005a1/train/javascript/)__ - 7 kyu
+```javascript
+for (let i = 0; i < questions.length; i++) {
+  questions[i].usersAnswer = null;
+}
+```
 * __[Breaking chocolate problem](https://www.codewars.com/kata/534ea96ebb17181947000ada/train/javascript/)__ - 7 kyu
 ```javascript
 function breakChocolate(n,m) {
