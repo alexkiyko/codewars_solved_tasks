@@ -1,4 +1,17 @@
 # CodeWars
+* __[Numbers to Objects](https://www.codewars.com/kata/57ced2c1c6fdc22123000316/train/javascript/)__ - 7 kyu
+```javascript
+function numObj(s) {
+  let arr = [];
+  
+  for (let i = 0; i < s.length; i++) {
+    let obj = {};
+    obj[s[i.toString()]] = String.fromCharCode(s[i]);
+    arr.push(obj);
+  }
+    return arr;
+}
+```
 * __[Add property to every object in array](https://www.codewars.com/kata/54e8c3e89e2ae6f4900005a1/train/javascript/)__ - 7 kyu
 ```javascript
 for (let i = 0; i < questions.length; i++) {
