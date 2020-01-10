@@ -1,4 +1,26 @@
 # CodeWars
+* __[Permute a Palindrome](https://www.codewars.com/kata/58ae6ae22c3aaafc58000079/train/javascript/)__ - 6 kyu
+```javascript
+function permuteAPalindrome (input) {
+  let obj = {};
+
+  for (let i = 0; i < input.length; i++) {
+    if (!obj[input[i]]) {
+        obj[input[i]] = 1;
+    } else {
+        obj[input[i]] = obj[input[i]] + 1;
+     }
+  }
+  let count = 0;
+
+  for (let j in obj) {
+     if (obj[j] % 2 !== 0) {
+         count++;
+     }
+  }
+  return count <= 1;
+}
+```
 * __[How many days are we represented in a foreign country?](https://www.codewars.com/kata/58e93b4706db4d24ee000096/train/javascript/)__ - 7 kyu
 ```javascript
 function daysRepresented(trips){
