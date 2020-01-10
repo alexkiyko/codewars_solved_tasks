@@ -1,4 +1,19 @@
 # CodeWars
+* __[How many days are we represented in a foreign country?](https://www.codewars.com/kata/58e93b4706db4d24ee000096/train/javascript/)__ - 7 kyu
+```javascript
+function daysRepresented(trips){
+  const arr = [];
+
+  for (let i = 0; i < trips.length; i++) {
+    for (let j = trips[i][0]; j <= trips[i][1]; j++) {
+      arr.push(j);
+    }
+  }
+  
+  const sortedArr = arr.filter((el, i) => i === arr.indexOf(el));
+  return sortedArr.length;
+}
+```
 * __[The Office I - Outed](https://www.codewars.com/kata/57ecf6efc7fe13eb070000e1/train/javascript/)__ - 7 kyu
 ```javascript
 function outed(meet, boss){
