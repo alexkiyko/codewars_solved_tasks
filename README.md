@@ -1,4 +1,21 @@
 # CodeWars
+* __[The Office I - Outed](https://www.codewars.com/kata/57ecf6efc7fe13eb070000e1/train/javascript/)__ - 7 kyu
+```javascript
+function outed(meet, boss){
+  let sum = 0;
+  let countMembers = 0;
+  let bossScore = 0;
+  
+  for (let prop in meet) {
+    sum += meet[prop];
+    if (meet.hasOwnProperty(prop)) countMembers++;
+    if (prop === boss) bossScore += meet[prop];
+  }
+
+  let rating = (sum + bossScore) / countMembers;
+  return rating <= 5 ? 'Get Out Now!' : 'Nice Work Champ!';
+}
+```
 * __[Coding Meetup #5 - Higher-Order Functions Series - Prepare the count of languages](https://www.codewars.com/kata/5828713ed04efde70e000346/train/javascript)__ - 7 kyu
 ```javascript
 function countLanguages(list) {
