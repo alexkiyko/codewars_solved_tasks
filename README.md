@@ -1,7 +1,26 @@
 # CodeWars
+* __[What is my name score? #1](https://www.codewars.com/kata/576a29ab726f4bba4b000bb1/train/javascript?)__ - 7 kyu
+```javascript
+function nameScore(name) {
+
+  let obj = {};
+  let count = 0;
+
+  for (let i = 0; i < name.length; i++) {
+    for (let j in alpha) {
+      if (j.includes(name[i].toUpperCase())) {
+        count += alpha[j];
+      }
+    }
+  }
+
+  obj[name] = count;
+  return obj;
+}
+```
 * __[Powers of 3](https://www.codewars.com/kata/57be674b93687de78c0001d9/train/javascript/)__ - 7 kyu
 ```javascript
-function largestPower(n){
+function largestPower(n) {
   let res = 0;
   while (3 ** res < n) { 
     res++;
