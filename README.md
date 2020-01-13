@@ -1,4 +1,17 @@
 # CodeWars
+* __[Simple Fun #152: Invite More Women?](https://www.codewars.com/kata/58acfe4ae0201e1708000075/train/javascript)__ - 7 kyu
+```javascript
+function inviteMoreWomen(arr) {
+  let men = 0;
+  let women = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === 1) men++;
+    else women++;
+  }
+  return women < men;
+}
+```
 * __[Count the Digit](https://www.codewars.com/kata/566fc12495810954b1000030/train/javascript/)__ - 7 kyu
 ```javascript
 function nbDig(n, d) {
