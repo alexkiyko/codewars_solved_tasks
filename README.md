@@ -1,4 +1,22 @@
 # CodeWars
+* __[Count the Digit](https://www.codewars.com/kata/566fc12495810954b1000030/train/javascript/)__ - 7 kyu
+```javascript
+function nbDig(n, d) {
+  const arr = [];
+  let countDigit = 0;
+
+  for (let i = 0; i <= n; i++) {
+    arr.push(String(i ** 2));
+  }
+
+  let newArr = arr.join('').split('');
+
+  for (let i = 0; i < newArr.length; i++) {
+    if (newArr[i].includes(d.toString())) countDigit++;
+  }
+  return countDigit;
+}
+```
 * __[Most valuable character](https://www.codewars.com/kata/5dd5128f16eced000e4c42ba/train/javascript/)__ - 7 kyu
 ```javascript
 function solve(st) {
