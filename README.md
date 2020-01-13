@@ -1,4 +1,28 @@
 # CodeWars
+* __[Most valuable character](https://www.codewars.com/kata/5dd5128f16eced000e4c42ba/train/javascript/)__ - 7 kyu
+```javascript
+function solve(st) {
+  const obj = {};
+  const orderedObj = {};
+
+  for (let i = 0; i < st.length; i++) {
+    if (!obj[st[i]]) {
+      obj[st[i]] = st.lastIndexOf(st[i]) - st.indexOf(st[i]);
+    }
+  }
+  
+  let max = 0;
+  for (let i in obj) {
+    if (obj[i] > max) max = obj[i];
+  }
+
+  Object.keys(obj).sort().forEach(key => orderedObj[key] = obj[key]);
+
+  for (let key in orderedObj) {
+    if(orderedObj[key] === max) return key;
+  }
+}
+```
 * __[What is my name score? #1](https://www.codewars.com/kata/576a29ab726f4bba4b000bb1/train/javascript?)__ - 7 kyu
 ```javascript
 function nameScore(name) {
