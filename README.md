@@ -1,4 +1,22 @@
 # CodeWars
+* __[The Office III - Broken Photocopier](https://www.codewars.com/kata/57ed56657b45ef922300002b/train/javascript)__ - 7 kyu
+```javascript
+function broken(x) {
+  x = x.split('');
+  const arr = [];
+
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] === '1') {
+      x[i] = '0';
+        arr.push(x[i]);
+      } else if (x[i] === '0') {
+        x[i] = '1';
+        arr.push(x[i]);
+      }
+  }
+  return arr.join('');
+}
+```
 * __[The Office IV - Find a Meeting Room](https://www.codewars.com/kata/57f604a21bd4fe771b00009c/train/javascript?)__ - 7 kyu
 ```javascript
 function meeting(x) {
@@ -141,17 +159,17 @@ function permuteAPalindrome (input) {
 
   for (let i = 0; i < input.length; i++) {
     if (!obj[input[i]]) {
-        obj[input[i]] = 1;
+      obj[input[i]] = 1;
     } else {
-        obj[input[i]] = obj[input[i]] + 1;
-     }
+      obj[input[i]] = obj[input[i]] + 1;
+    }
   }
   let count = 0;
 
   for (let j in obj) {
-     if (obj[j] % 2 !== 0) {
-         count++;
-     }
+    if (obj[j] % 2 !== 0) {
+      count++;
+    }
   }
   return count <= 1;
 }
@@ -173,7 +191,7 @@ function daysRepresented(trips){
 ```
 * __[The Office I - Outed](https://www.codewars.com/kata/57ecf6efc7fe13eb070000e1/train/javascript/)__ - 7 kyu
 ```javascript
-function outed(meet, boss){
+function outed(meet, boss) {
   let sum = 0;
   let countMembers = 0;
   let bossScore = 0;
@@ -194,9 +212,9 @@ function countLanguages(list) {
   let obj = {};
   for (let i = 0; i < list.length; i++) {
     if (!obj[list[i].language]) {
-       obj[list[i].language] = 1;
+      obj[list[i].language] = 1;
     } else {
-       obj[list[i].language] =  obj[list[i].language] + 1;
+      obj[list[i].language] =  obj[list[i].language] + 1;
     }
   }
   return obj;
@@ -297,14 +315,14 @@ function calculateTip(amount, rating) {
 
 * __[Every possible sum of two digits](https://www.codewars.com/kata/every-possible-sum-of-two-digits/train/javascript/)__ - 7 kyu
 ```javascript
-function digits(num){
+function digits(num) {
   const arr = [];
   num = num.toString().split('').map(Number);
 
   for (let i = 0; i < num.length; i++) {
-     for (let j = i + 1; j < num.length; j++){
-        arr.push(num[i] + num[j]);
-     }
+    for (let j = i + 1; j < num.length; j++) {
+      arr.push(num[i] + num[j]);
+    }
   }
   return arr;
 }
@@ -328,7 +346,7 @@ function DNAStrand(dna){
   };
   let dnaReverse = '';
   for (let i = 0; i < dna.length; i++) {
-     dnaReverse += dnaKey[dna[i]] ;
+    dnaReverse += dnaKey[dna[i]] ;
   }
   return dnaReverse;
 }
@@ -381,7 +399,7 @@ var capitals = function (word) {
   const arrList = [];
   for (let i = 0; i < word.length; i++) {
     if (word[i] === word[i].toUpperCase()) {
-          arrList.push(word.indexOf(word[i]));
+      arrList.push(word.indexOf(word[i]));
     }
   }
   return arrList;
@@ -408,8 +426,8 @@ function isPalindrome(x) {
   x = x.toLowerCase().split('');
   for (let i = 0; i < x.length / 2; i++) {
     if (x[i] !== x[x.length - 1 - i]) {
-       return false;
-     }
+      return false;
+    }
   }
   return true;
 }
@@ -428,7 +446,7 @@ function hero(bullets, dragons) {
 ```
 * __[Beginner - Lost Without a Map](https://www.codewars.com/kata/beginner-lost-without-a-map/train/javascript/)__ - 8 kyu
 ```javascript
-function maps(x){
+function maps(x) {
   return x.map(x => x * 2);
 }
 ```
@@ -464,10 +482,10 @@ function sumMul(n, m){
 function drawStairs(n) {
   let s = '';
   for (let i = 0; i < n; i++) {
-     s = s + ' '.repeat(i) + 'I';
-     if (i < (n - 1)) {
-       s += '\n';
-     }
+    s = s + ' '.repeat(i) + 'I';
+    if (i < (n - 1)) {
+      s += '\n';
+    }
   }
   return s;
 }
