@@ -1,4 +1,33 @@
 # CodeWars
+* __[The Office II - Boredom Score](https://www.codewars.com/kata/57ed4cef7b45ef8774000014/train/javascript/)__ - 7 kyu
+```javascript
+function boredom(staff) {
+    let sumScores = 0;
+
+    const scores = {
+        accounts: 1,
+        finance: 2,
+        canteen: 10,
+        regulation: 3,
+        trading: 6,
+        change: 6,
+        IS: 8,
+        retail: 5,
+        cleaning: 4,
+        'pissing about': 25
+    };
+    let arrScores = Object.values(staff);
+
+    for (let i = 0; i < arrScores.length; i++) {
+        if (scores[arrScores[i]]) {
+            sumScores += scores[arrScores[i]];
+        }
+    }
+    if (sumScores < 80) return 'kill me now';
+    if (sumScores > 80 && sumScores < 100) return 'i can handle this';
+    if (sumScores >= 100) return 'party time!!'
+}
+```
 * __[Bingo ( Or Not )](https://www.codewars.com/kata/5a1ee4dfffe75f0fcb000145/train/javascript/)__ - 7 kyu
 ```javascript
 function bingo(a) {
