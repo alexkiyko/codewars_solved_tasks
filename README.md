@@ -1,4 +1,20 @@
 # CodeWars
+* __[Bingo ( Or Not )](https://www.codewars.com/kata/5a1ee4dfffe75f0fcb000145/train/javascript/)__ - 7 kyu
+```javascript
+function bingo(a) {
+  const arr = [];
+  let arrFiltered = [];
+  let str = '';
+
+  for (let i = 0; i < a.length; i++) {
+    arr.push(String.fromCharCode(64 + a[i]));
+  }
+    
+  arrFiltered = arr.sort().filter((el, i) => i === arr.indexOf(el)).join('');
+  str = arrFiltered.replace(/[^BINGO]/g,'');
+  return str.length === 5? 'WIN' : 'LOSE';
+}
+```
 * __[Simple Fun #152: Invite More Women?](https://www.codewars.com/kata/58acfe4ae0201e1708000075/train/javascript)__ - 7 kyu
 ```javascript
 function inviteMoreWomen(arr) {
