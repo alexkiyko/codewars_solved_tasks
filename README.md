@@ -1,4 +1,10 @@
 # CodeWars
+* __[The Office IV - Find a Meeting Room](https://www.codewars.com/kata/57f604a21bd4fe771b00009c/train/javascript?)__ - 7 kyu
+```javascript
+function meeting(x) {
+  return x.indexOf('O') !== -1 ? x.indexOf('O') : 'None available!';
+}
+```
 * __[The Office II - Boredom Score](https://www.codewars.com/kata/57ed4cef7b45ef8774000014/train/javascript/)__ - 7 kyu
 ```javascript
 function boredom(staff) {
