@@ -1,4 +1,18 @@
 # CodeWars
+*__[Minimize Sum Of Array (Array Series #1)](https://www.codewars.com/kata/5a523566b3bfa84c2e00010b/train/javascript)__ - 7 kyu
+```javascript
+function minSum(arr) {
+  const sortedArr = arr.sort((a, b) => b - a);
+  const arrMax = sortedArr.slice(0, sortedArr.length/2);
+  const arrMin = sortedArr.slice(sortedArr.length/2).sort((a,b) => a - b);
+  const sumArr = [];
+  
+  for (let i = 0; i < arrMax.length; i++) {
+    sumArr.push(arrMax[i] * arrMin[i]);
+  }
+  return sumArr.reduce((acc, cur) => acc + cur, 0);
+}
+```
 * __[The Office III - Broken Photocopier](https://www.codewars.com/kata/57ed56657b45ef922300002b/train/javascript)__ - 7 kyu
 ```javascript
 function broken(x) {
