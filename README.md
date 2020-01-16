@@ -1,4 +1,15 @@
 # CodeWars
+* __[Substring fun](https://www.codewars.com/kata/565b112d09c1adfdd500019c/train/javascript/)__ - 7 kyu
+```javascript
+function nthChar(words) {
+  let str = '';
+
+  for (let i = 0; i < words.length; i++) {
+    str += words[i].substring(i, i + 1);
+  }
+  return str;
+}
+```
 *__[Minimize Sum Of Array (Array Series #1)](https://www.codewars.com/kata/5a523566b3bfa84c2e00010b/train/javascript)__ - 7 kyu
 ```javascript
 function minSum(arr) {
