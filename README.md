@@ -1,4 +1,21 @@
 # CodeWars
+* __[Sum of Digits / Digital Root](https://www.codewars.com/kata/541c8630095125aba6000c00/train/javascript/)__ - 6 kyu
+```javascript
+function digital_root(number) {
+  number = String(number);
+  let nextNumber = 0;
+
+  if (number.length === 1) {
+    return Number(number);
+  }
+    
+  for (let i = 0; i < number.length; i++) {
+    nextNumber += Number(number[i]);
+  }
+  return digital_root(nextNumber);
+}
+
+```
 * __[Count the divisors of a number](https://www.codewars.com/kata/542c0f198e077084c0000c2e/train/javascript/)__ - 7 kyu
 ```javascript
 function getDivisorsCnt(n) {
@@ -23,7 +40,7 @@ function nthChar(words) {
   return str;
 }
 ```
-*__[Minimize Sum Of Array (Array Series #1)](https://www.codewars.com/kata/5a523566b3bfa84c2e00010b/train/javascript)__ - 7 kyu
+* __[Minimize Sum Of Array (Array Series #1)](https://www.codewars.com/kata/5a523566b3bfa84c2e00010b/train/javascript)__ - 7 kyu
 ```javascript
 function minSum(arr) {
   const sortedArr = arr.sort((a, b) => b - a);
