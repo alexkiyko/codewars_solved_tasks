@@ -1,4 +1,17 @@
 # CodeWars
+* __[Count the divisors of a number](https://www.codewars.com/kata/542c0f198e077084c0000c2e/train/javascript/)__ - 7 kyu
+```javascript
+function getDivisorsCnt(n) {
+  let count = 0;
+
+  for (let i = 1; i <= n; i++) {
+    if (n % i === 0) {
+      count++;
+    }
+  }
+  return count;
+}
+```
 * __[Substring fun](https://www.codewars.com/kata/565b112d09c1adfdd500019c/train/javascript/)__ - 7 kyu
 ```javascript
 function nthChar(words) {
