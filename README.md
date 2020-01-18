@@ -1,4 +1,31 @@
 # CodeWars
+* __[Convert the score](https://www.codewars.com/kata/5b6c220fa0a661fbf200005d/train/javascript/)__ - 7 kyu
+```javascript
+function scoreboard(string) {
+  const score = [];
+  let arr = string.split(' ');
+
+  const num = {
+    nil : '0',
+    one : '1',
+    two : '2',
+    three : '3',
+    four : '4',
+    five : '5',
+    six : '6',
+    seven : '7',
+    eight : '8',
+    nine : '9'
+  };
+
+  for (let i = 0; i < arr.length; i++) {
+    if (num[arr[i]]) {
+      score.push(num[arr[i]]);
+    }
+  }
+  return score.map(Number);
+}
+```
 * __[Well of Ideas - Harder Version](https://www.codewars.com/kata/57f22b0f1b5432ff09001cab/train/javascript/)__ - 7 kyu
 ```javascript
 function well(x){
