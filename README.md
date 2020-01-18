@@ -1,4 +1,17 @@
 # CodeWars
+* __[Well of Ideas - Harder Version](https://www.codewars.com/kata/57f22b0f1b5432ff09001cab/train/javascript/)__ - 7 kyu
+```javascript
+function well(x){
+  let count = 0;
+
+  for (let i = 0; i < x.length; i++) {
+    for (let j = 0; j < x[i].length; j++) {          
+      if (typeof x[i][j] === 'string' && x[i][j].toLowerCase() === 'good') count++;
+    }
+  }
+  return count === 0 ? 'Fail!' : count <= 2 ? 'Publish!' : 'I smell a series!';
+}
+```
 * __[Sum of Digits / Digital Root](https://www.codewars.com/kata/541c8630095125aba6000c00/train/javascript/)__ - 6 kyu
 ```javascript
 function digital_root(number) {
