@@ -722,3 +722,9 @@ function getSize(w, h, d) {
   return [2 * (h * w) + 2 * (h * d) + 2 * (w * d), h * w * d];
 }
 ```
+* __[Get the mean of an array](https://www.codewars.com/kata/563e320cee5dddcf77000158/train/javascript/)__ - 8 kyu
+```javascript
+function getAverage(marks) {
+  return Math.floor(marks.reduce((acc, cur) => acc + cur, 0) / marks.length);
+}
+```
