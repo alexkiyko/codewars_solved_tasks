@@ -719,6 +719,6 @@ function arrayMadness(a, b) {
 * __[Surface Area and Volume of a Box](https://www.codewars.com/kata/565f5825379664a26b00007c/train/javascript/)__ - 8 kyu
 ```javascript
 function getSize(w, h, d) {
-  return [2 *(h * w) + 2* (h * d) + 2* (w * d), h * w * d];
+  return [2 * (h * w) + 2 * (h * d) + 2 * (w * d), h * w * d];
 }
 ```
