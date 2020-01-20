@@ -728,9 +728,15 @@ function getAverage(marks) {
   return Math.floor(marks.reduce((acc, cur) => acc + cur, 0) / marks.length);
 }
 ```
-* __[Watermelon](https://www.codewars.com/kata/55192f4ecd82ff826900089e/train/javascript/)__- 8 kyu
+* __[Watermelon](https://www.codewars.com/kata/55192f4ecd82ff826900089e/train/javascript/)__ - 8 kyu
 ```javascript
 function divide(weight) {
   return weight % 2 === 0 && weight > 2;
+}
+```
+* __[Simple validation of a username with regex](https://www.codewars.com/kata/56a3f08aa9a6cc9b75000023/train/javascript)__ - 8 kyu
+```javascript
+function validateUsr(username) {
+    return /^([a-z]|[0-9]|[_]){4,16}$/.test(username);
 }
 ```
