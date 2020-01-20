@@ -728,3 +728,9 @@ function getAverage(marks) {
   return Math.floor(marks.reduce((acc, cur) => acc + cur, 0) / marks.length);
 }
 ```
+* __[Watermelon](https://www.codewars.com/kata/55192f4ecd82ff826900089e/train/javascript/)__- 8 kyu
+```javascript
+function divide(weight) {
+  return weight % 2 === 0 && weight > 2;
+}
+```
