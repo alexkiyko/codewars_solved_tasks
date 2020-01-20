@@ -740,3 +740,9 @@ function validateUsr(username) {
     return /^([a-z]|[0-9]|[_]){4,16}$/.test(username);
 }
 ```
+* __[Swap Values](https://www.codewars.com/kata/5388f0e00b24c5635e000fc6/train/javascript)__ - 8 kyu
+```javascript
+function swapValues(arr) {
+   return arr.reverse();
+}
+```
