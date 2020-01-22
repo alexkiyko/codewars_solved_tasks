@@ -1,4 +1,19 @@
 # CodeWars
+* __[Which are in?](https://www.codewars.com/kata/550554fd08b86f84fe000a58/train/javascript)__ - 6 kyu
+```javascript
+function inArray(array1,array2) {
+  const result = [];
+  
+  for (let i = 0; i < array2.length; i++) {
+    for (let j = 0; j < array1.length; j++) {
+      if (array2[i].includes(array1[j])){
+        result.push(array1[j]);
+      }
+    }
+  }
+  return  result.filter((el, i) => i === result.indexOf(el)).sort();
+}
+```
 * __[Friend or Foe?](https://www.codewars.com/kata/55b42574ff091733d900002f/train/javascript)__ - 7 kyu
 ```javascript
 function friend(friends) {
