@@ -1,9 +1,22 @@
 # CodeWars
+* __[Friend or Foe?](https://www.codewars.com/kata/55b42574ff091733d900002f/train/javascript)__ - 7 kyu
+```javascript
+function friend(friends) {
+  const realFriends = [];
+  
+  for (let i = 0; i < friends.length; i++) {
+    if (friends[i].length === 4) {
+       realFriends.push(friends[i]);
+    }
+  }
+  return realFriends;
+}
+```
 * __[Convert the score](https://www.codewars.com/kata/5b6c220fa0a661fbf200005d/train/javascript/)__ - 7 kyu
 ```javascript
 function scoreboard(string) {
   const score = [];
-  let arr = string.split(' ');
+  const arr = string.split(' ');
 
   const num = {
     nil : '0',
@@ -737,12 +750,12 @@ function divide(weight) {
 * __[Simple validation of a username with regex](https://www.codewars.com/kata/56a3f08aa9a6cc9b75000023/train/javascript)__ - 8 kyu
 ```javascript
 function validateUsr(username) {
-    return /^([a-z]|[0-9]|[_]){4,16}$/.test(username);
+  return /^([a-z]|[0-9]|[_]){4,16}$/.test(username);
 }
 ```
 * __[Swap Values](https://www.codewars.com/kata/5388f0e00b24c5635e000fc6/train/javascript)__ - 8 kyu
 ```javascript
 function swapValues(arr) {
-   return arr.reverse();
+  return arr.reverse();
 }
 ```
