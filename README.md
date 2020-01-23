@@ -1,4 +1,18 @@
 # CodeWars
+* __[Most sales](https://www.codewars.com/kata/5e16ffb7297fe00001114824/train/javascript/)__ - 7 kyu;
+```javascript
+function top3(products, amounts, prices) {
+  const obj = {};
+
+  for (let i = 0; i <products.length; i++) {
+    if(!obj[products[i]]) {
+      obj[products[i]] = amounts[i] * prices[i];
+    }
+  }
+  const array = Object.entries(obj).sort((a, b) => b[1] - a[1]);
+  return [array[0][0], array[1][0], array[2][0]];
+}
+```
 * __[Which are in?](https://www.codewars.com/kata/550554fd08b86f84fe000a58/train/javascript)__ - 6 kyu
 ```javascript
 function inArray(array1,array2) {
