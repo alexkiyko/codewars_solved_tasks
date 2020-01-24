@@ -1,5 +1,30 @@
 # CodeWars
-* __[Most sales](https://www.codewars.com/kata/5e16ffb7297fe00001114824/train/javascript/)__ - 7 kyu;
+* __[Sum of numbers from 0 to N](https://www.codewars.com/kata/56e9e4f516bcaa8d4f001763/train/javascript/)__ - 7 kyu
+```javascript
+var SequenceSum = (function() {
+  function SequenceSum() {}
+
+  SequenceSum.showSequence = function(count) {
+    if (count < 0) return `${count}<0`;
+    if (count === 0) return `${count}=0`;
+
+    let numbersFrom0ToCount = '';
+    let sum = 0;
+
+    for (let i = 0; i < count; i++) {
+      sum += i;
+      numbersFrom0ToCount += i + '+';
+      if (i === count - 1) {
+        numbersFrom0ToCount += count;
+        sum += count;
+      }
+    }
+    return `${numbersFrom0ToCount} = ${sum}`;
+  };
+  return SequenceSum;
+})();
+```
+* __[Most sales](https://www.codewars.com/kata/5e16ffb7297fe00001114824/train/javascript/)__ - 7 kyu
 ```javascript
 function top3(products, amounts, prices) {
   const obj = {};
