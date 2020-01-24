@@ -1,4 +1,14 @@
 # CodeWars
+* __[Special Number (Special Numbers Series #5)](https://www.codewars.com/kata/5a55f04be6be383a50000187/train/javascript)__ - 7 kyu
+```javascript
+function specialNumber(n) {
+  const numbers = n.toString().split('').map(Number);
+
+  if (numbers.every(el => el <= 5)) {
+    return "Special!!";
+  } else return "NOT!!";
+}
+```
 * __[Sum of numbers from 0 to N](https://www.codewars.com/kata/56e9e4f516bcaa8d4f001763/train/javascript/)__ - 7 kyu
 ```javascript
 var SequenceSum = (function() {
