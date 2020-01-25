@@ -840,3 +840,7 @@ function getGrade (s1, s2, s3) {
   }
 }
 ```
+* __[Beginner Series #2 Clock](https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript/)__ - 8 kyu
+```javascript
+const past = (hour, min, sec) => (hour * 3600000) + (min * 60000) + (sec * 1000);
+```
