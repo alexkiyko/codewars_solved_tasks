@@ -568,6 +568,12 @@ function SeriesSum(n) {
   return sum.toFixed(2);
 }
 ```
+* __[Grasshopper - Terminal game move function](https://www.codewars.com/kata/563a631f7cbbc236cf0000c2/train/javascript/)__ - 8 kyu
+```javascript
+function move (position, roll) {
+ return position + roll * 2;
+}
+```
 * __[Correct the mistakes of the character recognition software](https://www.codewars.com/kata/correct-the-mistakes-of-the-character-recognition-software/train/javascript/)__ - 8 kyu
 ```javascript
 function correct(string) {
