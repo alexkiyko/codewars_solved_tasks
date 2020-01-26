@@ -1,4 +1,70 @@
 # CodeWars
+* __[Valid Parentheses](https://www.codewars.com/kata/valid-parentheses/train/javascript/)__ - 5 kyu
+```javascript
+function validParentheses(parens){
+  let count = 0;
+
+  for (let i = 0; i < parens.length; i++) {
+    if (parens[i] === '(') count++;
+    if (parens[i] !== '(') count--;
+    if (count < 0) return false;
+  }
+  return count === 0;
+}
+```
+* __[Permute a Palindrome](https://www.codewars.com/kata/58ae6ae22c3aaafc58000079/train/javascript/)__ - 6 kyu
+```javascript
+function permuteAPalindrome (input) {
+  let obj = {};
+
+  for (let i = 0; i < input.length; i++) {
+    if (!obj[input[i]]) {
+      obj[input[i]] = 1;
+    } else {
+      obj[input[i]] = obj[input[i]] + 1;
+    }
+  }
+  let count = 0;
+
+  for (let j in obj) {
+    if (obj[j] % 2 !== 0) {
+      count++;
+    }
+  }
+  return count <= 1;
+}
+```
+* __[Sum of Digits / Digital Root](https://www.codewars.com/kata/541c8630095125aba6000c00/train/javascript/)__ - 6 kyu
+```javascript
+function digital_root(number) {
+  number = String(number);
+  let nextNumber = 0;
+
+  if (number.length === 1) {
+    return Number(number);
+  }
+    
+  for (let i = 0; i < number.length; i++) {
+    nextNumber += Number(number[i]);
+  }
+  return digital_root(nextNumber);
+}
+```
+* __[Which are in?](https://www.codewars.com/kata/550554fd08b86f84fe000a58/train/javascript/)__ - 6 kyu
+```javascript
+function inArray(array1,array2) {
+  const result = [];
+  
+  for (let i = 0; i < array2.length; i++) {
+    for (let j = 0; j < array1.length; j++) {
+      if (array2[i].includes(array1[j])){
+        result.push(array1[j]);
+      }
+    }
+  }
+  return  result.filter((el, i) => i === result.indexOf(el)).sort();
+}
+```
 * __[Special Number (Special Numbers Series #5)](https://www.codewars.com/kata/5a55f04be6be383a50000187/train/javascript)__ - 7 kyu
 ```javascript
 function specialNumber(n) {
@@ -46,21 +112,6 @@ function top3(products, amounts, prices) {
   }
   const array = Object.entries(obj).sort((a, b) => b[1] - a[1]);
   return [array[0][0], array[1][0], array[2][0]];
-}
-```
-* __[Which are in?](https://www.codewars.com/kata/550554fd08b86f84fe000a58/train/javascript)__ - 6 kyu
-```javascript
-function inArray(array1,array2) {
-  const result = [];
-  
-  for (let i = 0; i < array2.length; i++) {
-    for (let j = 0; j < array1.length; j++) {
-      if (array2[i].includes(array1[j])){
-        result.push(array1[j]);
-      }
-    }
-  }
-  return  result.filter((el, i) => i === result.indexOf(el)).sort();
 }
 ```
 * __[Friend or Foe?](https://www.codewars.com/kata/55b42574ff091733d900002f/train/javascript)__ - 7 kyu
@@ -116,23 +167,6 @@ function well(x){
   return count === 0 ? 'Fail!' : count <= 2 ? 'Publish!' : 'I smell a series!';
 }
 ```
-* __[Sum of Digits / Digital Root](https://www.codewars.com/kata/541c8630095125aba6000c00/train/javascript/)__ - 6 kyu
-```javascript
-function digital_root(number) {
-  number = String(number);
-  let nextNumber = 0;
-
-  if (number.length === 1) {
-    return Number(number);
-  }
-    
-  for (let i = 0; i < number.length; i++) {
-    nextNumber += Number(number[i]);
-  }
-  return digital_root(nextNumber);
-}
-
-```
 * __[Count the divisors of a number](https://www.codewars.com/kata/542c0f198e077084c0000c2e/train/javascript/)__ - 7 kyu
 ```javascript
 function getDivisorsCnt(n) {
@@ -157,12 +191,12 @@ function nthChar(words) {
   return str;
 }
 ```
-* __[Minimize Sum Of Array (Array Series #1)](https://www.codewars.com/kata/5a523566b3bfa84c2e00010b/train/javascript)__ - 7 kyu
+* __[Minimize Sum Of Array (Array Series #1)](https://www.codewars.com/kata/5a523566b3bfa84c2e00010b/train/javascript/)__ - 7 kyu
 ```javascript
 function minSum(arr) {
   const sortedArr = arr.sort((a, b) => b - a);
   const arrMax = sortedArr.slice(0, sortedArr.length/2);
-  const arrMin = sortedArr.slice(sortedArr.length/2).sort((a,b) => a - b);
+  const arrMin = sortedArr.slice(sortedArr.length/2).sort((a, b) => a - b);
   const sumArr = [];
   
   for (let i = 0; i < arrMax.length; i++) {
@@ -171,7 +205,7 @@ function minSum(arr) {
   return sumArr.reduce((acc, cur) => acc + cur, 0);
 }
 ```
-* __[The Office III - Broken Photocopier](https://www.codewars.com/kata/57ed56657b45ef922300002b/train/javascript)__ - 7 kyu
+* __[The Office III - Broken Photocopier](https://www.codewars.com/kata/57ed56657b45ef922300002b/train/javascript/)__ - 7 kyu
 ```javascript
 function broken(x) {
   x = x.split('');
@@ -189,7 +223,7 @@ function broken(x) {
   return arr.join('');
 }
 ```
-* __[The Office IV - Find a Meeting Room](https://www.codewars.com/kata/57f604a21bd4fe771b00009c/train/javascript?)__ - 7 kyu
+* __[The Office IV - Find a Meeting Room](https://www.codewars.com/kata/57f604a21bd4fe771b00009c/train/javascript?/)__ - 7 kyu
 ```javascript
 function meeting(x) {
   return x.indexOf('O') !== -1 ? x.indexOf('O') : 'None available!';
@@ -240,7 +274,7 @@ function bingo(a) {
   return str.length === 5? 'WIN' : 'LOSE';
 }
 ```
-* __[Simple Fun #152: Invite More Women?](https://www.codewars.com/kata/58acfe4ae0201e1708000075/train/javascript)__ - 7 kyu
+* __[Simple Fun #152: Invite More Women?](https://www.codewars.com/kata/58acfe4ae0201e1708000075/train/javascript/)__ - 7 kyu
 ```javascript
 function inviteMoreWomen(arr) {
   let men = 0;
@@ -322,28 +356,6 @@ function largestPower(n) {
     res++;
   }
   return res - 1;
-}
-```
-* __[Permute a Palindrome](https://www.codewars.com/kata/58ae6ae22c3aaafc58000079/train/javascript/)__ - 6 kyu
-```javascript
-function permuteAPalindrome (input) {
-  let obj = {};
-
-  for (let i = 0; i < input.length; i++) {
-    if (!obj[input[i]]) {
-      obj[input[i]] = 1;
-    } else {
-      obj[input[i]] = obj[input[i]] + 1;
-    }
-  }
-  let count = 0;
-
-  for (let j in obj) {
-    if (obj[j] % 2 !== 0) {
-      count++;
-    }
-  }
-  return count <= 1;
 }
 ```
 * __[How many days are we represented in a foreign country?](https://www.codewars.com/kata/58e93b4706db4d24ee000096/train/javascript/)__ - 7 kyu
@@ -433,28 +445,9 @@ function houseNumbersSum(inputArray) {
   return sum;
 }
 ```
-* __[Multiple of index](https://www.codewars.com/kata/multiple-of-index/train/javascript/)__ - 8 kyu
-```javascript
-function multipleOfIndex(array) {
-  const arr = [];
-
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] % i === 0) {
-      arr.push(array[i]);
-    }
-  }
-  return arr;
-}
-```
-* __[Sum Mixed Array](https://www.codewars.com/kata/sum-mixed-array/train/javascript/)__ - 8 kyu
-```javascript
-function sumMix(x){
-  return x.map(Number).reduce((acc, cur) => acc + cur, 0);
-}
-```
 * __[Make a function that does arithmetic!](https://www.codewars.com/kata/make-a-function-that-does-arithmetic/train/javascript/)__ - 7 kyu
 ```javascript
-function arithmetic(a, b, operator){
+function arithmetic(a, b, operator) {
   const operators = {
     add : a + b,
     subtract : a - b,
@@ -464,27 +457,6 @@ function arithmetic(a, b, operator){
   return operators[operator];
 }
 ```
-* __[Tip Calculator](https://www.codewars.com/kata/tip-calculator/train/javascript/)__ - 8 kyu
-```javascript
-function calculateTip(amount, rating) {
-  rating = rating.toLowerCase();
-  
-  let tipObj = {
-    terrible : 0,
-    poor : 5,
-    good : 10,
-    great : 15,
-    excellent : 20,
-  };
-  
-  if (!tipObj.hasOwnProperty(rating)) {
-    return "Rating not recognised";
-  } else {
-    return Math.ceil(tipObj[rating] * amount / 100);
-  }
-}
-```
-
 * __[Every possible sum of two digits](https://www.codewars.com/kata/every-possible-sum-of-two-digits/train/javascript/)__ - 7 kyu
 ```javascript
 function digits(num) {
@@ -499,17 +471,9 @@ function digits(num) {
   return arr;
 }
 ```
-* __[Correct the mistakes of the character recognition software](https://www.codewars.com/kata/correct-the-mistakes-of-the-character-recognition-software/train/javascript/)__ - 8 kyu
-```javascript
-function correct(string) {
-  return string.replace(/0/g, "O")
-               .replace(/5/g, "S")
-               .replace(/1/g, "I");
-}
-```
 * __[Complementary DNA](https://www.codewars.com/kata/complementary-dna/train/javascript)__ - 7 kyu
 ```javascript
-function DNAStrand(dna){
+function DNAStrand(dna) {
   let dnaKey = {
     'A' : 'T',
     'T' : 'A',
@@ -541,16 +505,10 @@ function factorial(n) {
   return factorial;
 }
 ```
-* __[Valid Parentheses](https://www.codewars.com/kata/valid-parentheses/train/javascript/)__ - 5 kyu
+* __[JavaScript Array Filter](https://www.codewars.com/kata/javascript-array-filter/train/javascript/)__ - 7 kyu
 ```javascript
-function validParentheses(parens){
-  let count = 0;
-  for (let i = 0; i < parens.length; i++) {
-    if (parens[i] === '(') count++;
-    if (parens[i] !== '(') count--;
-    if (count < 0) return false;
-  }
-  return count === 0;
+function getEvenNumbers(numbersArray){
+  return numbersArray.filter(el => el % 2 === 0);
 }
 ```
 * __[Lottery machine](https://www.codewars.com/kata/lottery-machine/train/javascript/)__ - 7 kyu
@@ -592,6 +550,71 @@ function minMax(arr) {
   return [min, max];
 }
 ```
+* __[Discover The Original Price](https://www.codewars.com/kata/discover-the-original-price/train/javascript/)__ - 7 kyu
+```javascript
+function discoverOriginalPrice(discountedPrice, salePercentage) {
+  salePercentage = salePercentage / 100;
+  let originalPrice = discountedPrice / (1 - salePercentage);
+  return +originalPrice.toFixed(2);
+}
+```
+* __[Sum of the first nth term of Series](https://www.codewars.com/kata/sum-of-the-first-nth-term-of-series/train/javascript/)__ - 7 kyu
+```javascript
+function SeriesSum(n) {
+  let sum = 0;
+  for(i = 0; i < n; i++) {
+    sum += (1 / (1 + (i * 3)));
+  }
+  return sum.toFixed(2);
+}
+```
+* __[Correct the mistakes of the character recognition software](https://www.codewars.com/kata/correct-the-mistakes-of-the-character-recognition-software/train/javascript/)__ - 8 kyu
+```javascript
+function correct(string) {
+  return string.replace(/0/g, "O")
+               .replace(/5/g, "S")
+               .replace(/1/g, "I");
+}
+```
+* __[Multiple of index](https://www.codewars.com/kata/multiple-of-index/train/javascript/)__ - 8 kyu
+```javascript
+function multipleOfIndex(array) {
+  const arr = [];
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % i === 0) {
+      arr.push(array[i]);
+    }
+  }
+  return arr;
+}
+```
+* __[Sum Mixed Array](https://www.codewars.com/kata/sum-mixed-array/train/javascript/)__ - 8 kyu
+```javascript
+function sumMix(x){
+  return x.map(Number).reduce((acc, cur) => acc + cur, 0);
+}
+```
+* __[Tip Calculator](https://www.codewars.com/kata/tip-calculator/train/javascript/)__ - 8 kyu
+```javascript
+function calculateTip(amount, rating) {
+  rating = rating.toLowerCase();
+  
+  let tipObj = {
+    terrible : 0,
+    poor : 5,
+    good : 10,
+    great : 15,
+    excellent : 20,
+  };
+  
+  if (!tipObj.hasOwnProperty(rating)) {
+    return "Rating not recognised";
+  } else {
+    return Math.ceil(tipObj[rating] * amount / 100);
+  }
+}
+```
 * __[Is it a palindrome?](https://www.codewars.com/kata/is-it-a-palindrome/train/javascript/)__ - 8 kyu
 ```javascript
 function isPalindrome(x) {
@@ -622,14 +645,6 @@ function maps(x) {
   return x.map(x => x * 2);
 }
 ```
-* __[Discover The Original Price](https://www.codewars.com/kata/discover-the-original-price/train/javascript/)__ - 7 kyu
-```javascript
-function discoverOriginalPrice(discountedPrice, salePercentage) {
-  salePercentage = salePercentage / 100;
-  let originalPrice = discountedPrice / (1 - salePercentage);
-  return +originalPrice.toFixed(2);
-}
-```
 * __[Keep Hydrated!](https://www.codewars.com/kata/keep-hydrated-1/train/javascript/)__ - 8 kyu
 ```javascript
 function litres(hour) {
@@ -638,7 +653,7 @@ function litres(hour) {
 ```
 * __[Sum of Multiples](https://www.codewars.com/kata/sum-of-multiples/train/javascript/)__ - 8 kyu
 ```javascript
-function sumMul(n, m){
+function sumMul(n, m) {
   if (n >= m) {
     return 'INVALID';
   }
@@ -660,16 +675,6 @@ function drawStairs(n) {
     }
   }
   return s;
-}
-```
-* __[Sum of the first nth term of Series](https://www.codewars.com/kata/sum-of-the-first-nth-term-of-series/train/javascript/)__ - 7 kyu
-```javascript
-function SeriesSum(n) {
-  let sum = 0;
-  for(i = 0; i < n; i++) {
-    sum += (1 / (1 + (i * 3)));
-  }
-  return sum.toFixed(2);
 }
 ```
 * __[Remove String Spaces](https://www.codewars.com/kata/remove-string-spaces/train/javascript/)__ - 8 kyu
@@ -771,12 +776,6 @@ function warnTheSheep(queue) {
   else return `Oi! Sheep number ${Math.abs(queue.indexOf('wolf') - queue.length + 1 )}! You are about to be eaten by a wolf!`
 }
 ```
-* __[JavaScript Array Filter](https://www.codewars.com/kata/javascript-array-filter/train/javascript/)__ - 7 kyu
-```javascript
-function getEvenNumbers(numbersArray){
-  return numbersArray.filter(el => el % 2 === 0);
-}
-```
 * __[Beginner - Reduce but Grow](https://www.codewars.com/kata/beginner-reduce-but-grow/train/javascript/)__ - 8 kyu
 ```javascript
 const grow = x => x.reduce((acc, cur) => acc * cur, 1);
@@ -811,13 +810,13 @@ function divide(weight) {
   return weight % 2 === 0 && weight > 2;
 }
 ```
-* __[Simple validation of a username with regex](https://www.codewars.com/kata/56a3f08aa9a6cc9b75000023/train/javascript)__ - 8 kyu
+* __[Simple validation of a username with regex](https://www.codewars.com/kata/56a3f08aa9a6cc9b75000023/train/javascript/)__ - 8 kyu
 ```javascript
 function validateUsr(username) {
   return /^([a-z]|[0-9]|[_]){4,16}$/.test(username);
 }
 ```
-* __[Swap Values](https://www.codewars.com/kata/5388f0e00b24c5635e000fc6/train/javascript)__ - 8 kyu
+* __[Swap Values](https://www.codewars.com/kata/5388f0e00b24c5635e000fc6/train/javascript/)__ - 8 kyu
 ```javascript
 function swapValues(arr) {
   return arr.reverse();
@@ -843,4 +842,12 @@ function getGrade (s1, s2, s3) {
 * __[Beginner Series #2 Clock](https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript/)__ - 8 kyu
 ```javascript
 const past = (hour, min, sec) => (hour * 3600000) + (min * 60000) + (sec * 1000);
+```
+* __[noobCode 01: SUPERSIZE ME.... or rather, this integer!](https://www.codewars.com/kata/5709bdd2f088096786000008/train/javascript/)__ - 8 kyu
+```javascript
+function superSize(num) {
+  num = num.toString().split('');
+  const maxToMin = num.sort((a, b) => b - a).join('');
+  return Number(maxToMin);
+}
 ```
