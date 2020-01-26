@@ -568,6 +568,18 @@ function SeriesSum(n) {
   return sum.toFixed(2);
 }
 ```
+* __[Will there be enough space?](https://www.codewars.com/kata/5875b200d520904a04000003/train/javascript/)__ - 8 kyu
+```javascript
+function enough(cap, on, wait) {
+  let emptySeats = cap - on;
+  let availableSeats = emptySeats - wait;
+  if (emptySeats >= wait) {
+    return 0;
+  } else if (emptySeats < wait) {
+    return wait - emptySeats;
+  }
+}
+```
 * __[Grasshopper - Terminal game move function](https://www.codewars.com/kata/563a631f7cbbc236cf0000c2/train/javascript/)__ - 8 kyu
 ```javascript
 function move (position, roll) {
