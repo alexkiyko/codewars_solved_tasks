@@ -65,6 +65,14 @@ function inArray(array1,array2) {
   return  result.filter((el, i) => i === result.indexOf(el)).sort();
 }
 ```
+* __[Tidy Number (Special Numbers Series #9)](https://www.codewars.com/kata/5a87449ab1710171300000fd/train/javascript/)__ - 7 kyu
+```javascript
+function tidyNumber(n){
+  const numbers = Array.from(String(n), Number).join('');
+  const numbersInOrder = Array.from(String(n), Number).sort((a, b) => a - b).join('');
+  return numbers === numbersInOrder;
+}
+```
 * __[Special Number (Special Numbers Series #5)](https://www.codewars.com/kata/5a55f04be6be383a50000187/train/javascript)__ - 7 kyu
 ```javascript
 function specialNumber(n) {
@@ -81,8 +89,8 @@ var SequenceSum = (function() {
   function SequenceSum() {}
 
   SequenceSum.showSequence = function(count) {
-    if (count < 0) return `${count}<0`;
-    if (count === 0) return `${count}=0`;
+    if (count < 0) return `${count} < 0`;
+    if (count === 0) return `${count} = 0`;
 
     let numbersFrom0ToCount = '';
     let sum = 0;
