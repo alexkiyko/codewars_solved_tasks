@@ -17,6 +17,17 @@ function validParentheses(parens){
 ```
 ### Code challenges 6 kyu
 
+* __[Sums of Parts](https://www.codewars.com/kata/5ce399e0047a45001c853c2b/train/javascript/)__
+```javascript
+function partsSums(ls) {
+  const arr = [0];
+  let sum = 0;
+  for (let i = ls.length -1; i >= 0; i--) {
+    arr.push(sum += ls[i]);
+  }
+  return arr.reverse();
+}
+```
 * __[Permute a Palindrome](https://www.codewars.com/kata/58ae6ae22c3aaafc58000079/train/javascript/)__
 ```javascript
 function permuteAPalindrome (input) {
