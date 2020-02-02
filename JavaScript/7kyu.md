@@ -16,6 +16,7 @@ function menFromBoys(arr) {
 
 }
 ```
+
 * __[Tidy Number (Special Numbers Series #9)](https://www.codewars.com/kata/5a87449ab1710171300000fd/train/javascript/)__
 ```javascript
 function tidyNumber(n){
@@ -24,6 +25,7 @@ function tidyNumber(n){
   return numbers === numbersInOrder;
 }
 ```
+
 * __[Special Number (Special Numbers Series #5)](https://www.codewars.com/kata/5a55f04be6be383a50000187/train/javascript)__
 ```javascript
 function specialNumber(n) {
@@ -34,6 +36,7 @@ function specialNumber(n) {
   } else return "NOT!!";
 }
 ```
+
 * __[Sum of numbers from 0 to N](https://www.codewars.com/kata/56e9e4f516bcaa8d4f001763/train/javascript/)__
 ```javascript
 var SequenceSum = (function() {
@@ -59,7 +62,8 @@ var SequenceSum = (function() {
   return SequenceSum;
 })();
 ```
-    * __[Most sales](https://www.codewars.com/kata/5e16ffb7297fe00001114824/train/javascript/)__
+
+* __[Most sales](https://www.codewars.com/kata/5e16ffb7297fe00001114824/train/javascript/)__
 ```javascript
 function top3(products, amounts, prices) {
   const obj = {};
@@ -73,6 +77,7 @@ function top3(products, amounts, prices) {
   return [array[0][0], array[1][0], array[2][0]];
 }
 ```
+
 * __[Friend or Foe?](https://www.codewars.com/kata/55b42574ff091733d900002f/train/javascript)__
 ```javascript
 function friend(friends) {
@@ -86,6 +91,7 @@ function friend(friends) {
   return realFriends;
 }
 ```
+
 * __[Convert the score](https://www.codewars.com/kata/5b6c220fa0a661fbf200005d/train/javascript/)__
 ```javascript
 function scoreboard(string) {
@@ -113,6 +119,7 @@ function scoreboard(string) {
   return score.map(Number);
 }
 ```
+
 * __[Well of Ideas - Harder Version](https://www.codewars.com/kata/57f22b0f1b5432ff09001cab/train/javascript/)__
 ```javascript
 function well(x){
@@ -126,6 +133,7 @@ function well(x){
   return count === 0 ? 'Fail!' : count <= 2 ? 'Publish!' : 'I smell a series!';
 }
 ```
+
 * __[Count the divisors of a number](https://www.codewars.com/kata/542c0f198e077084c0000c2e/train/javascript/)__
 ```javascript
 function getDivisorsCnt(n) {
@@ -139,6 +147,7 @@ function getDivisorsCnt(n) {
   return count;
 }
 ```
+
 * __[Substring fun](https://www.codewars.com/kata/565b112d09c1adfdd500019c/train/javascript/)__
 ```javascript
 function nthChar(words) {
@@ -150,6 +159,7 @@ function nthChar(words) {
   return str;
 }
 ```
+
 * __[Minimize Sum Of Array (Array Series #1)](https://www.codewars.com/kata/5a523566b3bfa84c2e00010b/train/javascript/)__
 ```javascript
 function minSum(arr) {
@@ -164,6 +174,7 @@ function minSum(arr) {
   return sumArr.reduce((acc, cur) => acc + cur, 0);
 }
 ```
+
 * __[The Office III - Broken Photocopier](https://www.codewars.com/kata/57ed56657b45ef922300002b/train/javascript/)__
 ```javascript
 function broken(x) {
@@ -182,12 +193,14 @@ function broken(x) {
   return arr.join('');
 }
 ```
+
 * __[The Office IV - Find a Meeting Room](https://www.codewars.com/kata/57f604a21bd4fe771b00009c/train/javascript?/)__
 ```javascript
 function meeting(x) {
   return x.indexOf('O') !== -1 ? x.indexOf('O') : 'None available!';
 }
 ```
+
 * __[The Office II - Boredom Score](https://www.codewars.com/kata/57ed4cef7b45ef8774000014/train/javascript/)__
 ```javascript
 function boredom(staff) {
@@ -217,6 +230,7 @@ function boredom(staff) {
     if (sumScores >= 100) return 'party time!!'
 }
 ```
+
 * __[Bingo ( Or Not )](https://www.codewars.com/kata/5a1ee4dfffe75f0fcb000145/train/javascript/)__
 ```javascript
 function bingo(a) {
@@ -233,6 +247,7 @@ function bingo(a) {
   return str.length === 5? 'WIN' : 'LOSE';
 }
 ```
+
 * __[Simple Fun #152: Invite More Women?](https://www.codewars.com/kata/58acfe4ae0201e1708000075/train/javascript/)__
 ```javascript
 function inviteMoreWomen(arr) {
@@ -246,6 +261,7 @@ function inviteMoreWomen(arr) {
   return women < men;
 }
 ```
+
 * __[Count the Digit](https://www.codewars.com/kata/566fc12495810954b1000030/train/javascript/)__
 ```javascript
 function nbDig(n, d) {
@@ -264,6 +280,7 @@ function nbDig(n, d) {
   return countDigit;
 }
 ```
+
 * __[Most valuable character](https://www.codewars.com/kata/5dd5128f16eced000e4c42ba/train/javascript/)__
 ```javascript
 function solve(st) {
@@ -288,6 +305,7 @@ function solve(st) {
   }
 }
 ```
+
 * __[What is my name score? #1](https://www.codewars.com/kata/576a29ab726f4bba4b000bb1/train/javascript?)__
 ```javascript
 function nameScore(name) {
@@ -307,6 +325,7 @@ function nameScore(name) {
   return obj;
 }
 ```
+
 * __[Powers of 3](https://www.codewars.com/kata/57be674b93687de78c0001d9/train/javascript/)__
 ```javascript
 function largestPower(n) {
@@ -317,6 +336,7 @@ function largestPower(n) {
   return res - 1;
 }
 ```
+
 * __[How many days are we represented in a foreign country?](https://www.codewars.com/kata/58e93b4706db4d24ee000096/train/javascript/)__
 ```javascript
 function daysRepresented(trips){
@@ -332,6 +352,7 @@ function daysRepresented(trips){
   return sortedArr.length;
 }
 ```
+
 * __[The Office I - Outed](https://www.codewars.com/kata/57ecf6efc7fe13eb070000e1/train/javascript/)__
 ```javascript
 function outed(meet, boss) {
@@ -349,6 +370,7 @@ function outed(meet, boss) {
   return rating <= 5 ? 'Get Out Now!' : 'Nice Work Champ!';
 }
 ```
+
 * __[Coding Meetup #5 - Higher-Order Functions Series - Prepare the count of languages](https://www.codewars.com/kata/5828713ed04efde70e000346/train/javascript)__
 ```javascript
 function countLanguages(list) {
@@ -363,6 +385,7 @@ function countLanguages(list) {
   return obj;
 }
 ```
+
 * __[Numbers to Objects](https://www.codewars.com/kata/57ced2c1c6fdc22123000316/train/javascript/)__
 ```javascript
 function numObj(s) {
@@ -376,12 +399,14 @@ function numObj(s) {
     return arr;
 }
 ```
+
 * __[Add property to every object in array](https://www.codewars.com/kata/54e8c3e89e2ae6f4900005a1/train/javascript/)__
 ```javascript
 for (let i = 0; i < questions.length; i++) {
   questions[i].usersAnswer = null;
 }
 ```
+
 * __[Breaking chocolate problem](https://www.codewars.com/kata/534ea96ebb17181947000ada/train/javascript/)__
 ```javascript
 function breakChocolate(n,m) {
@@ -392,6 +417,7 @@ function breakChocolate(n,m) {
   }
 }
 ```
+
 * __[Simple Fun #37: House Numbers Sum](https://www.codewars.com/kata/simple-fun-number-37-house-numbers-sum/train/javascript/)__
 ```javascript
 function houseNumbersSum(inputArray) {
@@ -404,6 +430,7 @@ function houseNumbersSum(inputArray) {
   return sum;
 }
 ```
+
 * __[Make a function that does arithmetic!](https://www.codewars.com/kata/make-a-function-that-does-arithmetic/train/javascript/)__
 ```javascript
 function arithmetic(a, b, operator) {
@@ -416,6 +443,7 @@ function arithmetic(a, b, operator) {
   return operators[operator];
 }
 ```
+
 * __[Every possible sum of two digits](https://www.codewars.com/kata/every-possible-sum-of-two-digits/train/javascript/)__
 ```javascript
 function digits(num) {
@@ -430,6 +458,7 @@ function digits(num) {
   return arr;
 }
 ```
+
 * __[Complementary DNA](https://www.codewars.com/kata/complementary-dna/train/javascript)__
 ```javascript
 function DNAStrand(dna) {
@@ -446,6 +475,7 @@ function DNAStrand(dna) {
   return dnaReverse;
 }
 ```
+
 * __[Isograms](https://www.codewars.com/kata/isograms/train/javascript)__
 ```javascript
 function isIsogram(str) {
@@ -454,6 +484,7 @@ function isIsogram(str) {
   return strDif.length === 0;
 }
 ```
+
 * __[Factorial](https://www.codewars.com/kata/factorial-1/train/javascript/)__
 ```javascript
 function factorial(n) {
@@ -464,12 +495,14 @@ function factorial(n) {
   return factorial;
 }
 ```
+
 * __[JavaScript Array Filter](https://www.codewars.com/kata/javascript-array-filter/train/javascript/)__
 ```javascript
 function getEvenNumbers(numbersArray){
   return numbersArray.filter(el => el % 2 === 0);
 }
 ```
+
 * __[Lottery machine](https://www.codewars.com/kata/lottery-machine/train/javascript/)__
 ```javascript
 function lottery(str) {
@@ -482,6 +515,7 @@ function lottery(str) {
   }
 }
 ```
+
 * __[Find the capitals](https://www.codewars.com/kata/find-the-capitals-1/train/javascript/)__
 ```javascript
 var capitals = function (word) {
@@ -494,6 +528,7 @@ var capitals = function (word) {
   return arrList;
 }
 ```
+
 * __[The highest profit wins!](https://www.codewars.com/kata/the-highest-profit-wins/train/javascript/)__
 ```javascript
 function minMax(arr) {
@@ -509,6 +544,7 @@ function minMax(arr) {
   return [min, max];
 }
 ```
+
 * __[Discover The Original Price](https://www.codewars.com/kata/discover-the-original-price/train/javascript/)__
 ```javascript
 function discoverOriginalPrice(discountedPrice, salePercentage) {
@@ -517,6 +553,7 @@ function discoverOriginalPrice(discountedPrice, salePercentage) {
   return +originalPrice.toFixed(2);
 }
 ```
+
 * __[Sum of the first nth term of Series](https://www.codewars.com/kata/sum-of-the-first-nth-term-of-series/train/javascript/)__
 ```javascript
 function SeriesSum(n) {

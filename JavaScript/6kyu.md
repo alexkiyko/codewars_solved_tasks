@@ -11,6 +11,7 @@ function partsSums(ls) {
   return arr.reverse();
 }
 ```
+
 * __[Permute a Palindrome](https://www.codewars.com/kata/58ae6ae22c3aaafc58000079/train/javascript/)__
 ```javascript
 function permuteAPalindrome (input) {
@@ -33,6 +34,7 @@ function permuteAPalindrome (input) {
   return count <= 1;
 }
 ```
+
 * __[Sum of Digits / Digital Root](https://www.codewars.com/kata/541c8630095125aba6000c00/train/javascript/)__
 ```javascript
 function digital_root(number) {
@@ -49,6 +51,7 @@ function digital_root(number) {
   return digital_root(nextNumber);
 }
 ```
+
 * __[Which are in?](https://www.codewars.com/kata/550554fd08b86f84fe000a58/train/javascript/)__
 ```javascript
 function inArray(array1,array2) {
