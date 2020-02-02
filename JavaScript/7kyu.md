@@ -1,4 +1,11 @@
 ### Code challenges 7 kyu
+* __[Help Bob count letters and digits.](https://www.codewars.com/kata/5738f5ea9545204cec000155/train/javascript/)__
+```javascript
+function countLettersAndDigits(input) {
+    let regex = /[^a-z0-9]/gi;
+    return input.replace(regex, '').length;
+}
+```
 
 * __[Sort Out The Men From Boys](https://www.codewars.com/kata/5af15a37de4c7f223e00012d/train/javascript)__
 ```javascript
