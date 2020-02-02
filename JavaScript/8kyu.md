@@ -1,5 +1,12 @@
 ### Code challenges 8 kyu
 
+* __[Grasshopper - Terminal game combat function](https://www.codewars.com/kata/586c1cf4b98de0399300001d/train/javascript/)__
+```javascript
+function combat(health, damage) {
+  return (health - damage) < 0 ? 0 : health - damage;
+}
+```
+
 * __[Will there be enough space?](https://www.codewars.com/kata/5875b200d520904a04000003/train/javascript/)__
 ```javascript
 function enough(cap, on, wait) {
