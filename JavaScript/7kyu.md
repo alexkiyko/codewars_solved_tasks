@@ -1,4 +1,12 @@
 ### Code challenges 7 kyu
+* __[Product Of Maximums Of Array (Array Series #2)](https://www.codewars.com/kata/5a63948acadebff56f000018/train/javascript/)__
+```javascript
+function maxProduct(numbers, size){
+  const numbersMax = numbers.sort((a, b) => b - a).slice(0, size);
+  return numbersMax.reduce((acc, cur) => acc * cur, 1);
+}
+```
+
 * __[Remove duplicate words](https://www.codewars.com/kata/5b39e3772ae7545f650000fc/train/javascript/)__
 ```javascript
 function removeDuplicateWords (s) {
@@ -7,6 +15,7 @@ function removeDuplicateWords (s) {
   return arrFiltered.join(' ');
 }
 ```
+
 * __[Help Bob count letters and digits.](https://www.codewars.com/kata/5738f5ea9545204cec000155/train/javascript/)__
 ```javascript
 function countLettersAndDigits(input) {
