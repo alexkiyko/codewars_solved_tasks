@@ -1,4 +1,12 @@
 ### Code challenges 7 kyu
+* __[Remove duplicate words](https://www.codewars.com/kata/5b39e3772ae7545f650000fc/train/javascript/)__
+```javascript
+function removeDuplicateWords (s) {
+  const arr = s.split(' ');
+  const arrFiltered = arr.filter((el, index) => index === arr.indexOf(el));
+  return arrFiltered.join(' ');
+}
+```
 * __[Help Bob count letters and digits.](https://www.codewars.com/kata/5738f5ea9545204cec000155/train/javascript/)__
 ```javascript
 function countLettersAndDigits(input) {
