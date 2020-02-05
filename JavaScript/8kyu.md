@@ -1,5 +1,12 @@
 ### Code challenges 8 kyu
 
+* __[How many lightsabers do you own?](https://www.codewars.com/kata/51f9d93b4095e0a7200001b8/train/javascript/)__
+```javascript
+function howManyLightsabersDoYouOwn(name) {
+  return name === 'Zach' ? 18 : 0;
+}
+```
+
 * __[Grasshopper - Terminal game combat function](https://www.codewars.com/kata/586c1cf4b98de0399300001d/train/javascript/)__
 ```javascript
 function combat(health, damage) {
