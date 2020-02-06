@@ -1,5 +1,29 @@
 ### Code challenges 6 kyu
 
+* __[Primorial Of a Number](https://www.codewars.com/kata/5a99a03e4a6b34bb3c000124/train/javascript/)__
+```javascript
+function isPrime (num) {
+  for(let i = 2; i < num; i++) {
+    if(num % i === 0) return false;
+  }
+  return num > 1;
+}
+
+const primes = [] ;
+let number = 100;
+
+for(let i = 2; i < number ; i ++) {
+  if(isPrime(i)) {
+    primes.push(i)
+  }
+}
+
+function numPrimorial(n){
+  let primesUpToN = primes.slice(0, n);
+  return primesUpToN.reduce((acc, cur) => acc * cur, 1);
+}
+```
+
 * __[Sums of Parts](https://www.codewars.com/kata/5ce399e0047a45001c853c2b/train/javascript/)__
 ```javascript
 function partsSums(ls) {
