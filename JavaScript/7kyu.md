@@ -1,4 +1,20 @@
 ### Code challenges 7 kyu
+* __[Scrabble Score](https://www.codewars.com/kata/558fa34727c2d274c10000ae/train/javascript/)__
+```javascript
+function scrabbleScore(str) {
+  if (str === '') return 0;
+  str = str.toUpperCase().replace(/[' ']/g, '');
+  let score = 0;
+
+  for (let i = 0; i < str.length; i++) {
+    if ($dict[str[i]]) {
+      score += $dict[str[i]];
+    }
+  }
+  return score;
+};
+```
+
 * __[Extra Perfect Numbers (Special Numbers Series #7)](https://www.codewars.com/kata/5a662a02e626c54e87000123/train/javascript/)__
 ```javascript
 function extraPerfect(n){
