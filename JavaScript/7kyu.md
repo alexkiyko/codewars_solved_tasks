@@ -1,4 +1,31 @@
 ### Code challenges 7 kyu
+
+* __[Balanced Number (Special Numbers Series #1)](https://www.codewars.com/kata/5a4e3782880385ba68000018/train/javascript/)__
+```javascript
+function balancedNum(number) {
+  if (number < 100) return 'Balanced';
+  number = number.toString();
+  let leftSide;
+  let rightSide;
+  let leftSideSum = 0;
+  let rightSideSum = 0;
+  
+  if (number.length % 2 !== 0) {
+    leftSide = Array.from(number).slice(0, number.length / 2);
+    rightSide = Array.from(number).slice(number.length / 2 + 1);
+  }
+  if (number.length % 2 === 0) {
+    leftSide = Array.from(number).slice(0, number.length / 2 - 1);
+    rightSide = Array.from(number).slice(number.length / 2 + 1);
+  }
+  for (let i = 0; i < rightSide.length; i++) {
+    rightSideSum += +rightSide[i];
+    leftSideSum += +leftSide[i];
+  }
+  return rightSideSum === leftSideSum ? 'Balanced' : 'Not Balanced';
+}
+```
+
 * __[Scrabble Score](https://www.codewars.com/kata/558fa34727c2d274c10000ae/train/javascript/)__
 ```javascript
 function scrabbleScore(str) {
