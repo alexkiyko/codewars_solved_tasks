@@ -1,5 +1,15 @@
 ### Code challenges 7 kyu
 
+* __[Form The Minimum](https://www.codewars.com/kata/5ac6932b2f317b96980000ca/train/javascript/)__
+```javascript
+function minValue(values) {
+  return Number(values
+    .filter((number, index) => index === values.indexOf(number))
+    .sort((min, max) => min - max)
+    .join(''));
+}
+```
+
 * __[Balanced Number (Special Numbers Series #1)](https://www.codewars.com/kata/5a4e3782880385ba68000018/train/javascript/)__
 ```javascript
 function balancedNum(number) {
