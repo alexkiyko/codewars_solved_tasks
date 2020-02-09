@@ -1,5 +1,13 @@
 ### Code challenges 7 kyu
 
+* __[Form The Largest](https://www.codewars.com/kata/5a4ea304b3bfa89a9900008e/train/javascript/)__
+```javascript
+function maxNumber(n){
+  const numbers = Array.from(n.toString());
+  return Number(numbers.sort((min, max) => max - min).join(''));  
+}
+```
+
 * __[Form The Minimum](https://www.codewars.com/kata/5ac6932b2f317b96980000ca/train/javascript/)__
 ```javascript
 function minValue(values) {
