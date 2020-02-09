@@ -1,5 +1,16 @@
 ### Code challenges 7 kyu
 
+* __[Sum of Minimums!](https://www.codewars.com/kata/5d5ee4c35162d9001af7d699/train/javascript/)__
+```javascript
+function sumOfMinimums(arr) {
+  let sumOfMinVal = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sumOfMinVal += Math.min(...arr[i]);
+  }
+  return sumOfMinVal;
+}
+```
+
 * __[Form The Largest](https://www.codewars.com/kata/5a4ea304b3bfa89a9900008e/train/javascript/)__
 ```javascript
 function maxNumber(n){
