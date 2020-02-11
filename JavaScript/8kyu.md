@@ -1,5 +1,13 @@
 ### Code challenges 8 kyu
 
+* __[Area or Perimeter](https://www.codewars.com/kata/5ab6538b379d20ad880000ab/train/javascript/)__
+```javascript
+const areaOrPerimeter = function(length , width) {
+  if (length === width) return length * width;
+  else return length * 2 + width * 2;
+};
+```
+
 * __[How many lightsabers do you own?](https://www.codewars.com/kata/51f9d93b4095e0a7200001b8/train/javascript/)__
 ```javascript
 function howManyLightsabersDoYouOwn(name) {
