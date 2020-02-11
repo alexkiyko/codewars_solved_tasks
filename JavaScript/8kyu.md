@@ -1,5 +1,15 @@
 ### Code challenges 8 kyu
 
+* __[Find the Difference in Age between Oldest and Youngest Family Members](https://www.codewars.com/kata/5720a1cb65a504fdff0003e2/train/javascript/)__
+```javascript
+function differenceInAges(ages){
+  const agesSorted = ages.sort((min, max) => max -min);
+  const maxAge = agesSorted[0];
+  const minAge = agesSorted[agesSorted.length -1];
+  return [minAge, maxAge, maxAge - minAge];
+}
+```
+
 * __[Area or Perimeter](https://www.codewars.com/kata/5ab6538b379d20ad880000ab/train/javascript/)__
 ```javascript
 const areaOrPerimeter = function(length , width) {
