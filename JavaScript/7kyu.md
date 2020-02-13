@@ -1,5 +1,26 @@
 ### Code challenges 7 kyu
 
+* __[Scrabblemania](https://www.codewars.com/kata/5b68983a975680155000005d/train/javascript/)__
+```javascript
+function wordScore(word) {
+  const score = {
+    "a" : 1, "b" : 3,"c" : 3,"d" : 2, "e" : 1, "f" : 4,"g" : 2,"h" : 4,"i" : 1,
+    "j" : 8,"k" : 5,"l" : 1,"m" : 3,"n" : 1,"o" : 1,"p" : 3,"q" : 10,"r" : 1,
+    "s" : 1,"t" : 1,"u" : 1,"v" : 4, "w" : 4,"x" : 8,"y" : 4,"z" : 10
+    };
+  let wordSum = 0;
+  let bonus = 50;
+
+  for (let i = 0; i < word.length; i++) {
+    if (score[word[i]]) {
+      wordSum += score[word[i]];
+    }
+  }
+  if (word.length >= 7) return  wordSum * word.length + bonus;
+  else return wordSum * word.length;
+}
+```
+
 * __[Sum of Minimums!](https://www.codewars.com/kata/5d5ee4c35162d9001af7d699/train/javascript/)__
 ```javascript
 function sumOfMinimums(arr) {
