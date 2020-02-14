@@ -1,5 +1,34 @@
 ### Code challenges 6 kyu
 
+* __[Vasya - Clerk](https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8/train/javascript/)__
+```javascript
+function tickets(peopleInLine) {
+  let bills25 = 0;
+  let bills50 = 0;
+  let bills100 = 0;
+
+  for (let i = 0; i < peopleInLine.length; i++) {
+    let bill = peopleInLine[i];
+    
+    if (bill === 25) {
+      bills25++;
+    } else if (bill === 50 && bills25 > 0) {
+      bills50++;
+      bills25--;
+    } else if (bill === 100 && bills50 > 0 && bills25 > 0) {
+      bills100++;
+      bills50--;
+      bills25--;
+    } else if (bill === 100 && bills25 > 2) {
+      bills100++;
+      bills25 -= 3;
+    } else {
+      return 'NO';
+    }
+  } return 'YES';
+}
+```
+
 * __[Primorial Of a Number](https://www.codewars.com/kata/5a99a03e4a6b34bb3c000124/train/javascript/)__
 ```javascript
 function isPrime (num) {
