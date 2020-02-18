@@ -1,5 +1,23 @@
 ### Code challenges 7 kyu
 
+* __[Ski Jump](https://www.codewars.com/kata/57ed7214f670e99f7a000c73/train/javascript/)__
+```javascript
+function skiJump(mountain){
+  let speed = mountain.length * 1.5;
+  let jumpLength = ((mountain.length * speed * 9) /10).toFixed(2);
+
+  if (jumpLength < 10) {
+      return `${jumpLength} metres: He's crap!`;
+    } else if (10 <= jumpLength && jumpLength <= 24) {
+      return `${jumpLength} metres: He's ok!`;
+    } else if (25 <= jumpLength && jumpLength < 50) {
+      return `${jumpLength} metres: He's flying!`;
+    } else if ( jumpLength >= 50) {
+      return `${jumpLength} metres: Gold!!`;
+    }
+}
+```
+
 * __[Scrabblemania](https://www.codewars.com/kata/5b68983a975680155000005d/train/javascript/)__
 ```javascript
 function wordScore(word) {
