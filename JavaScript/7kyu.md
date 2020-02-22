@@ -1,8 +1,21 @@
 ### Code challenges 7 kyu
 
+* __[List Filtering](https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/javascript/)__
+```javascript
+function filter_list(arr) {
+  const filteredArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] === 'number') {
+      filteredArray.push(arr[i]);
+    }
+  }
+  return filteredArray;
+}
+```
+
 * __[Ski Jump](https://www.codewars.com/kata/57ed7214f670e99f7a000c73/train/javascript/)__
 ```javascript
-function skiJump(mountain){
+function skiJump(mountain) {
   let speed = mountain.length * 1.5;
   let jumpLength = ((mountain.length * speed * 9) /10).toFixed(2);
 
@@ -112,10 +125,10 @@ function scrabbleScore(str) {
 
 * __[Extra Perfect Numbers (Special Numbers Series #7)](https://www.codewars.com/kata/5a662a02e626c54e87000123/train/javascript/)__
 ```javascript
-function extraPerfect(n){
+function extraPerfect(n) {
   const arr = [];
 
-  for (let i = 1; i <= n; i += 2){
+  for (let i = 1; i <= n; i += 2) {
     arr.push(i);
   }
   return arr;
@@ -124,7 +137,7 @@ function extraPerfect(n){
 
 * __[Product Of Maximums Of Array (Array Series #2)](https://www.codewars.com/kata/5a63948acadebff56f000018/train/javascript/)__
 ```javascript
-function maxProduct(numbers, size){
+function maxProduct(numbers, size) {
   const numbersMax = numbers.sort((a, b) => b - a).slice(0, size);
   return numbersMax.reduce((acc, cur) => acc * cur, 1);
 }
@@ -166,7 +179,7 @@ function menFromBoys(arr) {
 
 * __[Tidy Number (Special Numbers Series #9)](https://www.codewars.com/kata/5a87449ab1710171300000fd/train/javascript/)__
 ```javascript
-function tidyNumber(n){
+function tidyNumber(n) {
   const numbers = Array.from(String(n), Number).join('');
   const numbersInOrder = Array.from(String(n), Number).sort((a, b) => a - b).join('');
   return numbers === numbersInOrder;
