@@ -1,5 +1,23 @@
 ### Code challenges 7 kyu
 
+* __[Odder Than the Rest](https://www.codewars.com/kata/5983cba828b2f1fd55000114/train/javascript/)__ 
+#####Solution 1
+```javascript
+function oddOne(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 !== 0) {
+      return arr.indexOf(arr[i]);
+    }
+  } return -1;
+}
+```
+#####Solution 2
+```javascript
+function oddOne(arr) {
+  return arr.findIndex(number => number % 2 !== 0);
+}
+```
+
 * __[List Filtering](https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/javascript/)__
 ```javascript
 function filter_list(arr) {
