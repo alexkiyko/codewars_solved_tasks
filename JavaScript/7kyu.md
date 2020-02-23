@@ -1,7 +1,7 @@
 ### Code challenges 7 kyu
 
 * __[Odder Than the Rest](https://www.codewars.com/kata/5983cba828b2f1fd55000114/train/javascript/)__ 
-#####Solution 1
+##### Solution 1
 ```javascript
 function oddOne(arr) {
   for (let i = 0; i < arr.length; i++) {
@@ -11,7 +11,7 @@ function oddOne(arr) {
   } return -1;
 }
 ```
-#####Solution 2
+##### Solution 2
 ```javascript
 function oddOne(arr) {
   return arr.findIndex(number => number % 2 !== 0);
@@ -19,6 +19,7 @@ function oddOne(arr) {
 ```
 
 * __[List Filtering](https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/javascript/)__
+##### Solution 1
 ```javascript
 function filter_list(arr) {
   const filteredArray = [];
@@ -30,7 +31,13 @@ function filter_list(arr) {
   return filteredArray;
 }
 ```
-
+##### Solution 2
+```javascript
+function filter_list(arr) {
+  const filteredArr = arr.filter(el => typeof el === 'number');
+  return filteredArr;
+}
+```
 * __[Ski Jump](https://www.codewars.com/kata/57ed7214f670e99f7a000c73/train/javascript/)__
 ```javascript
 function skiJump(mountain) {
