@@ -1,5 +1,37 @@
 ### Code challenges 6 kyu
 
+* __[Count the smiley faces!](https://www.codewars.com/kata/583203e6eb35d7980400002a/train/javascript/)__
+```javascript
+function countSmileys(arr) {
+  let count = 0;
+  const eye = {
+    ':': true,
+    ';': true
+  };
+  const nose = {
+    '-': true,
+    '~': true
+  };
+  const mouth = {
+    ')': true,
+    'D': true
+  };
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length === 2) {
+      if (eye[arr[i][0]] && mouth[arr[i][1]]) {
+        count++;
+      }
+    } else if (arr[i].length === 3) {
+      if (eye[arr[i][0]] && nose[arr[i][1]] && mouth[arr[i][2]]) {
+        count++;
+      }
+    }
+  }
+  return count;
+}
+```
+
 * __[Vasya - Clerk](https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8/train/javascript/)__
 ```javascript
 function tickets(peopleInLine) {
