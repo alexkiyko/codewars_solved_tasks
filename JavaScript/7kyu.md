@@ -1,5 +1,12 @@
 ### Code challenges 7 kyu
 
+* __[Sort the Gift Code](https://www.codewars.com/kata/52aeb2f3ad0e952f560005d3/train/javascript/)__
+```javascript
+function sortGiftCode(code) {
+  return code.split('').sort().join('');
+}
+```
+
 * __[Currying functions: multiply all elements in an array](https://www.codewars.com/kata/586909e4c66d18dd1800009b/train/javascript/)__
 ```javascript
 const multiplyAll = arr => int => {
