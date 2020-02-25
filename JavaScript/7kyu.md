@@ -1,5 +1,12 @@
 ### Code challenges 7 kyu
 
+* __[Currying functions: multiply all elements in an array](https://www.codewars.com/kata/586909e4c66d18dd1800009b/train/javascript/)__
+```javascript
+const multiplyAll = arr => int => {
+  return arr.map(num => num * int)
+}
+```
+
 * __[Odder Than the Rest](https://www.codewars.com/kata/5983cba828b2f1fd55000114/train/javascript/)__ 
 ##### Solution 1
 ```javascript
