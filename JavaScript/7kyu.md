@@ -1,5 +1,13 @@
 ### Code challenges 7 kyu
 
+* __[The Office VI - Sabbatical](https://www.codewars.com/kata/57fe50d000d05166720000b1/train/javascript/)__
+```javascript
+function sabb(x, val, happ) {
+  const numOfLetters = x.replace(/[^sabticl]/gi, '').length;
+  return numOfLetters + val + happ > 22 ? 'Sabbatical! Boom!' : 'Back to your desk, boy.';
+}
+```
+
 * __[Sort the Gift Code](https://www.codewars.com/kata/52aeb2f3ad0e952f560005d3/train/javascript/)__
 ```javascript
 function sortGiftCode(code) {
