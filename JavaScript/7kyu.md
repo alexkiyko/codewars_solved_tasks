@@ -1,5 +1,12 @@
 ### Code challenges 7 kyu
 
+* __[Borrower Speak](https://www.codewars.com/kata/57d2ba8095497e484e00002e/train/javascript/)__
+```javascript
+function borrow(s) {
+  return s.replace(/[^a-z]/gi, '').toLowerCase();
+}
+```
+
 * __[Return the first M multiples of N](https://www.codewars.com/kata/593c9175933500f33400003e/train/javascript/)__
 ```javascript
 function multiples(m, n) {
