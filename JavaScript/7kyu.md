@@ -1,5 +1,17 @@
 ### Code challenges 7 kyu
 
+* __[Return the first M multiples of N](https://www.codewars.com/kata/593c9175933500f33400003e/train/javascript/)__
+```javascript
+function multiples(m, n) {
+  const arr = [];
+
+  for (let i = 1; i <= m; i++) {
+    arr.push(n * i);
+  }
+  return arr;
+}
+```
+
 * __[The Office VI - Sabbatical](https://www.codewars.com/kata/57fe50d000d05166720000b1/train/javascript/)__
 ```javascript
 function sabb(x, val, happ) {
