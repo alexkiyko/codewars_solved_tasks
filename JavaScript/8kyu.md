@@ -1,5 +1,17 @@
 ### Code challenges 8 kyu
 
+* __[Reversed Strings](https://www.codewars.com/kata/5168bb5dfe9a00b126000018/train/javascript/)__
+```javascript
+function solution(str){
+  let reversedStr = '';
+  
+  for (let i = str.length -1; i >= 0; i--) {
+    reversedStr += str[i]; 
+  }
+  return reversedStr;
+}
+```
+
 * __[Find the Difference in Age between Oldest and Youngest Family Members](https://www.codewars.com/kata/5720a1cb65a504fdff0003e2/train/javascript/)__
 ```javascript
 function differenceInAges(ages){
