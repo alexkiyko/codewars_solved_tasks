@@ -1,5 +1,13 @@
 ### Code challenges 8 kyu
 
+* __[Palindrome Strings](https://www.codewars.com/kata/57a5015d72292ddeb8000b31/train/javascript/)__
+```javascript
+function isPalindrome(line) {
+  line = String(line);
+  return line.split('').reverse().join('').toLowerCase() === line.toLowerCase();
+}
+```
+
 * __[Reversed Strings](https://www.codewars.com/kata/5168bb5dfe9a00b126000018/train/javascript/)__
 ```javascript
 function solution(str){
