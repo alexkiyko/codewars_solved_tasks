@@ -98,6 +98,7 @@ function partsSums(ls) {
 ```
 
 * __[Permute a Palindrome](https://www.codewars.com/kata/58ae6ae22c3aaafc58000079/train/javascript/)__
+##### Solution 1
 ```javascript
 function permuteAPalindrome (input) {
   let obj = {};
@@ -119,7 +120,25 @@ function permuteAPalindrome (input) {
   return count <= 1;
 }
 ```
+##### Solution 2
+```javascript
+function permuteAPalindrome (input) {
 
+  const obj = {};
+  let count = 0;
+
+  for (let i = 0; i < input.length; i++) {
+    if(obj[input[i]]) {
+      obj[input[i]] -= 1;
+      count -= 1;
+    } else if (!obj[input[i]]) {
+      obj[input[i]] = 1;
+      count += 1;
+    }
+  }
+  return count <= 1;
+}
+```
 * __[Sum of Digits / Digital Root](https://www.codewars.com/kata/541c8630095125aba6000c00/train/javascript/)__
 ```javascript
 function digital_root(number) {
