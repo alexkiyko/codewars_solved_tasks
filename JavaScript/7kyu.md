@@ -1,5 +1,25 @@
 ### Code challenges 7 kyu
 
+* __[Fizz Buzz](https://www.codewars.com/kata/5300901726d12b80e8000498/train/javascript/)__
+```javascript
+function fizzbuzz(n) {
+  const arr = [];
+
+  for (let i = 1; i <= n; i++) {
+    if (i % 15 === 0) {
+      arr.push('FizzBuzz');
+    } else if (i % 5 === 0) {
+      arr.push('Buzz')
+    } else if (i % 3 === 0) {
+      arr.push('Fizz');
+    } else {
+      arr.push(i);
+    }
+  }
+  return arr;
+}
+```
+
 * __[Borrower Speak](https://www.codewars.com/kata/57d2ba8095497e484e00002e/train/javascript/)__
 ```javascript
 function borrow(s) {
