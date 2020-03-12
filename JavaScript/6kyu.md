@@ -1,5 +1,24 @@
 ### Code challenges 6 kyu
 
+* __[Smallest Difference](https://www.codewars.com/kata/585de79128bc74912d0001c5/train/javascript/)__
+```javascript
+function smallestDiff(arr1, arr2) {
+  if (arr1.length === 0 && arr2.length > 0) return Math.min(...arr2);
+  if (arr2.length === 0 && arr1.length > 0) return Math.min(...arr1);
+  if (arr1.length === 0 && arr2.length === 0) return -1;
+  let diff = Number.MAX_SAFE_INTEGER;
+
+  for (let i = 0; i < arr1.length; i++) {
+    for (let j = 0; j < arr2.length; j++) {
+      if (Math.abs(arr1[i] - arr2[j]) < diff) {
+        diff = Math.abs(arr1[i] - arr2[j]);
+      }
+    }
+  }
+  return diff;
+}
+```
+
 * __[Count the smiley faces!](https://www.codewars.com/kata/583203e6eb35d7980400002a/train/javascript/)__
 ```javascript
 function countSmileys(arr) {
