@@ -1,5 +1,18 @@
 ### Code challenges 8 kyu
 
+* __[Find the smallest integer in the array]()__
+```javascript
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    let min = args[0];
+    for (let i = 1; i < args.length; i++) {
+      if (args[i] < min) min = args[i];
+    }
+    return min;
+  }
+}
+```
+
 * __[Palindrome Strings](https://www.codewars.com/kata/57a5015d72292ddeb8000b31/train/javascript/)__
 ```javascript
 function isPalindrome(line) {
