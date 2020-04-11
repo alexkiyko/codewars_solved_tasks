@@ -1,5 +1,26 @@
 ### Code challenges 7 kyu
 
+* __[Vowel Count](https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript)__
+```javascript
+function getCount(str) {
+  let vowelsCount = 0;
+
+  const obj = {
+    a: true,
+    e: true,
+    i: true,
+    o: true,
+    u: true
+  };
+
+  for(let i = 0; i < str.length; i++) {
+    if (obj[str[i]]) {
+      vowelsCount++
+    }
+  }
+  return vowelsCount;
+}
+```
 
 * __[Two Oldest Ages](https://www.codewars.com/kata/511f11d355fe575d2c000001/train/javascript/)__
 ```javascript
