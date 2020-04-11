@@ -1,5 +1,31 @@
 ### Code challenges 7 kyu
 
+
+* __[Two Oldest Ages](https://www.codewars.com/kata/511f11d355fe575d2c000001/train/javascript/)__
+```javascript
+function twoOldestAges(ages) {
+  return ages.sort((a, b) => a - b).slice(-2);
+}
+```
+
+* __[Alternate capitalization](https://www.codewars.com/kata/59cfc000aeb2844d16000075/train/javascript/)__
+```javascript
+function capitalize(s) {
+  let even =  '', odd = '';
+
+  for (let i = 0; i < s.length; i++) {
+    if (i % 2 === 0) {
+      even += s[i].toUpperCase();
+      odd += s[i];
+    } else {
+      even += s[i];
+      odd += s[i].toUpperCase();
+    }
+  }
+  return [even, odd];
+}
+```
+
 * __[Fizz Buzz](https://www.codewars.com/kata/5300901726d12b80e8000498/train/javascript/)__
 ```javascript
 function fizzbuzz(n) {
