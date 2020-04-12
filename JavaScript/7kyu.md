@@ -1,5 +1,29 @@
 ### Code challenges 7 kyu
 
+* __[Changing letters](https://www.codewars.com/kata/5831c204a31721e2ae000294/train/javascript)__
+```javascript
+function swap(str) {
+  const vowels = {
+    a: true,
+    e: true,
+    i: true,
+    o: true,
+    u: true
+  };
+  
+  let strCapitalVowels = '';
+  
+  for(let i = 0; i < str.length; i++) {
+    if (vowels[str[i]]) {
+      strCapitalVowels += str[i].toUpperCase()
+    } else {
+      strCapitalVowels += str[i];
+    }
+  }
+  return strCapitalVowels;
+}
+```
+
 * __[Vowel Count](https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript)__
 ```javascript
 function getCount(str) {
