@@ -1,5 +1,28 @@
 ### Code challenges 7 kyu
 
+* __[Asterisk it](https://www.codewars.com/kata/5888cba35194f7f5a800008b/train/javascript)__
+```javascript
+function asteriscIt(n) {
+  let result = '';
+  let arr;
+
+  if (Array.isArray(n)) {
+    arr = n.join('').split('');
+  } else {
+    arr = Array.from(String(n));
+  }
+
+  for (let i = 0; i < arr.length; i++) {
+    if(arr[i] % 2 === 0 && arr[i + 1] % 2 === 0 ) {
+      result += arr[i] + '*';
+    } else {
+      result += arr[i];
+    }
+  }
+  return result;
+}
+```
+
 * __[Changing letters](https://www.codewars.com/kata/5831c204a31721e2ae000294/train/javascript)__
 ```javascript
 function swap(str) {
