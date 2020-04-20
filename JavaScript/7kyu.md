@@ -1,5 +1,17 @@
 ### Code challenges 7 kyu
 
+* __[Halving Sum](https://www.codewars.com/kata/5a58d46cfd56cb4e8600009d/train/javascript/)__
+```javascript
+function halvingSum(n) {
+  let sum = 0;
+  while (n >= 1) {
+    sum += n;
+    n = Math.floor(n / 2);
+  }
+  return sum;
+}
+```
+
 * __[Happy Birthday, Darling!](https://www.codewars.com/kata/5e96332d18ac870032eb735f/train/javascript/)__
 ```javascript
 function womensAge(n) {
