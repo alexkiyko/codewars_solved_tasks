@@ -1,6 +1,21 @@
 ### Code challenges 7 kyu
 
-* __[Asterisk it](https://www.codewars.com/kata/5888cba35194f7f5a800008b/train/javascript)__
+* __[My Languages](https://www.codewars.com/kata/5b16490986b6d336c900007d/train/javascript/)__
+```javascript
+function myLanguages(obj) {
+  const arr = [];
+  const objSorted = Object.entries(obj).sort((a,b) => b[1] - a[1]);
+
+  for (let i = 0; i < objSorted.length; i++) {
+    if(objSorted[i][1] >= 60) {
+      arr.push(objSorted[i][0]);
+      }
+    }
+  return arr;
+}
+```
+
+* __[Asterisk it](https://www.codewars.com/kata/5888cba35194f7f5a800008b/train/javascript/)__
 ```javascript
 function asteriscIt(n) {
   let result = '';
@@ -23,7 +38,7 @@ function asteriscIt(n) {
 }
 ```
 
-* __[Changing letters](https://www.codewars.com/kata/5831c204a31721e2ae000294/train/javascript)__
+* __[Changing letters](https://www.codewars.com/kata/5831c204a31721e2ae000294/train/javascript/)__
 ```javascript
 function swap(str) {
   const vowels = {
@@ -47,7 +62,7 @@ function swap(str) {
 }
 ```
 
-* __[Vowel Count](https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript)__
+* __[Vowel Count](https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript/)__
 ```javascript
 function getCount(str) {
   let vowelsCount = 0;
