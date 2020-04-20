@@ -1,5 +1,18 @@
 ### Code challenges 7 kyu
 
+* __[Happy Birthday, Darling!](https://www.codewars.com/kata/5e96332d18ac870032eb735f/train/javascript/)__
+```javascript
+function womensAge(n) {
+  let result;
+  if (n % 2 === 0) {
+    result = `${n}? That's just 20, in base ${n / 2}!`
+  } else {
+    result = `${n}? That's just 21, in base ${Math.floor(n / 2)}!`
+  }
+  return result
+}
+```
+
 * __[My Languages](https://www.codewars.com/kata/5b16490986b6d336c900007d/train/javascript/)__
 ```javascript
 function myLanguages(obj) {
