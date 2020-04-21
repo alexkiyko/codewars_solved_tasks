@@ -1,5 +1,17 @@
 ### Code challenges 7 kyu
 
+* __[Multiply array values and filter non-numeric](https://www.codewars.com/kata/55ed875819ae85ca8b00005c/train/javascript/)__
+```javascript
+function multiplyAndFilter(array, multiplier) {
+  const result = [];
+  const filtered = array.filter(el => typeof el === 'number');
+  for (let i = 0; i < filtered.length; i++) {
+    result.push(filtered[i] * multiplier);
+  }
+  return result;
+}
+```
+
 * __[Halving Sum](https://www.codewars.com/kata/5a58d46cfd56cb4e8600009d/train/javascript/)__
 ```javascript
 function halvingSum(n) {
