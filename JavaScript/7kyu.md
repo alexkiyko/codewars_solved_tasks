@@ -1,5 +1,17 @@
 ### Code challenges 7 kyu
+* __[Find min and max](https://www.codewars.com/kata/57a1ae8c7cb1f31e4e000130/train/javascript/)__
+```javascript
+function getMinMax(arr) {
+  let min = arr[0];
+  let max = arr[0];
 
+  for (let i = 1; i < arr.length; i++) {
+   if (arr[i] <= min) min = arr[i];
+   if (arr[i] >= max) max = arr[i];
+  }
+  return [min, max];
+}
+```
 * __[Multiply array values and filter non-numeric](https://www.codewars.com/kata/55ed875819ae85ca8b00005c/train/javascript/)__
 ```javascript
 function multiplyAndFilter(array, multiplier) {
