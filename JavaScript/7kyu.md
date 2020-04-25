@@ -1,4 +1,17 @@
 ### Code challenges 7 kyu
+
+* __[Series of integers from m to n](https://www.codewars.com/kata/5841f680c5c9b092950001ae/train/javascript/)__
+```javascript
+function generateIntegers(m, n) {
+  const arr = [];
+  
+  for (let i = m; i <= n; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
+```
+
 * __[Find min and max](https://www.codewars.com/kata/57a1ae8c7cb1f31e4e000130/train/javascript/)__
 ```javascript
 function getMinMax(arr) {
