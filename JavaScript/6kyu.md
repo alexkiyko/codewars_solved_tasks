@@ -1,5 +1,36 @@
 ### Code challenges 6 kyu
 
+* __[Almost Even](https://www.codewars.com/kata/529e2e1f16cb0fcccb000a6b/train/javascript/)__
+```javascript
+var splitInteger = function(num, parts) {
+  const arr = [];
+  let number = Math.floor(num / parts);
+  
+  for (let i = 0; i < parts; i++) {
+    arr.push(number)
+  }
+
+  function arrSum (array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+      sum += array[i];
+    }
+    return sum;
+  }
+  
+  if (arrSum(arr) === num) {
+    return arr;
+  }
+
+  for (let i = 0; i < arr.length; i++) {
+    arr[i]++;
+    if (arrSum(arr) === num) {
+      return arr;
+    }
+  }
+};
+```
+
 * __[Smallest Difference](https://www.codewars.com/kata/585de79128bc74912d0001c5/train/javascript/)__
 ```javascript
 function smallestDiff(arr1, arr2) {
