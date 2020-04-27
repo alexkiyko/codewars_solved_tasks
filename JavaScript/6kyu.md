@@ -1,5 +1,24 @@
 ### Code challenges 6 kyu
 
+* __[Split Strings](https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/train/javascript/)__
+```javascript
+function solution(str) {
+  const arr = [];
+  let newStr = '';
+
+  if (str.length % 2 !== 0) {
+    newStr = str + '_';
+  } else {
+    newStr = str;
+  }
+  
+  for (let i = 0; i < newStr.length; i = i + 2) {
+    arr.push(newStr[i] + newStr[i + 1]);
+  }
+  return arr;
+}
+```
+
 * __[Break camelCase](https://www.codewars.com/kata/5208f99aee097e6552000148/train/javascript)__
 ```javascript
 function solution(str) {
