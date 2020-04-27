@@ -1,5 +1,22 @@
 ### Code challenges 6 kyu
 
+* __[Break camelCase](https://www.codewars.com/kata/5208f99aee097e6552000148/train/javascript)__
+```javascript
+function solution(str) {
+  let space = ' ';
+  let newStr = '';
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === str[i].toUpperCase()) {
+      newStr += space + str[i];
+    } else {
+      newStr += str[i];
+    }
+  }
+  return newStr;
+}
+```
+
 * __[Almost Even](https://www.codewars.com/kata/529e2e1f16cb0fcccb000a6b/train/javascript/)__
 ```javascript
 var splitInteger = function(num, parts) {
