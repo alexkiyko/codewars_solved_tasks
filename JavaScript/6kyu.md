@@ -1,5 +1,26 @@
 ### Code challenges 6 kyu
 
+* __[Find the odd int](https://www.codewars.com/kata/54da5a58ea159efa38000836/train/javascript/)__
+```javascript
+function findOdd(arr) {
+  const obj = {};
+
+  for(let i = 0; i < arr.length; i++) {
+    if (obj[arr[i]]) {
+      obj[arr[i]]++;
+    } else {
+      obj[arr[i]] = 1
+    }
+  }
+
+  for (let prop in obj) {
+    if (obj[prop] % 2 !== 0) {
+      return +prop;
+    }
+  }
+}
+```
+
 * __[Split Strings](https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/train/javascript/)__
 ```javascript
 function solution(str) {
