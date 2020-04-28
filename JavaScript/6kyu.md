@@ -1,5 +1,21 @@
 ### Code challenges 6 kyu
 
+* __[Backspaces in string](https://www.codewars.com/kata/5727bb0fe81185ae62000ae3/train/javascript/)__
+```javascript
+function cleanString(s) {
+  const arr = [];
+
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] !== '#') {
+      arr.push(s[i]);
+    } else if (s[i] === '#') {
+      arr.pop();
+    }
+  }
+  return arr.join('');
+};
+```
+
 * __[Find the odd int](https://www.codewars.com/kata/54da5a58ea159efa38000836/train/javascript/)__
 ```javascript
 function findOdd(arr) {
