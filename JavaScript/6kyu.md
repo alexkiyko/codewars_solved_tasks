@@ -1,5 +1,26 @@
 ### Code challenges 6 kyu
 
+* __[Array.diff](https://www.codewars.com/kata/523f5d21c841566fde000009/train/javascript/)__
+```javascript
+function arrayDiff(a, b) {
+  const arr =[];
+
+  for (let i = 0; i < a.length; i++) {
+    let include = true;
+    for (let j = 0; j < b.length; j++) {
+      if (a[i] === b[j]) {
+        include = false;
+        break;
+      }
+    }
+    if (include) {
+      arr.push(a[i]);
+    }
+  }
+  return arr;
+}
+```
+
 * __[Backspaces in string](https://www.codewars.com/kata/5727bb0fe81185ae62000ae3/train/javascript/)__
 ```javascript
 function cleanString(s) {
