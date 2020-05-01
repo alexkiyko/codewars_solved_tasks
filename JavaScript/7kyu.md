@@ -1,5 +1,21 @@
 ### Code challenges 7 kyu
 
+* __[Deodorant Evaporator](https://www.codewars.com/kata/5506b230a11c0aeab3000c1f/train/javascript)__
+```javascript
+function evaporator(content, evap_per_day, threshold) {
+  let thresholdPercent = threshold / 100;
+  let evapPercent = evap_per_day / 100;
+  let thresholdVal = content * thresholdPercent;
+
+  let totalDay = 0;
+  while (content >= thresholdVal) {
+    content = content - (content * evapPercent);
+    totalDay++;
+  }
+  return totalDay;
+}
+```
+
 * __[Sum even numbers](https://www.codewars.com/kata/586beb5ba44cfc44ed0006c3/train/javascript/)__
 ```javascript
 function sumEvenNumbers(input) {
