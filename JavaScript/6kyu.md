@@ -1,5 +1,19 @@
 ### Code challenges 6 kyu
 
+* __[Unique In Order](https://www.codewars.com/kata/54e6533c92449cc251001667/train/javascript/)__
+```javascript
+var uniqueInOrder = function(iterable) {
+  const arr = [];
+
+  for (let i = 0; i < iterable.length; i++) {
+    if (iterable[i] !== iterable[i + 1]) {
+      arr.push(iterable[i]);
+    }
+  }
+  return arr;
+};
+```
+
 * __[Array.diff](https://www.codewars.com/kata/523f5d21c841566fde000009/train/javascript/)__
 ```javascript
 function arrayDiff(a, b) {
