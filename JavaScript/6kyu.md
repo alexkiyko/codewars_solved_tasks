@@ -1,5 +1,31 @@
 ### Code challenges 6 kyu
 
+* __[Title Case](https://www.codewars.com/kata/5202ef17a402dd033c000009/train/javascript/)__
+```javascript
+function titleCase(title, minorWords = '') {
+  if (title.length === 0) {
+    return '';
+  }
+  let minorArr = minorWords.toLowerCase().split(' ');
+  const titleArr = title.toLowerCase().split(' ');
+  const arr = [];
+
+  arr.push(firstLetterCapital(titleArr[0]));
+
+  for (let i = 1; i < titleArr.length; i++) {
+    if(minorArr.indexOf(titleArr[i]) === -1) {
+      arr.push(firstLetterCapital(titleArr[i]));
+    } else
+      arr.push(titleArr[i]);
+  }
+  return arr.join(' ');
+}
+
+function firstLetterCapital(str) {
+  return str[0].toUpperCase() + str.slice(1);
+}
+```
+
 * __[Unique In Order](https://www.codewars.com/kata/54e6533c92449cc251001667/train/javascript/)__
 ```javascript
 var uniqueInOrder = function(iterable) {
