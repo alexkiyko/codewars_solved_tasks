@@ -1,5 +1,23 @@
 ### Code challenges 7 kyu
 
+* __[Split In Parts](https://www.codewars.com/kata/5650ab06d11d675371000003/train/javascript/)__
+```javascript
+var splitInParts = function(s, n) {
+  let str = '';
+  let count = 0;
+
+  for (let i = 0; i < s.length; i++) {
+    str += s[i];
+    count++;
+    if (count === n) {
+      str += ' ';
+      count = 0;
+    }
+  }
+  return str.trim();
+};
+```
+
 * __[Deodorant Evaporator](https://www.codewars.com/kata/5506b230a11c0aeab3000c1f/train/javascript)__
 ```javascript
 function evaporator(content, evap_per_day, threshold) {
