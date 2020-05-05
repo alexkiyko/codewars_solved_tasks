@@ -1,5 +1,25 @@
 ### Code challenges 6 kyu
 
+* __[Delete occurrences of an element if it occurs more than n times](https://www.codewars.com/kata/554ca54ffa7d91b236000023/train/javascript/)__
+```javascript
+function deleteNth(arr,n) {
+  const res = [];
+  const obj = {};
+
+  for (let i = 0; i < arr.length; i++) {
+    if (obj[arr[i]]) {
+      obj[arr[i]] += 1;
+    } else {
+      obj[arr[i]] = 1;
+    }
+    if (obj[arr[i]] <= n) {
+      res.push(arr[i]);
+    }
+  }
+  return res;
+}
+```
+
 * __[Title Case](https://www.codewars.com/kata/5202ef17a402dd033c000009/train/javascript/)__
 ```javascript
 function titleCase(title, minorWords = '') {
