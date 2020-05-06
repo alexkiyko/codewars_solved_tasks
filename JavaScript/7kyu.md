@@ -1,5 +1,23 @@
 ### Code challenges 7 kyu
 
+* __[Not above the one!](https://www.codewars.com/kata/5b5097324a317afc740000fe/train/javascript/)__
+```javascript
+function binaryCleaner(arr) {
+  const arrNumBelowOne = [];
+  const arrIndexOfRemovedNumbers = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < 2) {
+      arrNumBelowOne.push(arr[i]);
+    }
+    if (arr[i] >= 2 ) {
+      arrIndexOfRemovedNumbers.push(i);
+    }
+  }
+  return [arrNumBelowOne, arrIndexOfRemovedNumbers];
+}
+```
+
 * __[Split In Parts](https://www.codewars.com/kata/5650ab06d11d675371000003/train/javascript/)__
 ```javascript
 var splitInParts = function(s, n) {
