@@ -1,5 +1,19 @@
 ### Code challenges 8 kyu
 
+* __[All Star Code Challenge #18](https://www.codewars.com/kata/5865918c6b569962950002a1/train/javascript/)__
+```javascript
+function strCount(str, letter) {
+  let count = 0;
+  
+  for (let i = 0; i < str.length; i++) {
+    if(str[i] === letter) {
+      count++;
+    }
+  }
+  return count;
+}
+```
+
 * __[Find the smallest integer in the array]()__
 ```javascript
 class SmallestIntegerFinder {
