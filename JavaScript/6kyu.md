@@ -1,5 +1,18 @@
 ### Code challenges 6 kyu
 
+* __[Find the missing term in an Arithmetic Progression](https://www.codewars.com/kata/52de553ebb55d1fca3000371/train/javascript/)__
+```javascript
+var findMissing = function (list) {
+  const diff = (list[list.length - 1] - list[0]) / list.length;
+
+  for (let i = 0; i < list.length - 1; i++) {
+    if((list[i + 1] - list[i]) !== diff) {
+      return list[i] + diff;
+    }
+  }
+};
+```
+
 * __[Delete occurrences of an element if it occurs more than n times](https://www.codewars.com/kata/554ca54ffa7d91b236000023/train/javascript/)__
 ```javascript
 function deleteNth(arr,n) {
