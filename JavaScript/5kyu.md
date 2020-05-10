@@ -1,5 +1,22 @@
 ### Code challenges 5 kyu
 
+* __[Moving Zeros To The End](https://www.codewars.com/kata/52597aa56021e91c93000cb0/train/javascript/)__
+```javascript
+var moveZeros = function (arr) {
+  const zeros = [];
+  const numbers = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== 0) {
+      numbers.push(arr[i])
+    } else {
+      zeros.push(arr[i]);
+    }
+  }
+  return [...numbers, ...zeros];
+};
+```
+
 * __[Scramblies](https://www.codewars.com/kata/55c04b4cc56a697bb0000048/train/javascript)__
 ```javascript
 function scramble(str1, str2) {
