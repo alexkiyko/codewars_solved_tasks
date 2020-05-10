@@ -1,5 +1,26 @@
 ### Code challenges 6 kyu
 
+* __[Dashatize it](https://www.codewars.com/kata/58223370aef9fc03fd000071/train/javascript/)__
+```javascript
+function dashatize(num) {
+  if(isNaN(num)) {
+    return num.toString();
+  }
+
+  num = Math.abs(num).toString();
+  let str = '';
+
+  for (let i = 0; i < num.length; i++) {
+    if (Number(num[i]) % 2 === 0 && Number(num[i + 1]) % 2 === 0) {
+      str += num[i];
+    } else {
+      str += num[i] + '-';
+    }
+  }
+  return str.substring(0, str.length -1);
+}
+```
+
 * __[Find the missing term in an Arithmetic Progression](https://www.codewars.com/kata/52de553ebb55d1fca3000371/train/javascript/)__
 ```javascript
 var findMissing = function (list) {
