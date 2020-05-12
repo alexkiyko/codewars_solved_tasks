@@ -1,5 +1,17 @@
 ### Code challenges 6 kyu
 
+* __[Count characters in your string](https://www.codewars.com/kata/52efefcbcdf57161d4000091/train/javascript/)__
+```javascript
+function count (str) {
+  const obj = {};
+
+  for (let i = 0; i < str.length; i++) {
+    obj[str[i]] ? obj[str[i]]++ : obj[str[i]] = 1;
+  }
+  return obj;
+}
+```
+
 * __[Dashatize it](https://www.codewars.com/kata/58223370aef9fc03fd000071/train/javascript/)__
 ```javascript
 function dashatize(num) {
