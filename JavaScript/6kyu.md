@@ -1,5 +1,20 @@
 ### Code challenges 6 kyu
 
+* __[Convert string to camel case](https://www.codewars.com/kata/517abf86da9663f1d2000003/train/javascript/)__
+```javascript
+function toCamelCase(str) {
+  const s = str.split('');
+
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === '_' || s[i] === '-') {
+      s[i] = '';
+      s[i + 1] = s[i + 1].toUpperCase()
+    }
+  }
+  return s.join('');
+}
+```
+
 * __[Count characters in your string](https://www.codewars.com/kata/52efefcbcdf57161d4000091/train/javascript/)__
 ```javascript
 function count (str) {
