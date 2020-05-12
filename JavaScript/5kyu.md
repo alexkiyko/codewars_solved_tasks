@@ -1,5 +1,21 @@
 ### Code challenges 5 kyu
 
+* __[Where my anagrams at?](https://www.codewars.com/kata/523a86aa4230ebb5420001e1/train/javascript/)__
+```javascript
+function anagrams(word, words) {
+  word = word.split('').sort().join('');
+  let arr = [];
+
+  for (let i = 0; i < words.length; i++) {
+    let sorted = words[i].split('').sort().join('');
+    if (word === sorted) {
+      arr.push(words[i]);
+    }
+  }
+  return arr;
+}
+```
+
 * __[Moving Zeros To The End](https://www.codewars.com/kata/52597aa56021e91c93000cb0/train/javascript/)__
 ```javascript
 var moveZeros = function (arr) {
