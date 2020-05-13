@@ -1,5 +1,18 @@
 ### Code challenges 7 kyu
 
+* __[Debug Sum of Digits of a Number](https://www.codewars.com/kata/563d59dd8e47a5ed220000ba/train/javascript/)__
+```javascript
+function getSumOfDigits(integer) {
+  let digits =  Math.floor(integer).toString();
+  let sum = 0;
+
+  for(let i = 0; i < digits.length; i++) {
+    sum += +digits[i];
+  }
+  return sum;
+}
+```
+
 * __[Not above the one!](https://www.codewars.com/kata/5b5097324a317afc740000fe/train/javascript/)__
 ```javascript
 function binaryCleaner(arr) {
