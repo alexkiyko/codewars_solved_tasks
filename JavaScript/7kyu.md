@@ -1,5 +1,18 @@
 ### Code challenges 7 kyu
 
+* __[Simple Fun #176: Reverse Letter](https://www.codewars.com/kata/58b8c94b7df3f116eb00005b/train/javascript/)__
+```javascript
+function reverseLetter(str) {
+  const filteredStr = str.replace(/[^a-z]/g, '');
+  let result = '';
+
+  for (let i = filteredStr.length -1; i >= 0; i--) {
+    result += filteredStr[i];
+  }
+  return result;
+}
+```
+
 * __[Debug Sum of Digits of a Number](https://www.codewars.com/kata/563d59dd8e47a5ed220000ba/train/javascript/)__
 ```javascript
 function getSumOfDigits(integer) {
