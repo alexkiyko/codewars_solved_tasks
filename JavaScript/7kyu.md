@@ -1,5 +1,19 @@
 ### Code challenges 7 kyu
 
+* __[Find all occurrences of an element in an array](https://www.codewars.com/kata/59a9919107157a45220000e1/train/javascript/)__
+```javascript
+const findAll = (array, n) => {
+  const indexOfN = [];
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === n) {
+      indexOfN.push(i);
+    }
+  }
+  return indexOfN;
+};
+```
+
 * __[esreveR](https://www.codewars.com/kata/5413759479ba273f8100003d/train/javascript/)__
 ```javascript
 reverse = function(array) {
