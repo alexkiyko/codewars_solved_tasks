@@ -1,5 +1,27 @@
 ### Code challenges 8 kyu
 
+* __[](https://www.codewars.com/kata/5899642f6e1b25935d000161/train/javascript/)__
+```javascript
+function mergeArrays(arr1, arr2) {
+
+  for (let i = 0; i < arr2.length; i++) {
+    arr1.push(arr2[i]);
+  }
+
+  for (let i = 0; i < arr1.length; i++) {
+    for(let j = i + 1; j < arr1.length; j++)  {
+      if (arr1[i] > arr1[j]) {
+        let temp = arr1[i];
+        arr1[i] = arr1[j];
+        arr1[j] = temp;
+      }
+    }
+  }
+  const filtered = arr1.filter((el, i) => i === arr1.indexOf(el));
+  return filtered;
+}
+```
+
 * __[All Star Code Challenge #18](https://www.codewars.com/kata/5865918c6b569962950002a1/train/javascript/)__
 ```javascript
 function strCount(str, letter) {
