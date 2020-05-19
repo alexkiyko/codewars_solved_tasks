@@ -1,5 +1,19 @@
 ### Code challenges 6 kyu
 
+* __[Multiples of 3 or 5](https://www.codewars.com/kata/514b92a657cdc65150000006/train/javascript/)__
+```javascript
+function solution(number) {
+  let sum = 0;
+
+  for (let i = 1; i < number; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      sum += i;
+    }
+  }
+  return sum;
+}
+```
+
 * __[Convert string to camel case](https://www.codewars.com/kata/517abf86da9663f1d2000003/train/javascript/)__
 ```javascript
 function toCamelCase(str) {
