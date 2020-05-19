@@ -1,5 +1,19 @@
 ### Code challenges 7 kyu
 
+* __[Bumps in the Road](https://www.codewars.com/kata/57ed30dde7728215300005fa/train/javascript/)__
+```javascript
+function bump(x) {
+  let count = 0;
+
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] === 'n') {
+      count++;
+    }
+  }
+  return count <= 15 ? "Woohoo!" : "Car Dead";
+}
+```
+
 * __[Find all occurrences of an element in an array](https://www.codewars.com/kata/59a9919107157a45220000e1/train/javascript/)__
 ```javascript
 const findAll = (array, n) => {
