@@ -1,5 +1,21 @@
 ### Code challenges 7 kyu
 
+* __[Get initials from person name](https://www.codewars.com/kata/57b56af6b69bfcffb80000d7/train/javascript/)__
+```javascript
+function toInitials(name) {
+  let arr = [];
+
+  for (let i = 0; i < name.length; i++) {
+    if (name[i] === ' ' || name[i] === '.') {
+      continue;
+    } else if (name[i] === name[i].toUpperCase()) {
+      arr.push(name[i] + '.')
+    }
+  }
+  return arr.join(' ');
+}
+```
+
 * __[Bumps in the Road](https://www.codewars.com/kata/57ed30dde7728215300005fa/train/javascript/)__
 ```javascript
 function bump(x) {
