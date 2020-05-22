@@ -1,5 +1,22 @@
 ### Code challenges 6 kyu
 
+* __[Merge two arrays](https://www.codewars.com/kata/583af10620dda4da270000c5/train/javascript/)__
+```javascript
+function mergeArrays(a, b) {
+  const arr = [];
+
+  for (let i = 0; i < (a.length + b.length); i++) {
+    if(a[i] !== undefined) {
+      arr.push(a[i])
+    } 
+    if(b[i] !== undefined) {
+      arr.push(b[i])
+    } 
+  }
+  return arr;
+}
+```
+
 * __[Multiples of 3 or 5](https://www.codewars.com/kata/514b92a657cdc65150000006/train/javascript/)__
 ```javascript
 function solution(number) {
