@@ -1,5 +1,18 @@
 ### Code challenges 7 kyu
 
+* __[Unique string characters](https://www.codewars.com/kata/5a262cfb8f27f217f700000b/train/javascript/)__
+```javascript
+function solve(a,b){
+  a = a.split('');
+  b = b.split('');
+
+  const difA = a.filter(x => b.indexOf(x) === -1);
+  const difB = b.filter(x => a.indexOf(x) === -1);
+
+  return [...difA, ...difB].join('');
+};
+```
+
 * __[Get initials from person name](https://www.codewars.com/kata/57b56af6b69bfcffb80000d7/train/javascript/)__
 ```javascript
 function toInitials(name) {
