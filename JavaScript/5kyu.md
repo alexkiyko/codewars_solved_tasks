@@ -1,5 +1,24 @@
 ### Code challenges 5 kyu
 
+* __[Convert PascalCase string into snake_case](https://www.codewars.com/kata/529b418d533b76924600085d/train/javascript/)__
+```javascript
+function toUnderscore(s) {
+  let res ='';
+  let first = Number(s[0]) ? s[0].toString() : s[0].toLowerCase();
+
+  for (let i = 1; i < s.length; i++) {
+    if (s[i] === s[i].toUpperCase() && !Number(s[i])) {
+      res += '_' + s[i].toLowerCase();
+    } else if (Number(s[i])) {
+      res += s[i];
+    } else {
+      res += s[i];
+    }
+  }
+  return first + res;
+}
+```
+
 * __[Where my anagrams at?](https://www.codewars.com/kata/523a86aa4230ebb5420001e1/train/javascript/)__
 ```javascript
 function anagrams(word, words) {
