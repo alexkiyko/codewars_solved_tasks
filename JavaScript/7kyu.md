@@ -1,5 +1,19 @@
 ### Code challenges 7 kyu
 
+* __[Coding Meetup #1 - Higher-Order Functions Series - Count the number of JavaScript developers coming from Europe](https://www.codewars.com/kata/582746fa14b3892727000c4f/train/javascript)__
+```javascript
+function countDevelopers(list) {
+  let count = 0;
+
+  for (let i = 0; i < list.length; i++) {
+    if(list[i].continent === 'Europe' && list[i].language === 'JavaScript') {
+      count++;
+    }
+  }
+  return count;
+}
+```
+
 * __[Unique string characters](https://www.codewars.com/kata/5a262cfb8f27f217f700000b/train/javascript/)__
 ```javascript
 function solve(a,b){
