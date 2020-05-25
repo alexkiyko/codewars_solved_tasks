@@ -1,5 +1,15 @@
 ### Code challenges 7 kyu
 
+* __[Are the numbers in order?](https://www.codewars.com/kata/56b7f2f3f18876033f000307/train/javascript)__
+```javascript
+function inAscOrder(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if(arr[i] > arr[i + 1]) return false;
+  }
+  return true;
+}
+```
+
 * __[Coding Meetup #1 - Higher-Order Functions Series - Count the number of JavaScript developers coming from Europe](https://www.codewars.com/kata/582746fa14b3892727000c4f/train/javascript)__
 ```javascript
 function countDevelopers(list) {
