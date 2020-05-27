@@ -1,5 +1,21 @@
 ### Code challenges 7 kyu
 
+* __[Sum of Array Averages](https://www.codewars.com/kata/56d5166ec87df55dbe000063/train/javascript)__
+```javascript
+const sumAverage = (arr) => {
+  let sum = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    sum += avg(arr[i]);
+  }
+  return Math.floor(sum);
+};
+
+function avg(array) {
+  return array.reduce((acc, cur) => acc + cur, 0) / array.length;
+}
+```
+
 * __[Are the numbers in order?](https://www.codewars.com/kata/56b7f2f3f18876033f000307/train/javascript)__
 ```javascript
 function inAscOrder(arr) {
