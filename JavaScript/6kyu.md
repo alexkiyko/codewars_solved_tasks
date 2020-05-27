@@ -1,5 +1,13 @@
 ### Code challenges 6 kyu
 
+* __[Find the unique number](https://www.codewars.com/kata/585d7d5adb20cf33cb000235/train/javascript/)__
+```javascript
+function findUniq(arr) {
+  const filtered = arr.filter(el => arr.indexOf(el) === arr.lastIndexOf(el));
+  return filtered[0];
+}
+```
+
 * __[Merge two arrays](https://www.codewars.com/kata/583af10620dda4da270000c5/train/javascript/)__
 ```javascript
 function mergeArrays(a, b) {
