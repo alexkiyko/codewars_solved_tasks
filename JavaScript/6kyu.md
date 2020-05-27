@@ -1,5 +1,26 @@
 ### Code challenges 6 kyu
 
+* __[Counting Duplicates](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/javascript/)__
+```javascript
+var duplicateCount = function(iterable) {
+  iterable = iterable.toLowerCase();
+  const obj = {};
+
+  for (let i = 0; i < iterable.length; i++) {
+    obj[iterable[i]] ? obj[iterable[i]]+= 1 : obj[iterable[i]] = 1;
+  }
+
+  let count  = 0;
+
+  for (let key in obj) {
+    if (obj[key] > 1) {
+      count++;
+    }
+  }
+  return count;
+};
+```
+
 * __[Find the unique number](https://www.codewars.com/kata/585d7d5adb20cf33cb000235/train/javascript/)__
 ```javascript
 function findUniq(arr) {
