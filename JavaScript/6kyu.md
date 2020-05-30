@@ -1,5 +1,18 @@
 ### Code challenges 6 kyu
 
+* __[Replace With Alphabet Position](https://www.codewars.com/kata/546f922b54af40e1e90001da/train/javascript/)__
+```javascript
+function alphabetPosition(text) {
+  text = text.toLowerCase().replace(/[^a-z]/g, '');
+  let alphabetNumbers = '';
+
+  for (let i = 0; i < text.length; i++) {
+    alphabetNumbers += text.charCodeAt(i) - 96 + ' ';
+  }
+  return alphabetNumbers.trim();
+}
+```
+
 * __[Counting Duplicates](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/javascript/)__
 ```javascript
 var duplicateCount = function(iterable) {
