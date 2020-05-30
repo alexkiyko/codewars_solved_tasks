@@ -1,5 +1,14 @@
 ### Code challenges 7 kyu
 
+* __[Responsible Drinking](https://www.codewars.com/kata/5aee86c5783bb432cd000018/train/javascript/)__
+```javascript
+function hydrate(s) {
+  s = s.replace(/[^1-9]/g, '');
+  let count = s.split('').reduce((acc, cur) => acc + Number(cur), 0);
+  return count > 1 ? `${count} glasses of water` : '1 glass of water';
+}
+```
+
 * __[Find the Capitals](https://www.codewars.com/kata/53573877d5493b4d6e00050c/train/javascript/)__
 ```javascript
 function capital(capitals){
