@@ -1,5 +1,22 @@
 ### Code challenges 6 kyu
 
+* __[Two Sum](https://www.codewars.com/kata/52c31f8e6605bcc646000082/train/javascript)__
+```javascript
+function twoSum(numbers, target) {
+  let obj = {};
+  let res = [];
+
+  for (let i = 0; i < numbers.length; i++) {
+    if (obj[numbers[i]] !== undefined) {
+      res.push(obj[numbers[i]], i);
+    } else {
+      obj[target - numbers[i]] = i;
+    }
+  }
+  return res;
+}
+```
+
 * __[Replace With Alphabet Position](https://www.codewars.com/kata/546f922b54af40e1e90001da/train/javascript/)__
 ```javascript
 function alphabetPosition(text) {
