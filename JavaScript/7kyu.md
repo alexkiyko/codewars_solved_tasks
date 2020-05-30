@@ -1,5 +1,17 @@
 ### Code challenges 7 kyu
 
+* __[Find the Capitals](https://www.codewars.com/kata/53573877d5493b4d6e00050c/train/javascript/)__
+```javascript
+function capital(capitals){
+  let arr = [];
+
+  for (let i = 0; i < capitals.length; i++) {
+    arr.push(`The capital of ${capitals[i].country || capitals[i].state} is ${capitals[i].capital}`);
+  }
+  return arr;
+}
+```
+
 * __[Sum of Array Averages](https://www.codewars.com/kata/56d5166ec87df55dbe000063/train/javascript)__
 ```javascript
 const sumAverage = (arr) => {
