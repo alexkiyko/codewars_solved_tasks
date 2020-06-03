@@ -1,5 +1,23 @@
 ### Code challenges 7 kyu
 
+* __[Complete Series](https://www.codewars.com/kata/580a4001d6df740d61000301/train/javascript/)__
+```javascript
+function completeSeries(arr) {
+  const res = [];
+  const filteredArr = arr
+    .sort((a, b) => a - b)
+    .filter((el, i) => i === arr.indexOf(el));
+    
+  if (arr.length !== filteredArr.length) return [0];
+  let lastNum = filteredArr[filteredArr.length - 1];
+  
+  for (let i = 0; i <= lastNum; i++) {
+    res.push(i);
+  }
+  return res;
+}
+```
+
 * __[Responsible Drinking](https://www.codewars.com/kata/5aee86c5783bb432cd000018/train/javascript/)__
 ```javascript
 function hydrate(s) {
