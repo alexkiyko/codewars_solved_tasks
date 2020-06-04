@@ -1,5 +1,10 @@
 ### Code challenges 7 kyu
 
+* __[Convert an array of strings to array of numbers](https://www.codewars.com/kata/5783d8f3202c0e486c001d23/train/javascript/)__
+```javascript
+const toNumberArray = str => str.map(Number);
+```
+
 * __[Complete Series](https://www.codewars.com/kata/580a4001d6df740d61000301/train/javascript/)__
 ```javascript
 function completeSeries(arr) {
