@@ -1,5 +1,21 @@
 ### Code challenges 6 kyu
 
+* __[Masquerade Waiting Line](https://www.codewars.com/kata/5357edc90d9c5df39a0013bc/train/javascript/)__
+```javascript
+function friendFind(line) {
+  let count = 0;
+
+  for (let i = 0; i < line.length; i++) {
+    if (line[i] === 'red') {
+      if(line[i - 2] === 'blue' && line[i - 1] === 'blue') count++;
+      else if (line[i - 1] === 'blue' && line[i + 1] === 'blue') count++;
+      else if (line[i + 1] === 'blue' && line[i + 2] === 'blue') count++;
+    }
+  }
+  return count;
+}
+```
+
 * __[Two Sum](https://www.codewars.com/kata/52c31f8e6605bcc646000082/train/javascript)__
 ```javascript
 function twoSum(numbers, target) {
