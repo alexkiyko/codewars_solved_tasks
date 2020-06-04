@@ -1,5 +1,19 @@
 ### Code challenges 7 kyu
 
+* __[Player Contact Manager](https://www.codewars.com/kata/5b203de891c7469b520000b4/train/javascript/)__
+```javascript
+function playerManager(players) {
+  if (!players) return [];
+  const playersArr = players.split(',');
+  const arr = [];
+
+  for (let i = 0; i < playersArr.length; i+=2) {
+    arr.push({ player: playersArr[i].trim(), contact: +playersArr[i + 1] });
+  }
+  return arr;
+}
+```
+
 * __[Convert an array of strings to array of numbers](https://www.codewars.com/kata/5783d8f3202c0e486c001d23/train/javascript/)__
 ```javascript
 const toNumberArray = str => str.map(Number);
