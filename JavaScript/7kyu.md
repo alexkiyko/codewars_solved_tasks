@@ -1,5 +1,13 @@
 ### Code challenges 7 kyu
 
+* __[Numerical Palindrome #1](https://www.codewars.com/kata/58ba6fece3614ba7c200017f/train/javascript/)__
+```javascript
+function palindrome(num) {
+  if (typeof num !== 'number' || num < 0) return 'Not valid';
+  return num.toString().split('').reverse().join('') === num.toString();
+}
+```
+
 * __[Player Contact Manager](https://www.codewars.com/kata/5b203de891c7469b520000b4/train/javascript/)__
 ```javascript
 function playerManager(players) {
@@ -7,7 +15,7 @@ function playerManager(players) {
   const playersArr = players.split(',');
   const arr = [];
 
-  for (let i = 0; i < playersArr.length; i+=2) {
+  for (let i = 0; i < playersArr.length; i += 2) {
     arr.push({ player: playersArr[i].trim(), contact: +playersArr[i + 1] });
   }
   return arr;
