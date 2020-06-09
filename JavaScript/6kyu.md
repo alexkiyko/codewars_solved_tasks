@@ -1,5 +1,22 @@
 ### Code challenges 6 kyu
 
+* __[Extract last names of people named Michael](https://www.codewars.com/kata/580741302e14acaef900015a/train/javascript/)__
+```javascript
+function getMichaelLastName(inputText) {
+  const input = inputText.split(' ');
+  const res = [];
+
+  for (let i = 0; i < input.length; i++) {
+    let name = input[i];
+    let lastName = input[i + 1];
+    if (name === 'Michael' && lastName[0] === lastName[0].toUpperCase()) {
+      res.push(lastName.replace(/[!?,.]/g, ''));
+    }
+  }
+  return res;
+}
+```
+
 * __[Masquerade Waiting Line](https://www.codewars.com/kata/5357edc90d9c5df39a0013bc/train/javascript/)__
 ```javascript
 function friendFind(line) {
