@@ -1,5 +1,23 @@
 ### Code challenges 6 kyu
 
+* __[Adjacent repeated words in a string](https://www.codewars.com/kata/5245a9138ca049e9a10007b8/train/javascript/)__
+```javascript
+function countAdjacentPairs(str) {
+  const arr =str.toLowerCase().split(' ');
+  let count = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === arr[i + 1]) {
+      if (arr[i + 1] === arr[i + 2]) {
+        continue
+      }
+      count++;
+    }
+  }
+  return count;
+}
+```
+
 * __[Extract last names of people named Michael](https://www.codewars.com/kata/580741302e14acaef900015a/train/javascript/)__
 ```javascript
 function getMichaelLastName(inputText) {
