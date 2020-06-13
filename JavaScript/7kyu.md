@@ -1,8 +1,15 @@
 ### Code challenges 7 kyu
 
+* __[The Ladies of ENIAC](https://www.codewars.com/kata/56d31aaefd3a52902a000d66/train/javascript/)__
+```javascript
+function radLadies(name) {
+  return name.replace(/[^! a-zA-Z]/g, '').toUpperCase();
+}
+```
+
 * __[Vowel one](https://www.codewars.com/kata/580751a40b5a777a200000a1/train/javascript/)__
 ```javascript
-function vowelOne(s){
+function vowelOne(s) {
   s = s.toLowerCase();
   let res = '';
 
