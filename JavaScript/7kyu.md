@@ -1,5 +1,27 @@
 ### Code challenges 7 kyu
 
+* __[Vowel one](https://www.codewars.com/kata/580751a40b5a777a200000a1/train/javascript/)__
+```javascript
+function vowelOne(s){
+  s = s.toLowerCase();
+  let res = '';
+
+  const vowels = {
+    a: true,
+    e: true,
+    i: true,
+    o: true,
+    u: true
+  };
+
+  for (let i = 0; i < s.length; i++) {
+    if (vowels[s[i]]) res += 1;
+    else res += 0;
+  }
+  return res;
+}
+```
+
 * __[Say hello!](https://www.codewars.com/kata/55955a48a4e9c1a77500005a/train/javascript/)__
 ```javascript
 function greet(name) {
