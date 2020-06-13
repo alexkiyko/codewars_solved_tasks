@@ -1,5 +1,13 @@
 ### Code challenges 7 kyu
 
+* __[Say hello!](https://www.codewars.com/kata/55955a48a4e9c1a77500005a/train/javascript/)__
+```javascript
+function greet(name) {
+  if (name === null || name === '') return null;
+  return `hello ${name}!`;
+}
+```
+
 * __[Numerical Palindrome #1](https://www.codewars.com/kata/58ba6fece3614ba7c200017f/train/javascript/)__
 ```javascript
 function palindrome(num) {
