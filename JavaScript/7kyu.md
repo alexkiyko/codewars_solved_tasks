@@ -1,5 +1,13 @@
 ### Code challenges 7 kyu
 
+* __[Largest pair sum in array](https://www.codewars.com/kata/556196a6091a7e7f58000018/train/javascript/)__
+```javascript
+function largestPairSum(numbers) {
+  const sorted = numbers.sort((a, b) => b - a);
+  return sorted[0] + sorted[1];
+}
+```
+
 * __[Exclamation marks series #8: Move all exclamation marks to the end of the sentence](https://www.codewars.com/kata/57fafd0ed80daac48800019f/train/javascript/)__
 ```javascript
 function remove(s){
