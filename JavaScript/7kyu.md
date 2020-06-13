@@ -1,5 +1,20 @@
 ### Code challenges 7 kyu
 
+* __[Love vs friendship](https://www.codewars.com/kata/59706036f6e5d1e22d000016/train/javascript/)__
+```javascript
+function wordsToMarks(string) {
+  const alp = 'abcdefghijklmnopqrstuvwxyz';
+  let sum = 0;
+
+  for (let i = 0; i < string.length; i++) {
+    if (alp.indexOf(string[i]) !== -1) {
+      sum += alp.indexOf(string[i]) + 1;
+    }
+  }
+  return sum;
+}
+```
+
 * __[The Ladies of ENIAC](https://www.codewars.com/kata/56d31aaefd3a52902a000d66/train/javascript/)__
 ```javascript
 function radLadies(name) {
