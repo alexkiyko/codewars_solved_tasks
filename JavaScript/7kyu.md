@@ -1,5 +1,19 @@
 ### Code challenges 7 kyu
 
+* __[Exclamation marks series #8: Move all exclamation marks to the end of the sentence](https://www.codewars.com/kata/57fafd0ed80daac48800019f/train/javascript/)__
+```javascript
+function remove(s){
+  let symb = '';
+  let str = '';
+
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === '!') symb += s[i];
+    else str += s[i];
+  }
+  return str + symb;
+}
+```
+
 * __[Exclamation marks series #7: Remove words from the sentence if it contains one exclamation mark](https://www.codewars.com/kata/57fafb6d2b5314c839000195/train/javascript)__
 ```javascript
 function count(str) {
