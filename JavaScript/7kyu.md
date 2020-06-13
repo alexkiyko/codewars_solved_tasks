@@ -1,5 +1,22 @@
 ### Code challenges 7 kyu
 
+* __[Exclamation marks series #7: Remove words from the sentence if it contains one exclamation mark](https://www.codewars.com/kata/57fafb6d2b5314c839000195/train/javascript)__
+```javascript
+function count(str) {
+  return str.replace(/[^!]/g, '').length;
+}
+
+function remove(s){
+  let symb = [];
+  s = s.split(' ');
+
+  for (let i = 0; i < s.length; i++) {
+    if (count(s[i]) !== 1) symb.push(s[i]);
+  }
+  return symb.join(' ');
+}
+```
+
 * __[Love vs friendship](https://www.codewars.com/kata/59706036f6e5d1e22d000016/train/javascript/)__
 ```javascript
 function wordsToMarks(string) {
