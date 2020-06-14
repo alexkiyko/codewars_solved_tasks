@@ -1,5 +1,25 @@
 ### Code challenges 6 kyu
 
+* __[Duplicate Encoder](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/javascript/)__
+```javascript
+function duplicateEncode(word) {
+  word = word.toLowerCase();
+  const obj = {};
+  let res = '';
+
+  for (let i = 0; i < word.length; i++) {
+    if (obj[word[i]]) obj[word[i]] += 1;
+    else obj[word[i]] = 1;
+  }
+
+  for (let i = 0; i < word.length; i++) {
+    if (obj[word[i]] === 1) res += '(';
+    else res += ')';
+  }
+  return res;
+}
+```
+
 * __[Adjacent repeated words in a string](https://www.codewars.com/kata/5245a9138ca049e9a10007b8/train/javascript/)__
 ```javascript
 function countAdjacentPairs(str) {
