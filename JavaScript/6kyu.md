@@ -1,5 +1,27 @@
 ### Code challenges 6 kyu
 
+* __[Consonant value](https://www.codewars.com/kata/59c633e7dcc4053512000073/train/javascript/)__
+```javascript
+function solve(s) {
+  let count = 0;
+  let max = 0;
+  let obj = {
+    a: true,
+    e: true,
+    i: true,
+    o: true,
+    u: true,
+  };
+  
+  for (let i = 0; i < s.length; i++) {
+    if (obj[s[i]]) count = 0;
+    else count += s[i].charCodeAt(0) - 96;
+    if (count > max) max = count;
+  }
+  return max;
+}
+```
+
 * __[Duplicate Encoder](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/javascript/)__
 ```javascript
 function duplicateEncode(word) {
