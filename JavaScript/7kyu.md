@@ -1,5 +1,48 @@
 ### Code challenges 7 kyu
 
+* __[Search for letters](https://www.codewars.com/kata/52dbae61ca039685460001ae/train/javascript/)__
+```javascript
+function change(string) {
+  let s = string
+    .toLowerCase()
+    .replace(/[^a-z]/g, '');
+
+  let alp = {
+    a :0,
+    b :0,
+    c: 0,
+    d: 0,
+    e: 0,
+    f: 0,
+    g: 0,
+    h: 0,
+    i: 0,
+    j: 0,
+    k: 0,
+    l: 0,
+    m: 0,
+    n: 0,
+    o: 0,
+    p: 0,
+    q: 0,
+    r: 0,
+    s: 0,
+    t: 0,
+    u: 0,
+    v: 0,
+    w: 0,
+    x: 0,
+    y: 0,
+    z: 0
+  };
+
+  for (let i = 0; i < s.length; i++) {
+    alp[s[i]] = 1;
+  }
+  return Object.values(alp).join('');
+}
+```
+
 * __[Largest pair sum in array](https://www.codewars.com/kata/556196a6091a7e7f58000018/train/javascript/)__
 ```javascript
 function largestPairSum(numbers) {
