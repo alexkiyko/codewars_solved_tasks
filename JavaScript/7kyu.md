@@ -1,5 +1,27 @@
 ### Code challenges 7 kyu
 
+* __[Test's results](https://www.codewars.com/kata/599db0a227ca9f294b0000c8/train/javascript/)__
+```javascript
+function testResult(array) {
+  const avr = +(array.reduce((acc, cur) => acc + cur, 0) / array.length).toFixed(3);
+  const dictionary = {
+    h : 0,
+    a : 0,
+    l : 0
+  };
+
+  for (let i = 0; i < array.length; i++) {
+    let mark = array[i];
+    if (mark >= 9) dictionary.h++;
+    else if (mark === 7 || mark === 8) dictionary.a++;
+    else dictionary.l++;
+  }
+  
+  if (dictionary.a === 0 && dictionary.l === 0) return [avr, dictionary, 'They did well'];
+  else return [avr, dictionary];
+}
+```
+
 * __[Dictionary from two lists](https://www.codewars.com/kata/5533c2a50c4fea6832000101/train/javascript/)__
 ```javascript
 function createDict(keys, values) {
