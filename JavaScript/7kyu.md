@@ -1,5 +1,19 @@
 ### Code challenges 7 kyu
 
+* __[Find the middle element](https://www.codewars.com/kata/545a4c5a61aa4c6916000755/train/javascript/)__
+```javascript
+var gimme = function (inputArray) {
+  const max = Math.max(...inputArray);
+  const min = Math.min(...inputArray);
+
+  for (let i = 0; i < inputArray.length; i++) {
+    if (inputArray[i] !== max && inputArray[i] !== min) {
+      return i;
+    }
+  }
+};
+```
+
 * __[Search for letters](https://www.codewars.com/kata/52dbae61ca039685460001ae/train/javascript/)__
 ```javascript
 function change(string) {
