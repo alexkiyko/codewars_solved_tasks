@@ -1,5 +1,17 @@
 ### Code challenges 7 kyu
 
+* __[Dictionary from two lists](https://www.codewars.com/kata/5533c2a50c4fea6832000101/train/javascript/)__
+```javascript
+function createDict(keys, values) {
+  const dictionary = {};
+  
+  for (let i = 0; i < keys.length; i++) {
+    dictionary[keys[i]] = i < values.length ? values[i] : null;
+  }
+  return dictionary;
+}
+```
+
 * __[Difference between two collections](https://www.codewars.com/kata/594093784aafb857f0000122/train/javascript/)__
 ```javascript
 function diff(a, b){
