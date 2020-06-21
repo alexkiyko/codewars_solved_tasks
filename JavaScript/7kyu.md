@@ -1,5 +1,22 @@
 ### Code challenges 7 kyu
 
+* __[Difference between two collections](https://www.codewars.com/kata/594093784aafb857f0000122/train/javascript/)__
+```javascript
+function diff(a, b){
+  const res = [];
+
+  for (let i = 0; i < a.length; i++) {
+    if (b.indexOf(a[i]) === -1) res.push(a[i]);
+  }
+  
+  for (let i = 0; i < b.length; i++) {
+    if (a.indexOf(b[i]) === -1) res.push(b[i]);
+  }
+
+  return [...new Set(res)].sort();
+}
+```
+
 * __[Find the middle element](https://www.codewars.com/kata/545a4c5a61aa4c6916000755/train/javascript/)__
 ```javascript
 var gimme = function (inputArray) {
