@@ -1,5 +1,28 @@
 ### Code challenges 5 kyu
 
+* __[Josephus Permutation](https://www.codewars.com/kata/5550d638a99ddb113e0000a2/train/javascript/)__
+```javascript
+function josephus(items,k) {
+  let res = [];
+  let count = 1;
+
+  while (items.length !== 0) {
+  
+    for (let i = 0; i < items.length; i++) {
+      if (count === k) {
+        res.push(items[i]);
+        items.splice(i, 1);
+        count = 0;
+        i = i - 1;
+      }
+      count++;
+    }
+    
+  }
+  return res;
+}
+```
+
 * __[Convert PascalCase string into snake_case](https://www.codewars.com/kata/529b418d533b76924600085d/train/javascript/)__
 ```javascript
 function toUnderscore(s) {
