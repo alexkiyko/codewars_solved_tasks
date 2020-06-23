@@ -1,5 +1,12 @@
 ### Code challenges 7 kyu
 
+* __[Get key/value pairs as arrays](https://www.codewars.com/kata/515dfd2f1db09667a0000003/train/javascript/)__
+```javascript
+function keysAndValues(data) {
+  return [Object.keys(data), Object.values(data)];
+}
+```
+
 * __[Test's results](https://www.codewars.com/kata/599db0a227ca9f294b0000c8/train/javascript/)__
 ```javascript
 function testResult(array) {
