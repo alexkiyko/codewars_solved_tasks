@@ -1,5 +1,14 @@
 ### Code challenges 7 kyu
 
+* __[Automorphic Number (Special Numbers Series #6)](https://www.codewars.com/kata/5a58d889880385c2f40000aa/train/javascript/)__
+```javascript
+function automorphic(n) {
+  let res = n * n;
+  let lengthOfN = n.toString().length;
+  return res.toString().slice(-lengthOfN) === n.toString() ? 'Automorphic' : 'Not!!';
+}
+```
+
 * __[Get key/value pairs as arrays](https://www.codewars.com/kata/515dfd2f1db09667a0000003/train/javascript/)__
 ```javascript
 function keysAndValues(data) {
