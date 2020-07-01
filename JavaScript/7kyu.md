@@ -1,5 +1,22 @@
 ### Code challenges 7 kyu
 
+* __[C.Wars](https://www.codewars.com/kata/55968ab32cf633c3f8000008/train/javascript/)__
+```javascript
+function initials(n) {
+  let res = '';
+  const arr = n.split(' ');
+
+  arr.forEach(el => {
+    if (el === arr[arr.length -1]) {
+      res += el[0].toUpperCase() + el.slice(1);
+    } else {
+      res += el[0].toUpperCase() + '.';
+    }
+  });
+  return res;
+}
+```
+
 * __[Automorphic Number (Special Numbers Series #6)](https://www.codewars.com/kata/5a58d889880385c2f40000aa/train/javascript/)__
 ```javascript
 function automorphic(n) {
