@@ -1,5 +1,16 @@
 ### Code challenges 7 kyu
 
+* __[Naughty or Nice?](https://www.codewars.com/kata/52a6b34e43c2484ac10000cd/train/javascript/)__
+```javascript
+function getNiceNames(people) {
+  return people.filter(person => person.wasNice === true).map(person => person.name);
+}
+
+function getNaughtyNames(people) {
+  return people.filter(person => person.wasNice === false).map(person => person.name);
+}
+```
+
 * __[Enumerable Magic #5- True for Just One?](https://www.codewars.com/kata/54599705cbae2aa60b0011a4/train/javascript/)__
 ```javascript
 function one(arr, fun) {
