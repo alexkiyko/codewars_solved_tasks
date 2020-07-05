@@ -1,5 +1,13 @@
 ### Code challenges 7 kyu
 
+* __[Enumerable Magic #5- True for Just One?](https://www.codewars.com/kata/54599705cbae2aa60b0011a4/train/javascript/)__
+```javascript
+function one(arr, fun) {
+  const filtered = arr.filter(el => fun(el));
+  return filtered.length === 1;
+}
+```
+
 * __[Indexed capitalization](https://www.codewars.com/kata/59cfc09a86a6fdf6df0000f1/train/javascript/)__
 ```javascript
 function capitalize(s,arr) {
