@@ -1,5 +1,21 @@
 ### Code challenges 7 kyu
 
+* __[Indexed capitalization](https://www.codewars.com/kata/59cfc09a86a6fdf6df0000f1/train/javascript/)__
+```javascript
+function capitalize(s,arr) {
+  let res = '';
+
+  for (let i = 0; i < s.length; i++) {
+    if (arr.includes(i)) {
+      res += s[i].toUpperCase();
+    } else {
+      res += s[i];
+    }
+  }
+  return res;
+}
+```
+ 
 * __[Sentences should start with capital letters.](https://www.codewars.com/kata/5bf774a81505a7413400006a/train/javascript/)__
 ```javascript
 function fix(paragraph) {
