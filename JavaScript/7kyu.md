@@ -1,5 +1,13 @@
 ### Code challenges 7 kyu
 
+* __[Reverse the bits in an integer](https://www.codewars.com/kata/5959ec605595565f5c00002b/train/javascript/)__
+```javascript
+function reverseBits (n) {
+  const num = n.toString(2).split('').reverse().join('');
+  return parseInt(num, 2)
+}
+```
+
 * __[Product of Array Items](https://www.codewars.com/kata/5901f361927288d961000013/train/javascript/)__
 ```javascript
 function product(values) {
