@@ -1,5 +1,13 @@
 ### Code challenges 7 kyu
 
+* __[Numbers in strings](https://www.codewars.com/kata/59dd2c38f703c4ae5e000014/train/javascript/)__
+```javascript
+function solve(s) {
+  const filtered = s.replace(/[^0-9]/g, ' ').split(' ').map(Number);
+  return Math.max(...filtered)
+}
+```
+
 * __[Nickname Generator](https://www.codewars.com/kata/593b1909e68ff627c9000186/train/javascript/)__
 ```javascript
 function nicknameGenerator(name) {
