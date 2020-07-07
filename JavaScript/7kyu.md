@@ -1,5 +1,14 @@
 ### Code challenges 7 kyu
 
+* __[Nickname Generator](https://www.codewars.com/kata/593b1909e68ff627c9000186/train/javascript/)__
+```javascript
+function nicknameGenerator(name) {
+  if (name.length < 4) return 'Error: Name too short';
+  if ('aeiou'.includes(name[2])) return name.slice(0, 4);
+  return name.slice(0, 3);
+}
+```
+
 * __[Reverse the bits in an integer](https://www.codewars.com/kata/5959ec605595565f5c00002b/train/javascript/)__
 ```javascript
 function reverseBits (n) {
