@@ -1,5 +1,13 @@
 ### Code challenges 7 kyu
 
+* __[Product of Array Items](https://www.codewars.com/kata/5901f361927288d961000013/train/javascript/)__
+```javascript
+function product(values) {
+  if (!values || values.length === 0) return null;
+  return values.reduce((a, c) => a * c, 1);
+}
+```
+
 * __[Naughty or Nice?](https://www.codewars.com/kata/52a6b34e43c2484ac10000cd/train/javascript/)__
 ```javascript
 function getNiceNames(people) {
