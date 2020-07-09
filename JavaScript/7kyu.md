@@ -1,5 +1,19 @@
 ### Code challenges 7 kyu
 
+* __[Arithmetic progression](https://www.codewars.com/kata/55caf1fd8063ddfa8e000018/train/javascript)__
+```javascript
+function arithmeticSequenceElements(a,r,n) {
+  const first = a;
+  const arr = [];
+  
+  for (let i = 1; i < n; i++ ) {
+    arr.push(a + r);
+    a = a + r;
+  }
+  return [first, ...arr].join(', ');
+}
+```
+
 * __[Numbers in strings](https://www.codewars.com/kata/59dd2c38f703c4ae5e000014/train/javascript/)__
 ```javascript
 function solve(s) {
