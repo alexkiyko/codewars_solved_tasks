@@ -1,5 +1,28 @@
 ### Code challenges 6 kyu
 
+*  __[Custom Array Filters](https://www.codewars.com/kata/53fc954904a45eda6b00097f/train/javascript/)__
+```javascript
+Array.prototype.even = function(){
+  return this.filter(el => typeof el === 'number' &&  el % 1 === 0 && el % 2 === 0);
+};
+
+Array.prototype.odd = function(){
+  return this.filter(el => typeof el === 'number' && el % 1 === 0 && el % 2 !== 0 );
+};
+
+Array.prototype.under = function(x){
+  return this.filter(el => typeof el === 'number' && el % 1 === 0 && el < x);
+};
+
+Array.prototype.over = function(x){
+  return this.filter(el => typeof el === 'number' && el % 1 === 0 && el > x);
+};
+
+Array.prototype.inRange = function(min,max){
+  return this.filter(el => typeof el === 'number' && el % 1 === 0 && el >= min && el <= max);
+};
+```
+
 * __[Consonant value](https://www.codewars.com/kata/59c633e7dcc4053512000073/train/javascript/)__
 ```javascript
 function solve(s) {
