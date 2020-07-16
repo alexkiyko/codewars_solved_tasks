@@ -1,5 +1,12 @@
 ### Code challenges 7 kyu
 
+* __[Nth power rules them all!](https://www.codewars.com/kata/58aed2cafab8faca1d000e20/train/javascript/)__
+```javascript
+function modifiedSum(a, n) {
+  return a.reduce((a, c) => a + Math.pow(c, n), 0) - a.reduce((a, c) => a + c, 0);
+}
+```
+
 * __[Arithmetic progression](https://www.codewars.com/kata/55caf1fd8063ddfa8e000018/train/javascript)__
 ```javascript
 function arithmeticSequenceElements(a,r,n) {
