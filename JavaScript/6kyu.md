@@ -1,5 +1,20 @@
 ### Code challenges 6 kyu
 
+* __[Reverse every other word in the string](https://www.codewars.com/kata/58d76854024c72c3e20000de/train/javascript/)__
+```javascript
+function reverse(str) {
+  if(str.trim().length === 0) return '';
+  const arr = str.split(' ');
+  const res = [];
+
+  for(let i = 0; i < arr.length; i++) {
+    if (i % 2 !== 0) res.push(arr[i].split('').reverse().join(''));
+    else res.push(arr[i]);
+  }
+  return res.join(' ');
+}
+```
+
 *  __[Custom Array Filters](https://www.codewars.com/kata/53fc954904a45eda6b00097f/train/javascript/)__
 ```javascript
 Array.prototype.even = function(){
