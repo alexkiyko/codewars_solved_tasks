@@ -1,8 +1,27 @@
 ### Code challenges 7 kyu
 
+* __[Double Sort](https://www.codewars.com/kata/57cc79ec484cf991c900018d/train/javascript/)__
+```javascript
+function dbSort(a) {
+  const num = [];
+  const str = [];
+  
+  a.forEach(el => {
+    if (typeof el === 'number') {
+      num.push(el);
+    } else {
+      str.push(el);
+    }
+  })
+  const numSorted = num.sort((a, b) => a - b);
+  const strSorted = str.sort();
+  return [...numSorted,...strSorted];
+}
+```
+
 * __[Sum of Cubes](https://www.codewars.com/kata/59a8570b570190d313000037/train/javascript/)__
 ```javascript
-function sumCubes(n){
+function sumCubes(n) {
   let sum = 0;
   
   for (let i = 1; i <= n; i++) {
