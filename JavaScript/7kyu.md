@@ -1,5 +1,12 @@
 ### Code challenges 7 kyu
 
+* __[Multiply the strings in the array](https://www.codewars.com/kata/59b2963132779166d2001018/train/javascript/)__
+```javascript
+function arrMultiply(arr) {
+  return String(arr.reduce((a, c) => a * c, 1));
+}
+```
+
 * __[All Star Code Challenge #3](https://www.codewars.com/kata/58640340b3a675d9a70000b9/train/javascript/)__
 ```javascript
 var removeVowels = function(str) {
