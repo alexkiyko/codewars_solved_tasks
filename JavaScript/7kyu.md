@@ -1,5 +1,12 @@
 ### Code challenges 7 kyu
 
+* __[All Star Code Challenge #3](https://www.codewars.com/kata/58640340b3a675d9a70000b9/train/javascript/)__
+```javascript
+var removeVowels = function(str) {
+  return str.replace(/[aeiou]/gi, ''); 
+}
+```
+
 * __[Double Sort](https://www.codewars.com/kata/57cc79ec484cf991c900018d/train/javascript/)__
 ```javascript
 function dbSort(a) {
