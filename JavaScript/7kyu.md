@@ -1,5 +1,17 @@
 ### Code challenges 7 kyu
 
+* __[Sum of Cubes](https://www.codewars.com/kata/59a8570b570190d313000037/train/javascript/)__
+```javascript
+function sumCubes(n){
+  let sum = 0;
+  
+  for (let i = 1; i <= n; i++) {
+    sum += i * i * i;
+  }
+  return sum;
+}
+```
+
 * __[Nth power rules them all!](https://www.codewars.com/kata/58aed2cafab8faca1d000e20/train/javascript/)__
 ```javascript
 function modifiedSum(a, n) {
