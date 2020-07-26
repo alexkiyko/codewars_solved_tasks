@@ -1,5 +1,16 @@
 ### Code challenges 7 kyu
 
+* __[Simple string characters](https://www.codewars.com/kata/5a29a0898f27f2d9c9000058/train/javascript/)__
+```javascript
+function solve(str) {
+  const numbers = str.replace(/[^0-9]/g, '').length;
+  const symbols = str.replace(/[a-zA-Z0-9]/g, '').length;
+  const upperCaseLetters = str.replace(/[^A-Z]/g, '').length;
+  const lowerCaseLetters = str.replace(/[^a-z]/g, '').length;
+  return [upperCaseLetters, lowerCaseLetters, numbers, symbols];
+}
+```
+
 * __[Show multiples of 2 numbers within a range](https://www.codewars.com/kata/583989556754d6f4c700018e/train/javascript/)__
 ```javascript
 function multiples(s1,s2,s3){
