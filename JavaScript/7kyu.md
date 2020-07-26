@@ -1,5 +1,13 @@
 ### Code challenges 7 kyu
 
+* __[Array element parity](https://www.codewars.com/kata/5a092d9e46d843b9db000064/train/javascript/)__
+```javascript
+function solve(arr) {
+  const filtered = arr.filter(el => arr.indexOf(-el) === -1);
+  return filtered[0];
+};
+```
+
 * __[Simple string characters](https://www.codewars.com/kata/5a29a0898f27f2d9c9000058/train/javascript/)__
 ```javascript
 function solve(str) {
