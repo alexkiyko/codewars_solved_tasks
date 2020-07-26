@@ -1,5 +1,12 @@
 ### Code challenges 8 kyu
 
+* __[Short Long Short](https://www.codewars.com/kata/50654ddff44f800200000007/train/javascript/)__
+```javascript
+function solution(a, b) {
+  return a.length > b.length ? b + a + b : a + b + a;
+}
+```
+
 * __[Merge two sorted arrays into one](https://www.codewars.com/kata/5899642f6e1b25935d000161/train/javascript/)__
 ```javascript
 function mergeArrays(arr1, arr2) {
