@@ -1,5 +1,13 @@
 ### Code challenges 7 kyu
 
+* __[max diff - easy](https://www.codewars.com/kata/588a3c3ef0fbc9c8e1000095/train/javascript/)__
+```javascript
+function maxDiff(list) {
+  if (list.length === 0) return 0;
+  return Math.max(...list) - Math.min(...list);
+}
+```
+
 * __[Array element parity](https://www.codewars.com/kata/5a092d9e46d843b9db000064/train/javascript/)__
 ```javascript
 function solve(arr) {
