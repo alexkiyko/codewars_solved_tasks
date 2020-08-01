@@ -1,5 +1,15 @@
 ### Code challenges 7 kyu
 
+* __[By 3, or not by 3? That is the question . . .](https://www.codewars.com/kata/59f7fc109f0e86d705000043/train/javascript/)__
+```javascript
+function divisibleByThree(str) {
+  const sum = str
+    .split('')
+    .reduce((acc, cur) => acc + Number(cur), 0);
+  return sum % 3 === 0;
+}
+```
+
 * __[Fix string case](https://www.codewars.com/kata/5b180e9fedaa564a7000009a/train/javascript/)__
 ```javascript
 function solve(s) {
