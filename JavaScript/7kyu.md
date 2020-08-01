@@ -1,5 +1,19 @@
 ### Code challenges 7 kyu
 
+* __[Fix string case](https://www.codewars.com/kata/5b180e9fedaa564a7000009a/train/javascript/)__
+```javascript
+function solve(s) {
+  let countLowerCase = 0;
+  let countUpperCase = 0;
+
+  for (let i = 0; i < s.length; i++) {
+    if (s[i].toUpperCase() === s[i]) countUpperCase++;
+    else countLowerCase++;
+  }
+  return countLowerCase >= countUpperCase ? s.toLowerCase() : s.toUpperCase();
+}
+```
+
 * __[max diff - easy](https://www.codewars.com/kata/588a3c3ef0fbc9c8e1000095/train/javascript/)__
 ```javascript
 function maxDiff(list) {
