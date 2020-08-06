@@ -1,5 +1,14 @@
 ### Code challenges 7 kyu
 
+* __[Anagram Detection](https://www.codewars.com/kata/529eef7a9194e0cbc1000255/train/javascript/)__
+```javascript
+var isAnagram = function(test, original) {
+  test = test.toLowerCase();
+  original = original.toLowerCase();
+  return [...test].sort().join('') === [...original].sort().join('');
+};
+```
+
 * __[By 3, or not by 3? That is the question . . .](https://www.codewars.com/kata/59f7fc109f0e86d705000043/train/javascript/)__
 ```javascript
 function divisibleByThree(str) {
