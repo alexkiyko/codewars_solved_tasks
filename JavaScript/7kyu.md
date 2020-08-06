@@ -1,5 +1,15 @@
 ### Code challenges 7 kyu
 
+* __[Count the Characters](https://www.codewars.com/kata/577ad961ae2807182f000c29/train/javascript/)__
+```javascript
+function countChar(string, char) {
+  return string
+    .toLowerCase()
+    .split('')
+    .filter(el => el === char.toLowerCase()).length;
+}
+```
+
 * __[Count consonants](https://www.codewars.com/kata/564e7fc20f0b53eb02000106/train/javascript/)__
 ```javascript
 function consonantCount(str) {
