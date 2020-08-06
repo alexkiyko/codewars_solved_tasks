@@ -1,5 +1,14 @@
 ### Code challenges 7 kyu
 
+* __[Count consonants](https://www.codewars.com/kata/564e7fc20f0b53eb02000106/train/javascript/)__
+```javascript
+function consonantCount(str) {
+  const vowels = 'aeiou';
+  str = str.replace(/[^a-z]/gi, '');
+  return str.split('').filter(el => vowels.indexOf(el) === -1).length;
+}
+```
+
 * __[Anagram Detection](https://www.codewars.com/kata/529eef7a9194e0cbc1000255/train/javascript/)__
 ```javascript
 var isAnagram = function(test, original) {
