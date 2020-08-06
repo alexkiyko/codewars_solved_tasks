@@ -1,5 +1,14 @@
 ### Code challenges 6 kyu
 
+* __[Valid Phone Number](https://www.codewars.com/kata/525f47c79f2f25a4db000025/train/javascript/)__
+```javascript
+function validPhoneNumber(phoneNumber) {
+  const format = '() -'
+  const res = phoneNumber.replace(/[0-9]/g, '');
+  return format === res;
+}
+```
+
 * __[Reverse every other word in the string](https://www.codewars.com/kata/58d76854024c72c3e20000de/train/javascript/)__
 ```javascript
 function reverse(str) {
