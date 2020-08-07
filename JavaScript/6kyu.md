@@ -1,5 +1,20 @@
 ### Code challenges 6 kyu
 
+* __[Write Number in Expanded Form](https://www.codewars.com/kata/5842df8ccbd22792a4000245/train/javascript/)__
+```javascript
+function expandedForm(num) {
+  let res = '';
+  num = num.toString();
+
+  for (let i = 0; i < num.length; i++) {
+    if (num[i] !== '0') {
+      res += num[i] + '0'.repeat(num.length - i - 1) + ' + ';
+    }
+  }
+  return res.substring(0, res.length - 3)
+}
+```
+
 * __[Valid Phone Number](https://www.codewars.com/kata/525f47c79f2f25a4db000025/train/javascript/)__
 ```javascript
 function validPhoneNumber(phoneNumber) {
