@@ -1,5 +1,25 @@
 ### Code challenges 6 kyu
 
+* __[Sort the odd](https://www.codewars.com/kata/578aa45ee9fd15ff4600090d/train/javascript/)__
+```javascript
+function sortArray(array) {
+  const res = [];
+  const odds = array
+    .filter(el => el % 2 !== 0)
+    .sort((a, b) => a - b);
+
+  array.forEach(el => {
+    if (el % 2 !== 0) {
+      res.push(odds[0]);
+      odds.shift();
+    } else {
+      res.push(el)
+    }
+  });
+  return res;
+}
+```
+
 * __[Write Number in Expanded Form](https://www.codewars.com/kata/5842df8ccbd22792a4000245/train/javascript/)__
 ```javascript
 function expandedForm(num) {
