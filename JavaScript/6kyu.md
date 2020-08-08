@@ -1,5 +1,22 @@
 ### Code challenges 6 kyu
 
+* __[Difference of 2](https://www.codewars.com/kata/5340298112fa30e786000688/train/javascript/)__
+```javascript
+function twosDifference(input){
+ input = input.sort((a, b) => a - b);
+ const res = [];
+  
+ for (let i = 0; i < input.length; i++) {
+   for (let j = i + 1; j < input.length; j++) {
+     if (Math.abs(input[i] - input[j]) === 2) {
+       res.push([input[i], input[j]]);
+     }
+   }
+ }
+ return res;
+}
+```
+
 * __[Sort the odd](https://www.codewars.com/kata/578aa45ee9fd15ff4600090d/train/javascript/)__
 ```javascript
 function sortArray(array) {
