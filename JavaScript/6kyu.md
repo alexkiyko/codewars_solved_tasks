@@ -1,5 +1,22 @@
 ### Code challenges 6 kyu
 
+* __[Find the missing letter](https://www.codewars.com/kata/5839edaa6754d6fec10000a2/train/javascript/)__
+```javascript
+function findMissingLetter(array) {
+  let alp = 'abcdefghijklmnopqrstuvwxyz';
+  if (array[0].toUpperCase() === array[0]) alp = alp.toUpperCase();
+  const start = alp.indexOf(array[0]);
+  const end = alp.indexOf(array[array.length -1]);
+  const str = alp.substring(start, end + 1);
+  
+  for (let i = 0; i < str.length; i++) {
+    if(array.indexOf(str[i]) === -1) {
+      return str[i];
+    }
+  }
+}
+```
+
 * __[Difference of 2](https://www.codewars.com/kata/5340298112fa30e786000688/train/javascript/)__
 ```javascript
 function twosDifference(input){
