@@ -1,5 +1,17 @@
 ### Code challenges 6 kyu
 
+* __[Count letters in string](https://www.codewars.com/kata/5808ff71c7cfa1c6aa00006d/train/javascript/)__
+```javascript
+function letterCount(s){
+  const hash = {};
+
+  for (let letter of s) {
+    hash[letter] ? hash[letter] += 1 : hash[letter] = 1;
+  }
+  return hash;
+}
+```
+
 * __[Find the missing letter](https://www.codewars.com/kata/5839edaa6754d6fec10000a2/train/javascript/)__
 ```javascript
 function findMissingLetter(array) {
