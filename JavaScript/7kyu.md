@@ -1,5 +1,18 @@
 ### Code challenges 7 kyu
 
+* __[Interview Question (easy)](https://www.codewars.com/kata/5b358a1e228d316283001892/train/javascript/)__
+```javascript
+function getStrings(city) {
+  city = city.toLowerCase();
+  const obj = {};
+
+  for (let char of city) {
+    if (char !== ' ') obj[char] ? obj[char] += '*' : obj[char] = '*';
+  }
+  return JSON.stringify(obj).replace(/["{}]/g,'')
+}
+```
+
 * __[Count the Characters](https://www.codewars.com/kata/577ad961ae2807182f000c29/train/javascript/)__
 ```javascript
 function countChar(string, char) {
