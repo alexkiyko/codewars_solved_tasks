@@ -1,5 +1,17 @@
 ### Code challenges 7 kyu
 
+* __[Diagonals sum](https://www.codewars.com/kata/5592fc599a7f40adac0000a8/train/javascript/)__
+```javascript
+function sum(matrix) {
+  let sum = 0;
+  
+  for (let i = 0; i < matrix.length; i++) {
+    sum += matrix[i][i] + matrix[i].reverse()[i]
+  }
+  return sum;
+}
+```
+
 * __[Simple string reversal II](https://www.codewars.com/kata/5a8d1c82373c2e099d0000ac/train/javascript/)__
 ```javascript
 function solve(st,a,b) {
