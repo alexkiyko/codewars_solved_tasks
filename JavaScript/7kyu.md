@@ -1,5 +1,16 @@
 ### Code challenges 7 kyu
 
+* __[Simple string reversal II](https://www.codewars.com/kata/5a8d1c82373c2e099d0000ac/train/javascript/)__
+```javascript
+function solve(st,a,b) {
+  if (b > st.length) b = st.length;
+  let start = st.slice(0, a);
+  let middle = st.slice(a,b + 1).split('').reverse().join('');
+  let end = st.slice(b + 1);
+  return start + middle + end;
+}
+```
+
 * __[Interview Question (easy)](https://www.codewars.com/kata/5b358a1e228d316283001892/train/javascript/)__
 ```javascript
 function getStrings(city) {
