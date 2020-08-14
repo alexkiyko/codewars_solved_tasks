@@ -1,5 +1,21 @@
 ### Code challenges 7 kyu
 
+* __[Alternate case](https://www.codewars.com/kata/57a62154cf1fa5b25200031e/train/javascript/)__
+```javascript
+function alternateCase(str) {
+  let res = '';
+  
+  for (let i = 0; i < str.length; i++) {
+    if(str[i] === str[i].toUpperCase()) {
+      res += str[i].toLowerCase();
+    } else {
+      res += str[i].toUpperCase();
+    }
+  }
+  return res;
+}
+```
+
 * __[Diagonals sum](https://www.codewars.com/kata/5592fc599a7f40adac0000a8/train/javascript/)__
 ```javascript
 function sum(matrix) {
