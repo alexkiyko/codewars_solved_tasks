@@ -1,5 +1,10 @@
 ### Code challenges 8 kyu
 
+* __[Take an Arrow to the knee, Functionally](https://www.codewars.com/kata/559f3123e66a7204f000009f/train/javascript/)__
+```javascript
+const ArrowFunc = (arr) => arr.map(el => String.fromCharCode(el)).join('');
+```
+
 * __[Hello Happy Codevarrior!](https://www.codewars.com/kata/53f9ee9f64b19d4b1d0001ed/train/javascript/)__
 ```javascript
 function Warrior(n) {
