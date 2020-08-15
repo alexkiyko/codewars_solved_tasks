@@ -1,5 +1,12 @@
 ### Code challenges 7 kyu
 
+* __[Sort Numbers](https://www.codewars.com/kata/5174a4c0f2769dd8b1000003/train/javascript/)__
+```javascript
+function solution(nums) {
+  return nums === null ? [] : nums.sort((a,b) => a- b);
+}
+```
+
 * __[Alternate case](https://www.codewars.com/kata/57a62154cf1fa5b25200031e/train/javascript/)__
 ```javascript
 function alternateCase(str) {
