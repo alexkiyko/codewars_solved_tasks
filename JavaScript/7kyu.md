@@ -1,5 +1,19 @@
 ### Code challenges 7 kyu
 
+* __[Running out of space](https://www.codewars.com/kata/56576f82ab83ee8268000059/train/javascript/)__
+```javascript
+function spacey(array) {
+  const res = [];
+  let str = '';
+
+  for (let i = 0; i < array.length; i++) {
+    str += array[i];
+    res.push(str);
+  }
+  return res;
+}
+```
+
 * __[Sort Numbers](https://www.codewars.com/kata/5174a4c0f2769dd8b1000003/train/javascript/)__
 ```javascript
 function solution(nums) {
