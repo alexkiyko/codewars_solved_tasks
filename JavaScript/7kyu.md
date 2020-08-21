@@ -1,5 +1,12 @@
 ### Code challenges 7 kyu
 
+* __[Remove anchor from URL](https://www.codewars.com/kata/51f2b4448cadf20ed0000386/train/javascript/)__
+```javascript
+function removeUrlAnchor(url) {
+  return url.includes('#') ? url.substring(0, url.indexOf('#')) : url;
+}
+```
+
 * __[No oddities here](https://www.codewars.com/kata/51fd6bc82bc150b28e0000ce/train/javascript/)__
 ```javascript
 function noOdds( values ) {
