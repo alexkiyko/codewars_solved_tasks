@@ -1,5 +1,12 @@
 ### Code challenges 7 kyu
 
+* __[No oddities here](https://www.codewars.com/kata/51fd6bc82bc150b28e0000ce/train/javascript/)__
+```javascript
+function noOdds( values ) {
+  return values.filter(num => num % 2 === 0);
+}
+```
+
 * __[Case swapping](https://www.codewars.com/kata/5590961e6620c0825000008f/train/javascript/)__
 ```javascript
 function swap(str) {
