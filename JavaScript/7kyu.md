@@ -1,5 +1,15 @@
 ### Code challenges 7 kyu
 
+* __[Case swapping](https://www.codewars.com/kata/5590961e6620c0825000008f/train/javascript/)__
+```javascript
+function swap(str) {
+  return str
+    .split('')
+    .map((char) => char.toUpperCase() === char ? char.toLowerCase() : char.toUpperCase())
+    .join('');
+}
+```
+
 * __[Running out of space](https://www.codewars.com/kata/56576f82ab83ee8268000059/train/javascript/)__
 ```javascript
 function spacey(array) {
