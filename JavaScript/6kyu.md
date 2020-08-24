@@ -1,5 +1,27 @@
 ### Code challenges 6 kyu
 
+* __[Valid Braces](https://www.codewars.com/kata/5277c8a221e209d3f6000b56/train/javascript/)__
+```javascript
+function validBraces(str) {
+ const stack = [];
+ const open = ['(', '{', '['];
+ const close = [')', '}', ']'];
+
+ for (let i = 0; i < str.length; i++) {
+   if (open.includes(str[i])) {
+     stack.push(str[i]);
+   } else {
+     if (close.indexOf(str[i]) === open.indexOf(stack[stack.length -1])) {
+       stack.pop();
+     } else {
+       return false;
+     }
+   }
+ }
+ return stack.length === 0;
+}
+```
+
 * __[Count letters in string](https://www.codewars.com/kata/5808ff71c7cfa1c6aa00006d/train/javascript/)__
 ```javascript
 function letterCount(s){
