@@ -1,5 +1,32 @@
 ### Code challenges 6 kyu
 
+* __[The most common letter](https://www.codewars.com/kata/5a434a9dc5e284724f000011/train/javascript/)__
+```javascript
+function replaceCommon(string, letter) {
+  const obj = {};
+
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] !== ' ') {
+      obj[string[i]] ? obj[string[i]] += 1 : obj[string[i]] = 1;
+    }
+  }
+  
+  const maxVal = Math.max(...Object.values(obj));
+  let mostOftenLetter;
+
+  for (let key in obj) {
+    if (maxVal === obj[key]) {
+      mostOftenLetter = key;
+      break;
+    }
+  }
+  
+  const replace = "regex";
+  const re = new RegExp(mostOftenLetter,"g");
+  return string.replace(re, letter)
+}
+```
+
 * __[Valid Braces](https://www.codewars.com/kata/5277c8a221e209d3f6000b56/train/javascript/)__
 ```javascript
 function validBraces(str) {
