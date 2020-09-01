@@ -1,5 +1,22 @@
 ### Code challenges 7 kyu
 
+* __[Number-Star ladder](https://www.codewars.com/kata/5631213916d70a0979000066/train/javascript/)__
+```javascript
+function pattern(n) {
+  let res = '';
+  let one = '1\n';
+  
+  for (let i = 2; i <= n; i++) {
+    if (i === n) {
+      res += 1 + '*'.repeat(i-1) + i;
+    } else {
+      res += 1 + '*'.repeat(i-1) + i +'\n';
+    }
+  }
+  return one + res;
+}
+```
+
 * __[Coding Meetup #2 - Higher-Order Functions Series - Greet developers](https://www.codewars.com/kata/58279e13c983ca4a2a00002a/train/javascript/)__
 ```javascript
 function greetDevelopers(list) {
