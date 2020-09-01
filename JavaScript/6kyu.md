@@ -1,5 +1,15 @@
 ### Code challenges 6 kyu
 
+* __[TV channels](https://www.codewars.com/kata/5836dce6966f8d1d43000007/train/javascript/)__
+```javascript
+function redarr(arr) {
+  const res = arr
+    .filter((el, i) => i === arr.indexOf(el))
+    .sort();
+  return Object.assign({}, res);
+}
+```
+
 * __[The most common letter](https://www.codewars.com/kata/5a434a9dc5e284724f000011/train/javascript/)__
 ```javascript
 function replaceCommon(string, letter) {
