@@ -1,5 +1,15 @@
 ### Code challenges 7 kyu
 
+* __[Coding Meetup #2 - Higher-Order Functions Series - Greet developers](https://www.codewars.com/kata/58279e13c983ca4a2a00002a/train/javascript/)__
+```javascript
+function greetDevelopers(list) {
+  for (let obj of list) {
+    obj.greeting = `Hi ${obj.firstName}, what do you like the most about ${obj.language}?`
+  }
+  return list;
+}
+```
+
 * __[Drone Fly-By](https://www.codewars.com/kata/58356a94f8358058f30004b5/train/javascript/)__
 ```javascript
 function flyBy(lamps, drone) {
@@ -11,7 +21,6 @@ function flyBy(lamps, drone) {
   }
 }
 ```
-
 
 * __[Remove anchor from URL](https://www.codewars.com/kata/51f2b4448cadf20ed0000386/train/javascript/)__
 ```javascript
