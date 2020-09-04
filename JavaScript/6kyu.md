@@ -1,5 +1,18 @@
 ### Code challenges 6 kyu
 
+* __[Persistent Bugger.](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/javascript/)__
+```javascript
+function persistence(num) {
+  let count = 0;
+
+  while (num.toString().length !== 1) {
+    num = [...num.toString()].reduce((a, c)=> a * c, 1);
+    count++;
+  }
+  return count;
+}
+```
+
 * __[TV channels](https://www.codewars.com/kata/5836dce6966f8d1d43000007/train/javascript/)__
 ```javascript
 function redarr(arr) {
