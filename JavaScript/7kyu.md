@@ -1,5 +1,15 @@
 ### Code challenges 7 kyu
 
+* __[Describe a list](https://www.codewars.com/kata/57a4a3e653ba3346bc000810/train/javascript/)__
+```javascript
+function describeList(x) {
+  const element = x.length;
+  if (element === 0) return "empty";
+  else if (element === 1) return "singleton";
+  else return "longer";
+}
+```
+
 * __[Number-Star ladder](https://www.codewars.com/kata/5631213916d70a0979000066/train/javascript/)__
 ```javascript
 function pattern(n) {
