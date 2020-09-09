@@ -1,5 +1,52 @@
 ### Code challenges 7 kyu
 
+* __[Word values](https://www.codewars.com/kata/598d91785d4ce3ec4f000018/train/javascript/)__
+```javascript
+function wordValue(a) {
+  const alp = {
+    a: 1,
+    b: 2,
+    c: 3,
+    d: 4,
+    e: 5,
+    f: 6,
+    g: 7,
+    h: 8,
+    i: 9,
+    j: 10,
+    k: 11,
+    l: 12,
+    m: 13,
+    n: 14,
+    o: 15,
+    p: 16,
+    q: 17,
+    r: 18,
+    s: 19,
+    t: 20,
+    u: 21,
+    v: 22,
+    w: 23,
+    x: 24,
+    y: 25,
+    z: 26
+  };
+
+  const res = [];
+
+  for (let i = 0; i < a.length; i++) {
+    let sum = 0;
+    for (let j = 0; j < a[i].length; j++) {
+      if (a[i][j] !== ' ') {
+        sum += alp[a[i][j]];
+      }
+    }
+    res.push(sum * (i + 1))
+  }
+  return res;
+}
+```
+
 * __[Describe a list](https://www.codewars.com/kata/57a4a3e653ba3346bc000810/train/javascript/)__
 ```javascript
 function describeList(x) {
