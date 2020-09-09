@@ -1,5 +1,12 @@
 ### Code challenges 7 kyu
 
+* __[Testing 1-2-3](https://www.codewars.com/kata/54bf85e3d5b56c7a05000cf9/train/javascript/)__
+```javascript
+const number = function(array) {
+  return array.map((el, i) => `${i + 1}: ${el}`);
+}
+```
+
 * __[Split By Value](https://www.codewars.com/kata/5a433c7a8f27f23bb00000dc/train/javascript/)__
 ```javascript
 function splitByValue(k, elements) {
