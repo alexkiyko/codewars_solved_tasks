@@ -1,5 +1,18 @@
 ### Code challenges 7 kyu
 
+* __[Split By Value](https://www.codewars.com/kata/5a433c7a8f27f23bb00000dc/train/javascript/)__
+```javascript
+function splitByValue(k, elements) {
+  const arrMin = [];
+  const arrMax = [];
+
+  elements.forEach(el => {
+    el < k ? arrMin.push(el) : arrMax.push(el);
+  });
+  return [...arrMin, ...arrMax];
+}
+```
+
 * __[Word values](https://www.codewars.com/kata/598d91785d4ce3ec4f000018/train/javascript/)__
 ```javascript
 function wordValue(a) {
