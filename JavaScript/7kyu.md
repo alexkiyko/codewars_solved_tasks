@@ -1,5 +1,13 @@
 ### Code challenges 7 kyu
 
+* __[Return a string's even characters.](https://www.codewars.com/kata/566044325f8fddc1c000002c/train/javascript/)__
+```javascript
+function evenChars(str) {
+  if (str.length < 2 || str.length > 100) return "invalid string";
+  return [...str].filter((el, i) => i % 2 !== 0 ? el : 0);
+}
+```
+
 * __[Testing 1-2-3](https://www.codewars.com/kata/54bf85e3d5b56c7a05000cf9/train/javascript/)__
 ```javascript
 const number = function(array) {
