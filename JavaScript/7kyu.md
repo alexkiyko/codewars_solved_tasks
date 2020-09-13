@@ -1,5 +1,20 @@
 ### Code challenges 7 kyu
 
+* __[Debug the functions EASY](https://www.codewars.com/kata/5844a422cbd2279a0c000281/train/javascript/)__
+```javascript
+function multi(arr) {
+  return arr.reduce((a, c) => a * c, 1);
+}
+
+function add(arr) {
+  return arr.reduce((a, c) => a + c, 0);
+}
+
+function reverse(str) {
+  return [...str].reverse().join('');
+}
+```
+
 * __[Coding Meetup #3 - Higher-Order Functions Series - Is Ruby coming?](https://www.codewars.com/kata/5827acd5f524dd029d0005a4/train/javascript/)__
 ```javascript
 function isRubyComing(list) {
