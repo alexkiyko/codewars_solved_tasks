@@ -1,5 +1,19 @@
 ### Code challenges 7 kyu
 
+* __[Coding Meetup #6 - Higher-Order Functions Series - Can they code in the same language?](https://www.codewars.com/kata/58287977ef8d4451f90001a0/train/javascript/)__
+```javascript
+function isSameLanguage(list) {
+  const language = list[0].language;
+
+  for (let code of list) {
+    if (code.language !== language) {
+      return false;
+    }
+  }
+  return true;
+}
+```
+
 * __[Is Undefined?](https://www.codewars.com/kata/564a6486c2070faee6000011/train/javascript/)__
 ```javascript
 const isUndefined = (value) => value === undefined;
