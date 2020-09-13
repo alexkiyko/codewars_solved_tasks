@@ -1,5 +1,10 @@
 ### Code challenges 7 kyu
 
+* __[Is Undefined?](https://www.codewars.com/kata/564a6486c2070faee6000011/train/javascript/)__
+```javascript
+const isUndefined = (value) => value === undefined;
+```
+
 * __[Return a string's even characters.](https://www.codewars.com/kata/566044325f8fddc1c000002c/train/javascript/)__
 ```javascript
 function evenChars(str) {
