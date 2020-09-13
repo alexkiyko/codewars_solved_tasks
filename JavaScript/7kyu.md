@@ -1,5 +1,12 @@
 ### Code challenges 7 kyu
 
+* __[Coding Meetup #3 - Higher-Order Functions Series - Is Ruby coming?](https://www.codewars.com/kata/5827acd5f524dd029d0005a4/train/javascript/)__
+```javascript
+function isRubyComing(list) {
+  return list.filter(el => el.language === 'Ruby').length >= 1;
+}
+```
+
 * __[Coding Meetup #6 - Higher-Order Functions Series - Can they code in the same language?](https://www.codewars.com/kata/58287977ef8d4451f90001a0/train/javascript/)__
 ```javascript
 function isSameLanguage(list) {
