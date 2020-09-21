@@ -1,5 +1,28 @@
 ### Code challenges 6 kyu
 
+* __[String array duplicates](https://www.codewars.com/kata/59f08f89a5e129c543000069/train/javascript/)__
+```javascript
+function dup(arr) {
+  const res = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    res.push(filterStr(arr[i]));
+  }
+  return res;
+}
+
+function filterStr(s) {
+  let filteredStr = '';
+  
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] !== s[i + 1]) {
+      filteredStr += s[i];
+    }
+  }
+  return filteredStr;
+}
+```
+
 * __[Persistent Bugger.](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/javascript/)__
 ```javascript
 function persistence(num) {
