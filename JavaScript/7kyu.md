@@ -1,5 +1,16 @@
 ### Code challenges 7 kyu
 
+* __[Substituting Variables Into Strings: Padded Numbers](https://www.codewars.com/kata/51c89385ee245d7ddf000001/train/javascript/)__
+```javascript
+function solution(value) {
+  const arr = [...value.toString()];
+  while (arr.length < 5) {
+    arr.unshift('0');
+  }
+  return `Value is ${arr.join``}`;
+}
+```
+
 * __[Debug the functions EASY](https://www.codewars.com/kata/5844a422cbd2279a0c000281/train/javascript/)__
 ```javascript
 function multi(arr) {
