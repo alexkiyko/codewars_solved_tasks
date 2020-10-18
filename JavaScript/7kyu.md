@@ -1,5 +1,20 @@
 ### Code challenges 7 kyu
 
+* __[Remove consecutive duplicate words](https://www.codewars.com/kata/5b39e91ee7a2c103300018b3/train/javascript/)__
+```javascript
+function removeConsecutiveDuplicates (s) {
+  s = s.split(' ');
+  const res = [];
+
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] !== s[i + 1]) {
+      res.push(s[i]);
+    }
+  }
+  return res.join(' ');
+}
+```
+
 * __[Substituting Variables Into Strings: Padded Numbers](https://www.codewars.com/kata/51c89385ee245d7ddf000001/train/javascript/)__
 ```javascript
 function solution(value) {
