@@ -1,5 +1,13 @@
 ### Code challenges 7 kyu
 
+* __[Nth Smallest Element (Array Series #4)](https://www.codewars.com/kata/5a512f6a80eba857280000fc/train/javascript/)__
+```javascript
+function nthSmallest(arr, pos) {
+  arr = arr.sort((a, b) => a - b);
+  return arr[pos - 1]
+}
+```
+
 * __[Counting Array Elements](https://www.codewars.com/kata/5569b10074fe4a6715000054/train/javascript/)__
 ```javascript
 function count(array) {
