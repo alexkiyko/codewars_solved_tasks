@@ -1,5 +1,17 @@
 ### Code challenges 7 kyu
 
+* __[Counting Array Elements](https://www.codewars.com/kata/5569b10074fe4a6715000054/train/javascript/)__
+```javascript
+function count(array) {
+  const obj = {};
+
+  for (let el of array) {
+    obj[el] ? obj[el] += 1 : obj[el] = 1;
+  }
+  return obj;
+}
+```
+
 * __[Array Leaders (Array Series #3)](https://www.codewars.com/kata/5a651865fd56cb55760000e0/train/javascript/)__
 ```javascript
 var arrayLeaders = numbers => {
