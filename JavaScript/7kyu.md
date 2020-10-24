@@ -1,5 +1,20 @@
 ### Code challenges 7 kyu
 
+* __[Array Leaders (Array Series #3)](https://www.codewars.com/kata/5a651865fd56cb55760000e0/train/javascript/)__
+```javascript
+var arrayLeaders = numbers => {
+  let res = [];
+
+  for (let i = 0; i < numbers.length; i++) {
+    let current = numbers[i];
+    if (current > numbers.slice(i + 1).reduce((a, c) => a + c, 0)) {
+      res.push(current)
+    }
+  }
+  return res;
+}
+```
+
 * __[Remove consecutive duplicate words](https://www.codewars.com/kata/5b39e91ee7a2c103300018b3/train/javascript/)__
 ```javascript
 function removeConsecutiveDuplicates (s) {
