@@ -1,5 +1,12 @@
 ### Code challenges 7 kyu
 
+* __[Find the lucky numbers](https://www.codewars.com/kata/580435ab150cca22650001fb/train/javascript/)__
+```javascript
+var filterLucky = x => {
+  return x.filter(el => el.toString().includes(7));
+}
+```
+
 * __[Nth Smallest Element (Array Series #4)](https://www.codewars.com/kata/5a512f6a80eba857280000fc/train/javascript/)__
 ```javascript
 function nthSmallest(arr, pos) {
