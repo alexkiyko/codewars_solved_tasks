@@ -1,5 +1,22 @@
 ### Code challenges 7 kyu
 
+* __[String matchup](https://www.codewars.com/kata/59ca8e8e1a68b7de740001f4/train/javascript/)__
+```javascript
+function solve(a,b) {
+  const res = [];
+  const obj = {};
+  
+  for (let el of a) {
+    obj[el] ? obj[el]++ : obj[el] = 1;  
+  }
+  
+  for (let el of b) {
+    obj[el] ? res.push(obj[el]) : res.push(0);
+  }
+
+  return res;
+}
+```
 * __[Find the lucky numbers](https://www.codewars.com/kata/580435ab150cca22650001fb/train/javascript/)__
 ```javascript
 var filterLucky = x => {
