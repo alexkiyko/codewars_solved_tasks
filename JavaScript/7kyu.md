@@ -1,11 +1,18 @@
 ### Code challenges 7 kyu
 
+* __[Between Extremes](https://www.codewars.com/kata/56d19b2ac05aed1a20000430/train/javascript/)__
+```javascript
+function betweenExtremes(numbers) {
+  return Math.abs(Math.max(...numbers) - Math.min(...numbers))
+}
+```
+
 * __[Javascript filter - 1](https://www.codewars.com/kata/525d9b1a037b7a9da7000905/train/javascript/)__
 ```javascript
-function searchNames( logins ){
+function searchNames( logins ) {
   return logins.filter(el => {
     let last = el[0][el[0].length - 1]
-    if(last === '_'){
+    if(last === '_') {
       return el;
     }
   }) 
