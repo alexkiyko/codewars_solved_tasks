@@ -1,5 +1,17 @@
 ### Code challenges 7 kyu
 
+* __[Javascript filter - 1](https://www.codewars.com/kata/525d9b1a037b7a9da7000905/train/javascript/)__
+```javascript
+function searchNames( logins ){
+  return logins.filter(el => {
+    let last = el[0][el[0].length - 1]
+    if(last === '_'){
+      return el;
+    }
+  }) 
+}
+```
+
 * __[String matchup](https://www.codewars.com/kata/59ca8e8e1a68b7de740001f4/train/javascript/)__
 ```javascript
 function solve(a,b) {
@@ -13,10 +25,10 @@ function solve(a,b) {
   for (let el of b) {
     obj[el] ? res.push(obj[el]) : res.push(0);
   }
-
   return res;
 }
 ```
+
 * __[Find the lucky numbers](https://www.codewars.com/kata/580435ab150cca22650001fb/train/javascript/)__
 ```javascript
 var filterLucky = x => {
